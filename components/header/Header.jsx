@@ -15,17 +15,26 @@ class Header extends PureComponent {
 
 		this.menu_items = [
 			{
-				name: 'Resume',
-				id: 'resume',
+				name: 'Home',
+				id: 'home',
 			},
 			{
-				name: 'Projects',
-				id: 'projects',
+				name: 'Classes',
+				id: 'classes',
+			},
+			{
+				name: 'Lion Dance',
+				id: 'liondance',
+			},
+			{
+				name: 'About',
+				id: 'about',
 			},
 			{
 				name: 'Contact',
 				id: 'contact',
 			},
+			
 		];
 	}
 
@@ -37,6 +46,7 @@ class Header extends PureComponent {
 		return (
 			<li key={`${item.id}`}>
 				<a href={`/${item.id}`}>{item.name}</a>
+				<div className={styles('underline')} />
 			</li>
 		);
 	}
@@ -47,12 +57,22 @@ class Header extends PureComponent {
 			text,
 		} = this.props;
 
+		const banner_styles = {
+			backgroundImage: `url(/static/fongs-banner-logo.png)`,
+			backgroundRepeat: 'no-repeat',
+			backgroundPosition: 'center'
+		};
+
+
 		return (
 			<header className={styles('container')}>
 				<div className={styles('inner')}>
-					<div className={styles('logo')}>
-						<a href='/'>Joe Biggica</a>
-					</div>
+					<div className={styles('banner')} style={banner_styles} />
+					<nav className={styles('nav')}>
+						<ul>
+							{this.menu_items.map(this.renderMenuItem)}
+						</ul>
+					</nav>
 					<div className={styles('menu-container')}>
 						<HamburgerButton className={styles('button')} onClick={this.onClick} />
 						<ul className={styles('menu', {'active': this.state.menu_active})}>

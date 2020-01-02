@@ -1,14 +1,15 @@
 {
 	"version": 2,
-	"name": "portfolio",
+	"name": "fongs-hung-ga",
 	"builds": [{
 		"src": "package.json",
 		"use": "@now/next"
 	}],
 	"routes": [
 		{"src": "/", "dest": "Index"},
-		{"src": "/resume", "dest": "Resume"},
-		{"src": "/projects", "dest": "Projects"},
+		{"src": "/classes", "dest": "Classes"},
+		{"src": "/liondance", "dest": "LionDance"},
+		{"src": "/about", "dest": "About"},
 		{"src": "/contact", "dest": "Contact"}
 	]
 }

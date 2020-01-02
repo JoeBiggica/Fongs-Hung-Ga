@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Header from 'components/header';
-import HeroBanner from 'components/herobanner';
 
-import GlobalStyles from 'styles/styles.scss';
+
+import styles from './Index.scss';
 
 class Index extends Component {
 	static getInitialProps ({ reduxStore, req }) {
@@ -53,11 +53,9 @@ class Index extends Component {
 			<>
 				<Header />
 				<section>
-					<HeroBanner 
-						title='Web engineer specializing in front-end development and modern frameworks'
-						buttons={this.banner_buttons}
-						button_border
-					/>
+					<div className={styles('video-banner')}>
+						<iframe src='//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1' />
+					</div>
 				</section>
 			</>
 		)

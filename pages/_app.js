@@ -3,6 +3,7 @@ import React from 'react'
 import withReduxStore from '../lib/with-redux-store'
 import { Provider } from 'react-redux'
 import SiteHead from '/components/sitehead'
+import GlobalStyles from 'styles/styles.scss';
 
 class NextApp extends App {
 	render () {
