@@ -891,22 +891,9 @@ function (_Component) {
   }]);
 
   function Index(props) {
-    var _this;
-
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__["default"])(Index).call(this, props));
-    _this.banner_buttons = [{
-      text: 'Resume',
-      url: '/resume'
-    }, {
-      text: 'Projects',
-      url: '/projects'
-    }, {
-      text: 'Contact',
-      url: '/contact'
-    }];
-    return _this;
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__["default"])(Index).call(this, props));
   } // toggle = () => {
   // 	const { toggleTap } = this.props
   // 	toggleTap()

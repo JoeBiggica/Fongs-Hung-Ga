@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+.Index-video-banner-2qJc- {
+  background-image: url("/static/andrew-lion-head.jpg");
+  background-position: 50%;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .Index-video-banner-2qJc-:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .Index-video-banner-2qJc- iframe {
+    display: none;
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border: 0;
+    transform: translate(-50%, -50%); }
+    @media (min-width: 1026px) {
+      .Index-video-banner-2qJc- iframe {
+        display: block; } }
+
+.styles-clearfix-2Rb3A:before,
+.styles-clearfix-2Rb3A:after {
+  content: "";
+  display: table; }
+
+.styles-clearfix-2Rb3A:after {
+  clear: both; }
+
+.styles-clearfix-2Rb3A {
+  zoom: 1; }
+
+* {
+  font-family: 'Avenir', sans-serif;
+  box-sizing: border-box;
+  margin: 0; }
+
+html,
+body {
+  font-size: 10px; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6em; }
+  p small {
+    font-size: .8em; }
+
+a {
+  transition: color 0.25s cubic-bezier(0.42, 0, 0.58, 1);
+  backface-visibility: hidden;
+  text-decoration: none;
+  color: #333333;
+  font-family: inherit; }
+  a:hover {
+    color: #FF1815;
+    cursor: pointer; }
+  a:focus {
+    outline: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    font-size: 1.4rem; }
+
+/*Oswald Webfont*/
+@font-face {
+  font-family: 'Oswald', sans-serif; }
+

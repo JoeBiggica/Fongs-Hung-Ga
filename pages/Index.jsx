@@ -16,21 +16,6 @@ class Index extends Component {
 
 	constructor(props) {
 		super(props);
-
-		this.banner_buttons = [
-			{
-				text: 'Resume',
-				url: '/resume',
-			},
-			{
-				text: 'Projects',
-				url: '/projects',
-			},
-			{
-				text: 'Contact',
-				url: '/contact',
-			},
-		];
 	}
 
 	// toggle = () => {
