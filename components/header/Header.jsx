@@ -45,7 +45,7 @@ class Header extends PureComponent {
 	renderMenuItem = item => {
 		return (
 			<li key={`${item.id}`}>
-				<a href={`/${item.id}`}>{item.name}</a>
+				<a href={`/`}>{item.name}</a>
 				<div className={styles('underline')} />
 			</li>
 		);

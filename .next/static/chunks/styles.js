@@ -86,7 +86,7 @@ module.exports = {"container":"Header-container-3ZpuA","inner":"Header-inner-2A1
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577996178415");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577997576715");
           });
       }
     }
@@ -162,7 +162,7 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577994734634");
+            injectCss(link, link.href.split("?")[0] + "?unix=1577997158225");
           });
       }
     }

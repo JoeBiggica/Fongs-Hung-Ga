@@ -64,7 +64,7 @@ function (_PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
         key: "".concat(item.id)
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
-        href: "/".concat(item.id)
+        href: "/"
       }, item.name), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_11___default()('underline')
       }));

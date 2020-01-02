@@ -1,4 +1,9 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
 .video-banner {
+	background-image: url('/static/andrew-lion-head.jpg');
 	background-position: 50%;
     background-size: cover;
     position: fixed;
@@ -20,6 +25,7 @@
 	}
 
 	iframe {
+		display: none;
 		width: 100vw;
 	    height: 56.25vw;
 	    min-height: 100vh;
@@ -31,5 +37,9 @@
 	    z-index: 1;
 	    border: 0;
 	    transform: translate(-50%,-50%);
+
+	    @include for-tablet-landscape-up {
+	    	display: block;
+	    }
 	}
 }
