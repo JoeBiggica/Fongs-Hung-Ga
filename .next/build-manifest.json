@@ -24,24 +24,6 @@
     "/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/about": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/classes": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/liondance": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
     ]
   }
 }
