@@ -64,7 +64,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"Header-container-3ZpuA","inner":"Header-inner-2A1qX","banner":"Header-banner-3w3mF","nav":"Header-nav-3jI7E","underline":"Header-underline-1IEy8","menu-container":"Header-menu-container-2rqw1","button":"Header-button-3USmz","menu":"Header-menu-sKL0B","active":"Header-active-1uMAQ"};;
+module.exports = {"container":"Header-container-3ZpuA","fixed":"Header-fixed-39ltI","inner":"Header-inner-2A1qX","banner":"Header-banner-3w3mF","nav":"Header-nav-3jI7E","active":"Header-active-1uMAQ","underline":"Header-underline-1IEy8","menu-container":"Header-menu-container-2rqw1","button":"Header-button-3USmz","menu":"Header-menu-sKL0B"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -86,7 +86,7 @@ module.exports = {"container":"Header-container-3ZpuA","inner":"Header-inner-2A1
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577999678236");
+            injectCss(link, link.href.split("?")[0] + "?unix=1578084773252");
           });
       }
     }
@@ -124,7 +124,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577996133849");
+            injectCss(link, link.href.split("?")[0] + "?unix=1578084748757");
           });
       }
     }
@@ -140,7 +140,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"video-banner":"Index-video-banner-2qJc-"};;
+module.exports = {"video-banner":"Index-video-banner-2qJc-","description":"Index-description-3gzw7"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -162,7 +162,7 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1577997158225");
+            injectCss(link, link.href.split("?")[0] + "?unix=1578085594876");
           });
       }
     }

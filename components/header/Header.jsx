@@ -6,6 +6,11 @@ import styles from './Header.scss';
 
 class Header extends PureComponent {
 
+	static propTypes = {
+		router: PropTypes.object,
+		fixed: PropTypes.bool,
+	}
+
 	state = {
 		menu_active: false,
 	}
@@ -13,10 +18,12 @@ class Header extends PureComponent {
 	constructor(props) {
 		super(props);
 
+		this.route = this.props.router && this.props.router.pathname.toLowerCase().replace('/', '');
+
 		this.menu_items = [
 			{
 				name: 'Home',
-				id: 'home',
+				id: 'index',
 			},
 			{
 				name: 'Classes',
@@ -43,9 +50,11 @@ class Header extends PureComponent {
 	}
 
 	renderMenuItem = item => {
+		const path = item.id === 'index' ? '/' : `/${item.id}`; 
+		const item_classname = styles({'active': item.id === this.route});
 		return (
-			<li key={`${item.id}`}>
-				<a href={`/`}>{item.name}</a>
+			<li className={item_classname} key={`${item.id}`}>
+				<a href={`${path}`}>{item.name}</a>
 				<div className={styles('underline')} />
 			</li>
 		);
@@ -54,8 +63,12 @@ class Header extends PureComponent {
 	render() {
 		const {
 			className,
-			text,
+			fixed,
 		} = this.props;
+
+		const container_classname = styles('container', {
+			'fixed': fixed,
+		});
 
 		const banner_styles = {
 			backgroundImage: `url(/static/fongs-banner-logo.png)`,
@@ -63,9 +76,8 @@ class Header extends PureComponent {
 			backgroundPosition: 'center'
 		};
 
-
 		return (
-			<header className={styles('container')}>
+			<header className={container_classname}>
 				<div className={styles('inner')}>
 					<div className={styles('banner')} style={banner_styles} />
 					<nav className={styles('nav')}>

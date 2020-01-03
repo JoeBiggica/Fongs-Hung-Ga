@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'next/router';
+import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Header from 'components/header';
 
@@ -12,6 +14,10 @@ class Index extends Component {
 		const isServer = !!req
 
 		return {}
+	}
+
+	static propTypes = {
+		router: PropTypes.object,
 	}
 
 	constructor(props) {
@@ -34,13 +40,22 @@ class Index extends Component {
 	// }
 
 	render() {
+		const {
+			router
+		} = this.props;
+
 		return (
 			<>
-				<Header />
+				<Header
+					router={router}
+					fixed 
+				/>
 				<section>
 					<div className={styles('video-banner')}>
 						<iframe src='//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1' />
 					</div>
+					<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
+					<p className={styles('description')}>Welcome to the official website of Fong’s Hung Ga Kung Fu Association , a private institution with locations in Staten Island, NY, central New Jersey and South Florida dedicated to teaching only the purest, traditional Chinese Hung Ga Kung Fu in the United States to students of all ages.</p>
 				</section>
 			</>
 		)
@@ -61,4 +76,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(Index);
+)(withRouter(Index));

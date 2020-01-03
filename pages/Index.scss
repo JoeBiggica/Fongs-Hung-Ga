@@ -43,3 +43,23 @@
 	    }
 	}
 }
+
+.description {
+	font-size: 18px;
+	line-height: 28px;
+    color: $white;
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 600px;
+
+    @include for-tablet-portrait-up {
+    	font-size: 21px;
+    	line-height: 31px;
+    }
+}
