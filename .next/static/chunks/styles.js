@@ -332,7 +332,7 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-","description":"Index
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1578085594876");
+            injectCss(link, link.href.split("?")[0] + "?unix=1578088957461");
           });
       }
     }

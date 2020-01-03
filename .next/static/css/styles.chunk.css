@@ -247,7 +247,7 @@ ul {
   font-size: 18px;
   line-height: 28px;
   color: #fff;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -25%);
