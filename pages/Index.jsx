@@ -48,6 +48,7 @@ class Index extends Component {
 			<>
 				<Header
 					router={router}
+					gradient
 					fixed 
 				/>
 				<section>

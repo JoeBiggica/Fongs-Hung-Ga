@@ -210,8 +210,10 @@ function (_PureComponent) {
     value: function render() {
       var _this$props = this.props,
           className = _this$props.className,
+          gradient = _this$props.gradient,
           fixed = _this$props.fixed;
       var container_classname = _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('container', {
+        'gradient': gradient,
         'fixed': fixed
       });
       var banner_styles = {
@@ -228,16 +230,7 @@ function (_PureComponent) {
         style: banner_styles
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("nav", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('nav')
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", null, this.menu_items.map(this.renderMenuItem))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('menu-container')
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_hamburgerbutton__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('button'),
-        onClick: this.onClick
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", {
-        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('menu', {
-          'active': this.state.menu_active
-        })
-      }, this.menu_items.map(this.renderMenuItem)))));
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", null, this.menu_items.map(this.renderMenuItem)))));
     }
   }]);
 
@@ -246,6 +239,7 @@ function (_PureComponent) {
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Header, "propTypes", {
   router: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.object,
+  gradient: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.bool,
   fixed: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.bool
 });
 
@@ -820,6 +814,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 module.exports = {
 	"container": "Header-container-3ZpuA",
 	"fixed": "Header-fixed-39ltI",
+	"gradient": "Header-gradient-2Ht_W",
 	"inner": "Header-inner-2A1qX",
 	"banner": "Header-banner-3w3mF",
 	"nav": "Header-nav-3jI7E",
@@ -944,6 +939,7 @@ function (_Component) {
       var router = this.props.router;
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_11__["default"], {
         router: router,
+        gradient: true,
         fixed: true
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("section", null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: _Index_scss__WEBPACK_IMPORTED_MODULE_12___default()('video-banner')

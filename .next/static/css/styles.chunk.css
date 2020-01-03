@@ -82,8 +82,8 @@ ul {
     transform: translateY(0) rotate(225deg); }
 
 .Header-container-3ZpuA {
+  background: #232323;
   padding: 0 20px;
-  background: linear-gradient(#000 30%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
   z-index: 2; }
   @media (min-width: 1026px) {
@@ -93,6 +93,8 @@ ul {
       left: 0; } }
   .Header-container-3ZpuA.Header-fixed-39ltI {
     position: fixed; }
+  .Header-container-3ZpuA.Header-gradient-2Ht_W {
+    background: linear-gradient(#000 30%, rgba(0, 0, 0, 0) 100%); }
 
 .Header-inner-2A1qX {
   position: relative;
@@ -114,16 +116,18 @@ ul {
       height: 88px; } }
 
 .Header-nav-3jI7E {
-  display: none;
   margin-top: 40px; }
-  @media (min-width: 600px) {
-    .Header-nav-3jI7E {
-      display: block; } }
   .Header-nav-3jI7E li {
-    font-size: 18px;
+    font-size: 12px;
     display: inline-block; }
+    @media (min-width: 600px) {
+      .Header-nav-3jI7E li {
+        font-size: 18px; } }
     .Header-nav-3jI7E li:not(:last-child) {
-      margin-right: 35px; }
+      margin-right: 15px; }
+      @media (min-width: 600px) {
+        .Header-nav-3jI7E li:not(:last-child) {
+          margin-right: 35px; } }
     .Header-nav-3jI7E li:hover a, .Header-nav-3jI7E li.Header-active-1uMAQ a {
       color: #FF1815; }
     .Header-nav-3jI7E li:hover .Header-underline-1IEy8, .Header-nav-3jI7E li.Header-active-1uMAQ .Header-underline-1IEy8 {
@@ -169,6 +173,57 @@ ul {
       margin-bottom: 10px; }
     .Header-menu-container-2rqw1 li a {
       color: #fff; }
+
+.Layout-container-1Z389 {
+  min-height: 100vh;
+  background: #232323; }
+
+.Layout-inner-d3Io5 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 30px; }
+
+.PageHeader-container-3ktzp {
+  width: 100%; }
+
+.PageHeader-inner-3_Dcy {
+  display: inline-block; }
+
+.PageHeader-title-1UdnQ {
+  font-size: 22px;
+  color: #fff; }
+  @media (min-width: 600px) {
+    .PageHeader-title-1UdnQ {
+      font-size: 28px; } }
+
+.PageHeader-underline-2Ki7C {
+  width: 100%;
+  height: 2px;
+  background: #FF1815; }
+
+.Classes-content-1new4 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  background: #414141; }
+
+.Contact-content-1LEfE {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  background: #414141; }
+
+.LionDance-content-rdopy {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  background: #414141; }
+
+.About-content-B13Eq {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  background: #414141; }
 
 .Index-video-banner-2qJc- {
   background-image: url("/static/andrew-lion-head.jpg");

@@ -8,6 +8,7 @@ class Header extends PureComponent {
 
 	static propTypes = {
 		router: PropTypes.object,
+		gradient: PropTypes.bool,
 		fixed: PropTypes.bool,
 	}
 
@@ -63,10 +64,12 @@ class Header extends PureComponent {
 	render() {
 		const {
 			className,
+			gradient,
 			fixed,
 		} = this.props;
 
 		const container_classname = styles('container', {
+			'gradient': gradient,
 			'fixed': fixed,
 		});
 
@@ -85,12 +88,12 @@ class Header extends PureComponent {
 							{this.menu_items.map(this.renderMenuItem)}
 						</ul>
 					</nav>
-					<div className={styles('menu-container')}>
+					{/*<div className={styles('menu-container')}>
 						<HamburgerButton className={styles('button')} onClick={this.onClick} />
 						<ul className={styles('menu', {'active': this.state.menu_active})}>
 							{this.menu_items.map(this.renderMenuItem)}
 						</ul>
-					</div>
+					</div>*/}
 				</div>
 			</header>
 		);	
