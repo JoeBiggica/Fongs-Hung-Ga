@@ -179,59 +179,6 @@ ul {
     .Header-menu-container-2rqw1 li a {
       color: #fff; }
 
-.Index-video-banner-2qJc- {
-  background-image: url("/static/andrew-lion-head.jpg");
-  background-position: 50%;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-  .Index-video-banner-2qJc-:before {
-    content: '';
-    background: rgba(0, 0, 0, 0.65);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2; }
-  .Index-video-banner-2qJc- iframe {
-    display: none;
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    position: absolute;
-    pointer-events: none;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    border: 0;
-    transform: translate(-50%, -50%); }
-    @media (min-width: 1026px) {
-      .Index-video-banner-2qJc- iframe {
-        display: block; } }
-
-.Index-description-3gzw7 {
-  font-size: 18px;
-  line-height: 28px;
-  color: #fff;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -25%);
-  text-align: center;
-  width: 100%;
-  padding: 0 20px;
-  max-width: 600px; }
-  @media (min-width: 600px) {
-    .Index-description-3gzw7 {
-      font-size: 21px;
-      line-height: 31px; } }
-
 .HeroBanner-container-fYWwV {
   width: 100%;
   padding: 0 20px;
@@ -376,6 +323,59 @@ ul {
   height: 100vh;
   margin-top: 60px;
   background: #414141; }
+
+.Index-video-banner-2qJc- {
+  background-image: url("https://lh3.googleusercontent.com/xYQRrFvVju3FpplI1A2lhX4fh3Vs2_3Z-V9Fzasd-hu_wzqYx_eY2G7B6eup8_sQyaDuw6yA9ma9-noYLujL7isDfm8-YDcvXEZb016Rv9hDEREZbP7AxJWd23GdvS9C0S5yYKXucrXUtuLhREee65cj614pyxF27CplVsZNQRX9QzAFZFbo5Wz8513AS7gYtuh2laPMtSu-CBvawnosDZ3t1uKdF1FGloW32c2wKJzVOvLPH7Fs12ZM8XYuYqkDCPeqHkfYq3-9Id3PWFhshDvwuwxV4f6QwE0Blt1tJzQo9k104ByUqKkGjoRMD62iuTO4dS67YM05AoVPLJfX_-qDzeHRTtjKs3DzZNoBSUiKNBjsjcAcYpxfN2exsDeXDvjk3buZujcz90ZH7FoBMF9fg3eIkMhbBGIN2FZ7W8e0cqr0yyoLs5zFwrIVl0-zoryMHRgSXRG4izhptj0XQdhFS7XV8YFni7KOUfXjwWkudzRUXOjd_kYU51T7WCJ4QrF9O3VdfUnHrUdrf2KqA_Rj5ibi_o0llsK2ucKcRNV-WoYebripuhaY6PvTSCnyKP5iPxfqMP6QAA9TrzuBuh5f1FEIINGmCoiHpXQdeBtkZ0NucNCsgTgs3Luiz7eFPoN654kgq7wRjTDnGiP63-RO36tko-vtPwrIlAgEIuYnn90qnwrfhjI=w541-h748-no");
+  background-position: 50%;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .Index-video-banner-2qJc-:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .Index-video-banner-2qJc- iframe {
+    display: none;
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border: 0;
+    transform: translate(-50%, -50%); }
+    @media (min-width: 1026px) {
+      .Index-video-banner-2qJc- iframe {
+        display: block; } }
+
+.Index-description-3gzw7 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 600px; }
+  @media (min-width: 600px) {
+    .Index-description-3gzw7 {
+      font-size: 21px;
+      line-height: 31px; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
