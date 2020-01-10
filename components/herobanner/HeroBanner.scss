@@ -4,25 +4,56 @@
 
 .container {
 	width: 100%;
-	padding: 60px 20px 30px;
+	padding: 0 20px;
 	background: $blacker;
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 
 	@include for-tablet-portrait-up {
-		padding: 0 60px 60px;
+		padding: 0 60px;
 		justify-content: center;
 	}
 
 	&.justify-top {
 		justify-content: flex-start;
-		padding-top: 60px;
+		padding-top: 20px;
+
+		@include for-tablet-portrait-up {
+			padding-top: 40px;
+		}
 	}
 
-	&.full-height {
+	&.justify-bottom {
+		justify-content: flex-end;
+		padding-bottom: 20px;
+
+		@include for-tablet-portrait-up {
+			padding-bottom: 40px;
+		}
+	}
+
+	&.full {
 		min-height: 100vh;
+	}
+
+	&.three-quater {
+		min-height: 75vh;
+	}
+
+	&.half {
+		min-height: 35vh;
+
+		@include for-tablet-portrait-up {
+			min-height: 50vh;
+		}
+	}
+
+	&.auto {
+		min-height: auto;
 	}
 }
 
@@ -41,12 +72,12 @@
 }
 
 .title {
-	font-size: 24px;
+	font-size: 30px;
 	line-height: 1.3;
 	color: $white;
 
 	@include for-tablet-portrait-up {
-		font-size: 40px;
+		font-size: 60px;
 	}
 }
 

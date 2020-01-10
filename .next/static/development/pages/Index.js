@@ -126,7 +126,16 @@ function (_PureComponent) {
         style: banner_styles
       }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("nav", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('nav')
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", null, this.menu_items.map(this.renderMenuItem)))));
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", null, this.menu_items.map(this.renderMenuItem))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('menu-container')
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_hamburgerbutton__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('button'),
+        onClick: this.onClick
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("ul", {
+        className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('menu', {
+          'active': this.state.menu_active
+        })
+      }, this.menu_items.map(this.renderMenuItem)))));
     }
   }]);
 

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import Header from 'components/header';
+import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 
@@ -29,6 +30,16 @@ class Classes extends Component {
 		return (
 			<>
 				<Header router={router} />
+				<HeroBanner 
+					className={styles('herobanner')}
+					title='Classes' 
+					text_position={HeroBanner.TextPosition.BOTTOM}
+
+					background_image='static/school-lions.jpg'
+					background_position={HeroBanner.BackgroundPosition.CENTER}
+					hero_height={HeroBanner.HeroHeight.HALF} 
+					gradient={HeroBanner.Gradient.BOTTOM}
+				/>
 				<Layout>
 					<PageHeader 
 						title='Classes'

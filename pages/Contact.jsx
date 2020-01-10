@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import Header from 'components/header';
+import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 
@@ -29,6 +30,7 @@ class Contact extends Component {
 		return (
 			<>
 				<Header router={router} />
+				<HeroBanner title='Contact' hero_height={HeroBanner.HeroHeight.HALF} />
 				<Layout>
 					<PageHeader 
 						title='Contact'

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import Header from 'components/header';
+import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 
@@ -29,9 +30,19 @@ class LionDance extends Component {
 		return (
 			<>
 				<Header router={router} />
+				<HeroBanner 
+					className={styles('herobanner')}
+					title='Lion Dance' 
+					text_position={HeroBanner.TextPosition.BOTTOM}
+
+					background_image='static/three-lions.jpg'
+					background_position={HeroBanner.BackgroundPosition.CENTER}
+					hero_height={HeroBanner.HeroHeight.HALF} 
+					gradient={HeroBanner.Gradient.BOTTOM}
+				/>
 				<Layout>
 					<PageHeader 
-						title='LionDance'
+						title='Lion Dance'
 					/>
 					<div className={styles('content')} />
 				</Layout>

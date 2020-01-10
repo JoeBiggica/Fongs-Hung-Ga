@@ -4,6 +4,34 @@ import classnames from 'classnames';
 
 import styles from './HeroBanner.scss';
 
+const HeroHeight = {
+	FULL: 'full',
+	THREE_QUATER: 'three-quater',
+	HALF: 'half',
+	AUTO: 'auto'
+};
+
+const TextPosition = {
+	TOP: 'top',
+	BOTTOM: 'bottom',
+	CENTER: 'center'
+}
+
+const ButtonDirection = {
+	ROW: 'row',
+	COLUMN: 'column'
+}
+
+const BackgroundPosition = {
+	TOP: 'top',
+	BOTTOM: 'bottom',
+	CENTER: 'center'
+}
+
+const Gradient = {
+	TOP: 'top',
+	BOTTOM: 'bottom'
+}
 
 class HeroBanner extends PureComponent {
 
@@ -11,17 +39,37 @@ class HeroBanner extends PureComponent {
 		className: PropTypes.string,
 		title: PropTypes.string,
 		title_border: PropTypes.bool,
-		text_position: PropTypes.string,
+		text_position: PropTypes.oneOf(Object.values(TextPosition)),
 		buttons: PropTypes.array,
 		button_border: PropTypes.bool,
 		button_direction: PropTypes.string,
 		image: PropTypes.object,
-		full_height: PropTypes.bool,
+		background_image: PropTypes.string,
+		background_position: PropTypes.oneOf(Object.values(BackgroundPosition)),
+		hero_height: PropTypes.oneOf(Object.values(HeroHeight)),
+		gradient: PropTypes.oneOf(Object.values(Gradient)),
 	}
 
 	static defaultProps = {
-		button_direction: 'row',
-		full_height: true,
+		button_direction: ButtonDirection.ROW,
+		hero_height: HeroHeight.FULL
+	}
+
+	static HeroHeight = HeroHeight
+	static TextPosition = TextPosition
+	static ButtonDirection = ButtonDirection
+	static BackgroundPosition = BackgroundPosition
+	static Gradient = Gradient
+
+	getBackground = (background_image, gradient) => {
+		switch(gradient) {
+			case 'top':
+				return `linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0)), url(${background_image})`;
+			case 'bottom':
+				return `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 75%), url(${background_image})`;
+			default:
+				return `url(${background_image})`
+		}
 	}
 
 	renderButton = (button, index) => {
@@ -58,25 +106,32 @@ class HeroBanner extends PureComponent {
 			buttons,
 			button_border,
 			image,
-			full_height,
+			background_image,
+			background_position,
+			hero_height,
+			gradient,
 		} = this.props;
 
 		const container_classname = styles('container', {
 			'justify-top': text_position === 'top',
 			'justify-bottom': text_position === 'bottom',
-			'full-height': full_height,
+			'full': hero_height === 'full',
+			'three-quater': hero_height === 'three-quater',
+			'half': hero_height === 'half',
+			'auto': hero_height === 'auto',
 		});
+
+		const container_style = {
+			backgroundImage: background_image && this.getBackground(background_image, gradient),
+			backgroundPosition: background_position && background_position,
+		};
 
 		const text_container_classname = styles('text-container', {
 			'border': title_border,
 		});
 
-		const image_style = {
-			backgroundImage: image,
-		}
-
 		return (
-			<div className={classnames(container_classname, className)}>
+			<div className={classnames(container_classname, className)} style={container_style}>
 				<div className={text_container_classname}>
 					<h1 className={styles('title')}>{this.props.title}</h1>
 				</div>
