@@ -330,15 +330,15 @@ module.exports = {"container":"PageHeader-container-3ktzp","inner":"PageHeader-i
 
 /***/ }),
 
-/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Index.scss":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Index.scss ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Classes.scss ***!
+  \*********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"video-banner":"Index-video-banner-2qJc-","description":"Index-description-3gzw7"};;
+module.exports = {"herobanner":"Classes-herobanner-hGTqS","content":"Classes-content-1new4"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -360,7 +360,7 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-","description":"Index
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1578694716327");
+            injectCss(link, link.href.split("?")[0] + "?unix=1578688924797");
           });
       }
     }
@@ -444,17 +444,17 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
 
 /***/ }),
 
-/***/ "./pages/Index.scss":
-/*!**************************!*\
-  !*** ./pages/Index.scss ***!
-  \**************************/
+/***/ "./pages/Classes.scss":
+/*!****************************!*\
+  !*** ./pages/Classes.scss ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
         // classnames-loader: automatically bind css-modules to classnames
         var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Index.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Index.scss");
+        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Classes.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {

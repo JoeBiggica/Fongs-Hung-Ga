@@ -64,9 +64,9 @@ class HeroBanner extends PureComponent {
 	getBackground = (background_image, gradient) => {
 		switch(gradient) {
 			case 'top':
-				return `linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0)), url(${background_image})`;
+				return `linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0) 50%), url(${background_image})`;
 			case 'bottom':
-				return `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 75%), url(${background_image})`;
+				return `linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 75%), url(${background_image})`;
 			default:
 				return `url(${background_image})`
 		}

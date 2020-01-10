@@ -531,10 +531,10 @@ function (_PureComponent) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "getBackground", function (background_image, gradient) {
       switch (gradient) {
         case 'top':
-          return "linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0)), url(".concat(background_image, ")");
+          return "linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0) 50%), url(".concat(background_image, ")");
 
         case 'bottom':
-          return "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 75%), url(".concat(background_image, ")");
+          return "linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 75%), url(".concat(background_image, ")");
 
         default:
           return "url(".concat(background_image, ")");
