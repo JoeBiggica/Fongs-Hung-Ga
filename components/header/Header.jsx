@@ -10,6 +10,7 @@ class Header extends PureComponent {
 		router: PropTypes.object,
 		gradient: PropTypes.bool,
 		fixed: PropTypes.bool,
+		dark_mode: PropTypes.bool,
 	}
 
 	state = {
@@ -66,15 +67,17 @@ class Header extends PureComponent {
 			className,
 			gradient,
 			fixed,
+			dark_mode,
 		} = this.props;
 
 		const container_classname = styles('container', {
 			'gradient': gradient,
 			'fixed': fixed,
+			'dark-mode': dark_mode,
 		});
 
 		const banner_styles = {
-			backgroundImage: `url(/static/fongs-banner-logo.png)`,
+			backgroundImage: `url(/static/fongs-banner-logo-long.png)`,
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center'
 		};

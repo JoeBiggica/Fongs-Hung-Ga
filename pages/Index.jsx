@@ -50,6 +50,7 @@ class Index extends Component {
 					router={router}
 					gradient
 					fixed 
+					dark_mode
 				/>
 				<section>
 					<div className={styles('video-banner')}>

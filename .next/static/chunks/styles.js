@@ -140,6 +140,34 @@
 
 /***/ }),
 
+/***/ "./components/table/Table.scss":
+/*!*************************************!*\
+  !*** ./components/table/Table.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        // classnames-loader: automatically bind css-modules to classnames
+        var classNames = __webpack_require__(/*! ../../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../../node_modules/extracted-loader!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader??ref--6-2!../../node_modules/sass-loader/lib/loader.js??ref--6-3!./Table.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/table/Table.scss");
+        var css = classNames.bind(locals);
+        for (var style in locals) {
+            if (!locals.hasOwnProperty(style)) {
+                continue;
+            }
+            if (typeof Object.defineProperty === 'function') {
+                Object.defineProperty(css, style, {value: locals[style]});
+            }
+            else {
+                css[style] = locals[style];
+            }
+        }
+        module.exports = css;
+    
+
+/***/ }),
+
 /***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/header/Header.scss":
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./components/header/Header.scss ***!
@@ -148,7 +176,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"Header-container-3ZpuA","fixed":"Header-fixed-39ltI","gradient":"Header-gradient-2Ht_W","inner":"Header-inner-2A1qX","banner":"Header-banner-3w3mF","nav":"Header-nav-3jI7E","active":"Header-active-1uMAQ","underline":"Header-underline-1IEy8","menu-container":"Header-menu-container-2rqw1","button":"Header-button-3USmz","menu":"Header-menu-sKL0B"};;
+module.exports = {"container":"Header-container-3ZpuA","fixed":"Header-fixed-39ltI","gradient":"Header-gradient-2Ht_W","dark-mode":"Header-dark-mode-1DaGR","inner":"Header-inner-2A1qX","banner":"Header-banner-3w3mF","nav":"Header-nav-3jI7E","active":"Header-active-1uMAQ","underline":"Header-underline-1IEy8","menu-container":"Header-menu-container-2rqw1","button":"Header-button-3USmz","menu":"Header-menu-sKL0B"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -170,7 +198,7 @@ module.exports = {"container":"Header-container-3ZpuA","fixed":"Header-fixed-39l
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382969841");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580581930311");
           });
       }
     }
@@ -208,7 +236,7 @@ module.exports = {"button":"HamburgerButton-button-3Kmsn","hamburger":"Hamburger
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382969882");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580575137517");
           });
       }
     }
@@ -246,7 +274,7 @@ module.exports = {"container":"HeroBanner-container-fYWwV","justify-top":"HeroBa
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382969933");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580575623666");
           });
       }
     }
@@ -284,7 +312,7 @@ module.exports = {"container":"Layout-container-1Z389","inner":"Layout-inner-d3I
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382969787");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580576102143");
           });
       }
     }
@@ -322,7 +350,7 @@ module.exports = {"container":"PageHeader-container-3ktzp","inner":"PageHeader-i
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382969776");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580576938016");
           });
       }
     }
@@ -330,15 +358,14 @@ module.exports = {"container":"PageHeader-container-3ktzp","inner":"PageHeader-i
 
 /***/ }),
 
-/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/About.scss":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/About.scss ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/table/Table.scss":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./components/table/Table.scss ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
-module.exports = {"content":"About-content-B13Eq"};;
+// extracted by mini-css-extract-plugin;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -360,7 +387,7 @@ module.exports = {"content":"About-content-B13Eq"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579383043950");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580577358158");
           });
       }
     }
@@ -368,15 +395,15 @@ module.exports = {"content":"About-content-B13Eq"};;
 
 /***/ }),
 
-/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Contact.scss":
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss":
 /*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Contact.scss ***!
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Classes.scss ***!
   \*********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"content":"Contact-content-1LEfE"};;
+module.exports = {"herobanner":"Classes-herobanner-hGTqS","content":"Classes-content-1new4"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -398,7 +425,83 @@ module.exports = {"content":"Contact-content-1LEfE"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579383156163");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580576092366");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Index.scss":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Index.scss ***!
+  \*******************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"video-banner":"Index-video-banner-2qJc-","description":"Index-description-3gzw7"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1580575137279");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/LionDance.scss ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"herobanner":"LionDance-herobanner-2rUbW","content":"LionDance-content-rdopy"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1580575628700");
           });
       }
     }
@@ -436,7 +539,7 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1579382965084");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580575803666");
           });
       }
     }
@@ -444,17 +547,17 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
 
 /***/ }),
 
-/***/ "./pages/About.scss":
-/*!**************************!*\
-  !*** ./pages/About.scss ***!
-  \**************************/
+/***/ "./pages/Classes.scss":
+/*!****************************!*\
+  !*** ./pages/Classes.scss ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
         // classnames-loader: automatically bind css-modules to classnames
         var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./About.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/About.scss");
+        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Classes.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {
@@ -472,17 +575,45 @@ module.exports = {"clearfix":"styles-clearfix-2Rb3A"};;
 
 /***/ }),
 
-/***/ "./pages/Contact.scss":
-/*!****************************!*\
-  !*** ./pages/Contact.scss ***!
-  \****************************/
+/***/ "./pages/Index.scss":
+/*!**************************!*\
+  !*** ./pages/Index.scss ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
         // classnames-loader: automatically bind css-modules to classnames
         var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Contact.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Contact.scss");
+        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Index.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Index.scss");
+        var css = classNames.bind(locals);
+        for (var style in locals) {
+            if (!locals.hasOwnProperty(style)) {
+                continue;
+            }
+            if (typeof Object.defineProperty === 'function') {
+                Object.defineProperty(css, style, {value: locals[style]});
+            }
+            else {
+                css[style] = locals[style];
+            }
+        }
+        module.exports = css;
+    
+
+/***/ }),
+
+/***/ "./pages/LionDance.scss":
+/*!******************************!*\
+  !*** ./pages/LionDance.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        // classnames-loader: automatically bind css-modules to classnames
+        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./LionDance.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {
