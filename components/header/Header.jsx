@@ -74,7 +74,7 @@ class Header extends PureComponent {
 		});
 
 		const banner_styles = {
-			backgroundImage: `url(/static/fongs-banner-logo.png)`,
+			backgroundImage: `url(/static/fongs-banner-logo-long.png)`,
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center'
 		};

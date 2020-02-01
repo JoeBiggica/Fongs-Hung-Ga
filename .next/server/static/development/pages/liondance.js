@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -217,7 +217,7 @@ function (_PureComponent) {
         'fixed': fixed
       });
       var banner_styles = {
-        backgroundImage: "url(/static/fongs-banner-logo.png)",
+        backgroundImage: "url(/static/fongs-banner-logo-long.png)",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       };
@@ -1408,37 +1408,9 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./pages/LionDance.scss":
-/*!******************************!*\
-  !*** ./pages/LionDance.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        // classnames-loader: automatically bind css-modules to classnames
-        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./LionDance.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss");
-        var css = classNames.bind(locals);
-        for (var style in locals) {
-            if (!locals.hasOwnProperty(style)) {
-                continue;
-            }
-            if (typeof Object.defineProperty === 'function') {
-                Object.defineProperty(css, style, {value: locals[style]});
-            }
-            else {
-                css[style] = locals[style];
-            }
-        }
-        module.exports = css;
-    
-
-/***/ }),
-
-/***/ "./pages/liondance.jsx":
+/***/ "./pages/LionDance.jsx":
 /*!*****************************!*\
-  !*** ./pages/liondance.jsx ***!
+  !*** ./pages/LionDance.jsx ***!
   \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1506,7 +1478,7 @@ function (_Component) {
         className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_14___default()('herobanner'),
         title: "Lion Dance",
         text_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].TextPosition.BOTTOM,
-        background_image: "https://lh3.googleusercontent.com/wsyy5L7WLY3sOBCfhB3Zogr4n8nuPNFYnVz-YXn_-5ARJJoOAfpqVkBM-MfL5mzN7zHDu0Yrh69zhOnd9ii3BuT7kg9ICxvwfr3m0eame9le2Gll4JMKnhJ1rR4lK5ya-4qmrjkwm0t8TwYwdofSSf4kPjuBfHTYgugWOYG9x1HJZ7aBV71mIPNFuZnYted6jtmKFUd3pD7m6AVmYRWc9KT73DSUMn7fEqq_sqFPZQytpkBcjaZ_dkmwD2l91EMWJZxt972m49nuLN2YEV8ePF6HYKyAegqPJeTZYmg29GsLc-G9zYeQiSkGtvZew0FGEzs5MfiEw5F_ZWX5t9olmfSZviyv9hZw8eMEIlQxzKt3tgvAbM7cCTwozY4l2LC2RTS56o0khCKk7PTCugACU2ly-BBUThSihx1fOeyicYMPojT_HU6Mtr8WjU94VeOnaADhOJCdDvp7WCs4CiQ6MJAK1FCRljsFpiTwJI1zxElGo-RBZEJL8ftHiARGOC6CGTE1nu-9I6iC31zB8Bno3Y74tNez2y5fGnz90jetAKL63XnLLO1EoIRCFq5iGBQkBFHQvXBApSVhoHeWJF8lpd2w2eMIcGkOstL3C07fsy990fS9klnoIEWQbjabxCdZgjv9lLmKOcU1w92-qmw5mURk9cRhkqXaTPKrJfdM4ukHufac3KmUx3k=w1024-h768-no",
+        background_image: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions.jpg",
         background_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].BackgroundPosition.CENTER,
         hero_height: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].HeroHeight.HALF,
         gradient: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].Gradient.BOTTOM
@@ -1537,14 +1509,42 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ 6:
+/***/ "./pages/LionDance.scss":
+/*!******************************!*\
+  !*** ./pages/LionDance.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        // classnames-loader: automatically bind css-modules to classnames
+        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./LionDance.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss");
+        var css = classNames.bind(locals);
+        for (var style in locals) {
+            if (!locals.hasOwnProperty(style)) {
+                continue;
+            }
+            if (typeof Object.defineProperty === 'function') {
+                Object.defineProperty(css, style, {value: locals[style]});
+            }
+            else {
+                css[style] = locals[style];
+            }
+        }
+        module.exports = css;
+    
+
+/***/ }),
+
+/***/ 5:
 /*!***********************************!*\
-  !*** multi ./pages/liondance.jsx ***!
+  !*** multi ./pages/LionDance.jsx ***!
   \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/liondance.jsx */"./pages/liondance.jsx");
+module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Fongs-Hung-Ga/pages/LionDance.jsx */"./pages/LionDance.jsx");
 
 
 /***/ }),
@@ -1726,4 +1726,4 @@ module.exports = require("redux");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=liondance.js.map
+//# sourceMappingURL=LionDance.js.map

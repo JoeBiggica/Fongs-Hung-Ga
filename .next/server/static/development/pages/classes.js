@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -217,7 +217,7 @@ function (_PureComponent) {
         'fixed': fixed
       });
       var banner_styles = {
-        backgroundImage: "url(/static/fongs-banner-logo.png)",
+        backgroundImage: "url(/static/fongs-banner-logo-long.png)",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       };
@@ -1408,37 +1408,9 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./pages/Classes.scss":
-/*!****************************!*\
-  !*** ./pages/Classes.scss ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        // classnames-loader: automatically bind css-modules to classnames
-        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./Classes.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss");
-        var css = classNames.bind(locals);
-        for (var style in locals) {
-            if (!locals.hasOwnProperty(style)) {
-                continue;
-            }
-            if (typeof Object.defineProperty === 'function') {
-                Object.defineProperty(css, style, {value: locals[style]});
-            }
-            else {
-                css[style] = locals[style];
-            }
-        }
-        module.exports = css;
-    
-
-/***/ }),
-
-/***/ "./pages/classes.jsx":
+/***/ "./pages/Classes.jsx":
 /*!***************************!*\
-  !*** ./pages/classes.jsx ***!
+  !*** ./pages/Classes.jsx ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1506,7 +1478,7 @@ function (_Component) {
         className: _Classes_scss__WEBPACK_IMPORTED_MODULE_14___default()('herobanner'),
         title: "Classes",
         text_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].TextPosition.BOTTOM,
-        background_image: "https://lh3.googleusercontent.com/f_3Yx4hv_8yowGDlC1QM9e0SjlKvWFQ51wgrAqL8TRAAo532EOkopjbFCqer6RILCyMJhURG9JIktkdzy7CwsW4B4fJKmIoBpn2PHyL1D3V-mQin11U4h_yZp2oQ5YndABBDJu39v3ui6iJpx41xUn1aEerngKLuTzUyTJHaHQ4RJOaMPq5sKCC1HcGm9kMHJR3XoReNYr6GFGp5wlAhgw6aOdq03Rv2xpAeCPw-94u2s9-a3stA88EbTpeAY-Ew_QA_YQrLrAq3_68FqNDxzlfsVbz0-2bRHLKfIpnSMr9GHfJmbQJQh0gBc_px6YYD41_eldazdRXl8sALw_v4btsQkT_eZ8Xtdq--JUB3r5E01j_cKDE4vFS_DT_TIVzW2yAk4mt81HTiubsJeGkHcG8ImS7ADNU7HxYEr0SABqeZIm0QApyOJrOr6lHx2U3s2M35O5qjHNeJwi7LK0SfML1hiZ5Ngj0SdU5RF0xwHXrpIXNJB1XsGTPR3DIWsFumXL1M4QhmsUMUyk1lc--nOiNLPTOC4LOUepY63tqWLiB3ekHvyHo8JATr1O8LSerHvRdc3XciZWKN_d9ESBNjdKYQvaopq8eL0uoppeOrkdJoIV8wZi-Fd4N1j2sbmwmOgw3yx1yqjDwaBUrHwUZHihRYc5eGXjKF5FKr4L_1rguXbhhlCScwszg=w1996-h1496-no",
+        background_image: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/IMG_9341.JPG",
         background_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].BackgroundPosition.CENTER,
         hero_height: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].HeroHeight.HALF,
         gradient: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].Gradient.BOTTOM
@@ -1537,14 +1509,42 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ 5:
+/***/ "./pages/Classes.scss":
+/*!****************************!*\
+  !*** ./pages/Classes.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        // classnames-loader: automatically bind css-modules to classnames
+        var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./Classes.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss");
+        var css = classNames.bind(locals);
+        for (var style in locals) {
+            if (!locals.hasOwnProperty(style)) {
+                continue;
+            }
+            if (typeof Object.defineProperty === 'function') {
+                Object.defineProperty(css, style, {value: locals[style]});
+            }
+            else {
+                css[style] = locals[style];
+            }
+        }
+        module.exports = css;
+    
+
+/***/ }),
+
+/***/ 4:
 /*!*********************************!*\
-  !*** multi ./pages/classes.jsx ***!
+  !*** multi ./pages/Classes.jsx ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/classes.jsx */"./pages/classes.jsx");
+module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Fongs-Hung-Ga/pages/Classes.jsx */"./pages/Classes.jsx");
 
 
 /***/ }),
@@ -1726,4 +1726,4 @@ module.exports = require("redux");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=classes.js.map
+//# sourceMappingURL=Classes.js.map

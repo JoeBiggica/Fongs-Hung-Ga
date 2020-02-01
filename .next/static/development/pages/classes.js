@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/classes.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Classes.js"],{
 
 /***/ "./components/header/Header.jsx":
 /*!**************************************!*\
@@ -113,7 +113,7 @@ function (_PureComponent) {
         'fixed': fixed
       });
       var banner_styles = {
-        backgroundImage: "url(/static/fongs-banner-logo.png)",
+        backgroundImage: "url(/static/fongs-banner-logo-long.png)",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       };
@@ -7464,21 +7464,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fclasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Fclasses.jsx!./":
-/*!****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fclasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Fclasses.jsx ***!
-  \****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FClasses&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FFongs-Hung-Ga%2Fpages%2FClasses.jsx!./":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FClasses&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FFongs-Hung-Ga%2Fpages%2FClasses.jsx ***!
+  \******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/classes", function() {
-      var page = __webpack_require__(/*! ./pages/classes.jsx */ "./pages/classes.jsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Classes", function() {
+      var page = __webpack_require__(/*! ./pages/Classes.jsx */ "./pages/Classes.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/classes.jsx */ "./pages/classes.jsx", function() {
-          if(!next.router.components["/classes"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/classes.jsx */ "./pages/classes.jsx")
-          next.router.update("/classes", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/Classes.jsx */ "./pages/Classes.jsx", function() {
+          if(!next.router.components["/Classes"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/Classes.jsx */ "./pages/Classes.jsx")
+          next.router.update("/Classes", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -8286,23 +8286,23 @@ exports.default = withRouter;
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_f63c51d7c013ef4fdbda ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_0b4d667fc966dc93bf48 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda */ "dll-reference dll_f63c51d7c013ef4fdbda"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0b4d667fc966dc93bf48 */ "dll-reference dll_0b4d667fc966dc93bf48"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_f63c51d7c013ef4fdbda ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_0b4d667fc966dc93bf48 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda */ "dll-reference dll_f63c51d7c013ef4fdbda"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0b4d667fc966dc93bf48 */ "dll-reference dll_0b4d667fc966dc93bf48"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -8910,12 +8910,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_f63c51d7c013ef4fdbda ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_0b4d667fc966dc93bf48 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda */ "dll-reference dll_f63c51d7c013ef4fdbda"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0b4d667fc966dc93bf48 */ "dll-reference dll_0b4d667fc966dc93bf48"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -9130,12 +9130,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_f63c51d7c013ef4fdbda ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_0b4d667fc966dc93bf48 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda */ "dll-reference dll_f63c51d7c013ef4fdbda"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0b4d667fc966dc93bf48 */ "dll-reference dll_0b4d667fc966dc93bf48"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -12075,12 +12075,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_f63c51d7c013ef4fdbda ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_0b4d667fc966dc93bf48 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda */ "dll-reference dll_f63c51d7c013ef4fdbda"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0b4d667fc966dc93bf48 */ "dll-reference dll_0b4d667fc966dc93bf48"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -14481,9 +14481,9 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/classes.jsx":
+/***/ "./pages/Classes.jsx":
 /*!***************************!*\
-  !*** ./pages/classes.jsx ***!
+  !*** ./pages/Classes.jsx ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -14549,7 +14549,7 @@ function (_Component) {
         className: _Classes_scss__WEBPACK_IMPORTED_MODULE_14___default()('herobanner'),
         title: "Classes",
         text_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].TextPosition.BOTTOM,
-        background_image: "https://lh3.googleusercontent.com/f_3Yx4hv_8yowGDlC1QM9e0SjlKvWFQ51wgrAqL8TRAAo532EOkopjbFCqer6RILCyMJhURG9JIktkdzy7CwsW4B4fJKmIoBpn2PHyL1D3V-mQin11U4h_yZp2oQ5YndABBDJu39v3ui6iJpx41xUn1aEerngKLuTzUyTJHaHQ4RJOaMPq5sKCC1HcGm9kMHJR3XoReNYr6GFGp5wlAhgw6aOdq03Rv2xpAeCPw-94u2s9-a3stA88EbTpeAY-Ew_QA_YQrLrAq3_68FqNDxzlfsVbz0-2bRHLKfIpnSMr9GHfJmbQJQh0gBc_px6YYD41_eldazdRXl8sALw_v4btsQkT_eZ8Xtdq--JUB3r5E01j_cKDE4vFS_DT_TIVzW2yAk4mt81HTiubsJeGkHcG8ImS7ADNU7HxYEr0SABqeZIm0QApyOJrOr6lHx2U3s2M35O5qjHNeJwi7LK0SfML1hiZ5Ngj0SdU5RF0xwHXrpIXNJB1XsGTPR3DIWsFumXL1M4QhmsUMUyk1lc--nOiNLPTOC4LOUepY63tqWLiB3ekHvyHo8JATr1O8LSerHvRdc3XciZWKN_d9ESBNjdKYQvaopq8eL0uoppeOrkdJoIV8wZi-Fd4N1j2sbmwmOgw3yx1yqjDwaBUrHwUZHihRYc5eGXjKF5FKr4L_1rguXbhhlCScwszg=w1996-h1496-no",
+        background_image: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/IMG_9341.JPG",
         background_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].BackgroundPosition.CENTER,
         hero_height: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].HeroHeight.HALF,
         gradient: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].Gradient.BOTTOM
@@ -14580,28 +14580,28 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ 7:
-/*!********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fclasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Fclasses.jsx ***!
-  \********************************************************************************************************************************************************/
+/***/ 6:
+/*!**********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FClasses&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FFongs-Hung-Ga%2Fpages%2FClasses.jsx ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fclasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Fclasses.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fclasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Fclasses.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FClasses&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FFongs-Hung-Ga%2Fpages%2FClasses.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FClasses&absolutePagePath=%2FUsers%2Freuters%2FEngineering%2FFongs-Hung-Ga%2Fpages%2FClasses.jsx!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_f63c51d7c013ef4fdbda":
+/***/ "dll-reference dll_0b4d667fc966dc93bf48":
 /*!*******************************************!*\
-  !*** external "dll_f63c51d7c013ef4fdbda" ***!
+  !*** external "dll_0b4d667fc966dc93bf48" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_f63c51d7c013ef4fdbda;
+module.exports = dll_0b4d667fc966dc93bf48;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=classes.js.map
+},[[6,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=Classes.js.map
