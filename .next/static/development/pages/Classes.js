@@ -14741,11 +14741,11 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 /*! exports provided: table, default */
 /***/ (function(module) {
 
-module.exports = {"table":{"columns":[{"name":"monday","header":"Monday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"7:35PM-8:45PM"}]},{"name":"tuesday","header":"Tuesday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"7:35PM-8:45PM"}]},{"name":"wednesday","header":"Wednesday","cells":[{"name":"Kids I","value":"Closed"},{"name":"Kids II","value":"Closed"},{"name":"Adults","value":"Closed"}]},{"name":"thursday","header":"Thursday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"7:35PM-8:45PM"},{"name":"Adults","value":"No Class"}]},{"name":"friday","header":"Friday","cells":[{"name":"Kids I","value":"Closed"},{"name":"Kids II","value":"Closed"},{"name":"Adults","value":"Closed"}]},{"name":"saturday","header":"Saturday","cells":[{"name":"Adults","value":"10:00AM-11:30AM"},{"name":"Kids","value":"11:30AM-12:30PM"}]},{"name":"sunday","header":"Sunday","cells":[{"name":"Kids","value":"1:00PM-2:00PM"}]}]}};
+module.exports = {"table":{"columns":[{"name":"monday","header":"Monday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"7:35PM-8:45PM"}]},{"name":"tuesday","header":"Tuesday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"7:35PM-8:45PM"}]},{"name":"wednesday","header":"Wednesday","cells":[{"name":"Kids I","value":"Closed"},{"name":"Kids II","value":"Closed"},{"name":"Adults","value":"Closed"}]},{"name":"thursday","header":"Thursday","cells":[{"name":"Kids I","value":"5:30PM-6:30pm"},{"name":"Kids II","value":"6:30PM-7:30pm"},{"name":"Adults","value":"No Class"}]},{"name":"friday","header":"Friday","cells":[{"name":"Kids I","value":"Closed"},{"name":"Kids II","value":"Closed"},{"name":"Adults","value":"Closed"}]},{"name":"saturday","header":"Saturday","cells":[{"name":"Adults","value":"10:00AM-11:30AM"},{"name":"Kids","value":"11:30AM-12:30PM"}]},{"name":"sunday","header":"Sunday","cells":[{"name":"Kids","value":"1:00PM-2:00PM"}]}]}};
 
 /***/ }),
 
-/***/ 6:
+/***/ 2:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FClasses&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FClasses.jsx ***!
   \********************************************************************************************************************************************************/
@@ -14768,5 +14768,5 @@ module.exports = dll_f63c51d7c013ef4fdbda;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=Classes.js.map

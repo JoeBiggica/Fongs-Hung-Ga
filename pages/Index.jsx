@@ -44,6 +44,11 @@ class Index extends Component {
 			router
 		} = this.props;
 
+		const logo_styles = {
+			background: `url(static/fongs-circle-logo.png) no-repeat center`,
+			backgroundSize: '100%'
+		}
+
 		return (
 			<>
 				<Header
@@ -57,7 +62,8 @@ class Index extends Component {
 						<iframe src='//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1' />
 					</div>
 					<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
-					<p className={styles('description')}>Welcome to the official website of Fong’s Hung Ga Kung Fu Association , a private institution with locations in Staten Island, NY, central New Jersey and South Florida dedicated to teaching only the purest, traditional Chinese Hung Ga Kung Fu in the United States to students of all ages.</p>
+					<div className={styles('logo')} style={logo_styles} />
+					<p className={styles('description')}>It's not just a style, it's a way of life.</p>
 				</section>
 			</>
 		)

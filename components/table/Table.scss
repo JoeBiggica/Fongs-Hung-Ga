@@ -32,12 +32,17 @@
 			}
 		}
 	}
+}
 
-	.header {
-		font-size: 20px;
-		font-weight: bold;
-		margin-bottom: 10px;
-	}
+
+.header {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	background: $red;
+	color: white;
+    padding: 2px 5px;
+    margin-bottom: 10px;
 }
 
 .cell-container {
