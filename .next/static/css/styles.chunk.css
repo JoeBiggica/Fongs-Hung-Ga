@@ -213,14 +213,16 @@ ul {
         display: block; } }
 
 .Index-logo-nGWz0 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   position: fixed;
   left: 50%;
   top: 30%;
   transform: translate(-50%, -25%); }
   @media (min-width: 600px) {
     .Index-logo-nGWz0 {
+      width: 300px;
+      height: 300px;
       top: 35%;
       font-size: 21px;
       line-height: 31px; } }
@@ -231,7 +233,7 @@ ul {
   color: #fff;
   position: fixed;
   left: 50%;
-  top: 60%;
+  top: 55%;
   transform: translate(-50%, -25%);
   text-align: center;
   width: 100%;
@@ -239,193 +241,9 @@ ul {
   max-width: 600px; }
   @media (min-width: 600px) {
     .Index-description-3gzw7 {
+      top: 60%;
       font-size: 21px;
       line-height: 31px; } }
-
-.HeroBanner-container-fYWwV {
-  width: 100%;
-  padding: 0 20px;
-  background: #232323;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-  @media (min-width: 600px) {
-    .HeroBanner-container-fYWwV {
-      padding: 0 60px;
-      justify-content: center; } }
-  .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
-    justify-content: flex-start;
-    padding-top: 20px; }
-    @media (min-width: 600px) {
-      .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
-        padding-top: 40px; } }
-  .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU {
-    justify-content: flex-end;
-    padding-bottom: 20px; }
-    @media (min-width: 600px) {
-      .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU {
-        padding-bottom: 40px; } }
-  .HeroBanner-container-fYWwV.HeroBanner-full-1ZTji {
-    min-height: 100vh; }
-  .HeroBanner-container-fYWwV.HeroBanner-three-quater-1uIgj {
-    min-height: 75vh; }
-  .HeroBanner-container-fYWwV.HeroBanner-half-1V9GZ {
-    min-height: 35vh; }
-    @media (min-width: 600px) {
-      .HeroBanner-container-fYWwV.HeroBanner-half-1V9GZ {
-        min-height: 50vh; } }
-  .HeroBanner-container-fYWwV.HeroBanner-auto-3Alws {
-    min-height: auto; }
-
-.HeroBanner-text-container-3UaLg {
-  max-width: 75%;
-  text-align: center; }
-  @media (min-width: 600px) {
-    .HeroBanner-text-container-3UaLg {
-      max-width: 60%; } }
-  .HeroBanner-text-container-3UaLg.HeroBanner-border-1PvtJ {
-    border: 1px solid #fff;
-    padding: 18px 20px; }
-
-.HeroBanner-title-2n_0g {
-  font-size: 30px;
-  line-height: 1.3;
-  color: #fff; }
-  @media (min-width: 600px) {
-    .HeroBanner-title-2n_0g {
-      font-size: 60px; } }
-
-.HeroBanner-buttons-container-2bvpJ {
-  margin-top: 40px; }
-  @media (min-width: 600px) {
-    .HeroBanner-buttons-container-2bvpJ {
-      margin-top: 60px; } }
-
-.HeroBanner-button-container-2xSm3 {
-  text-align: center; }
-  .HeroBanner-button-container-2xSm3:not(:last-child) {
-    margin: 0 0 40px 0; }
-  @media (min-width: 600px) {
-    .HeroBanner-button-container-2xSm3.HeroBanner-row-1TEvL {
-      display: inline-block; }
-      .HeroBanner-button-container-2xSm3.HeroBanner-row-1TEvL:not(:last-child) {
-        margin: 0 30px 0 0; } }
-  .HeroBanner-button-container-2xSm3 a {
-    color: #fff; }
-
-.HeroBanner-label-2R3I0 {
-  font-size: 16px;
-  color: #fff; }
-
-.HeroBanner-button-1GnDi {
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.42, 0, 0.58, 1); }
-  @media (min-width: 600px) {
-    .HeroBanner-button-1GnDi {
-      font-size: 20px; } }
-  .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ {
-    border: 1px solid #fff;
-    padding: 16px 30px; }
-    .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ:hover {
-      background: #fff; }
-      .HeroBanner-button-1GnDi.HeroBanner-border-1PvtJ:hover a {
-        color: #005CAF; }
-
-.HeroBanner-image-container-3HA7n {
-  width: 100%;
-  margin-top: 40px;
-  box-shadow: 0 0 10px 10px #000000;
-  cursor: pointer;
-  transition: all 0.25 cubic-bezier(0.42, 0, 0.58, 1); }
-  @media (min-width: 600px) {
-    .HeroBanner-image-container-3HA7n {
-      width: 500px;
-      margin-top: 60px; } }
-  .HeroBanner-image-container-3HA7n:hover {
-    box-shadow: 0 0 10px 15px #000000; }
-  .HeroBanner-image-container-3HA7n img {
-    width: 100%; }
-
-.Layout-container-1Z389 {
-  min-height: 100vh; }
-
-.Layout-inner-d3Io5 {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 30px; }
-
-.PageHeader-container-3ktzp {
-  width: 100%; }
-
-.PageHeader-inner-3_Dcy {
-  display: inline-block; }
-
-.PageHeader-title-1UdnQ {
-  font-size: 22px; }
-  @media (min-width: 600px) {
-    .PageHeader-title-1UdnQ {
-      font-size: 28px; } }
-
-.PageHeader-underline-2Ki7C {
-  width: 125%;
-  height: 5px;
-  background: #FF1815; }
-
-.Table-container-4bHKy {
-  width: 100%; }
-
-.Table-title-30c42 {
-  font-size: 24px;
-  margin-bottom: 15px; }
-
-.Table-table-columns-1UKoT {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; }
-  @media (min-width: 600px) {
-    .Table-table-columns-1UKoT {
-      flex-direction: row; } }
-  .Table-table-columns-1UKoT .Table-column-1Jb8H {
-    margin-bottom: 20px; }
-    @media (min-width: 600px) {
-      .Table-table-columns-1UKoT .Table-column-1Jb8H {
-        margin-bottom: 0; }
-        .Table-table-columns-1UKoT .Table-column-1Jb8H:not(:last-child) {
-          padding-right: 15px; } }
-
-.Table-header-2i1gN {
-  font-size: 20px;
-  font-weight: bold;
-  display: inline-block;
-  background: #FF1815;
-  color: white;
-  padding: 2px 5px;
-  margin-bottom: 10px; }
-
-.Table-cell-container-2YrHW {
-  margin-bottom: 10px; }
-  .Table-cell-container-2YrHW .Table-cell-1lyKe {
-    font-size: 16px;
-    font-weight: bold; }
-  .Table-cell-container-2YrHW .Table-subcell-3-zj9 {
-    font-size: 14px; }
-
-.Classes-herobanner-hGTqS {
-  margin-top: 30px; }
-
-.Classes-page-header-1ipoY {
-  margin-bottom: 20px; }
-
-.Classes-content-1new4 {
-  width: 100%;
-  height: 100vh;
-  margin-top: 60px;
-  background: #414141; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

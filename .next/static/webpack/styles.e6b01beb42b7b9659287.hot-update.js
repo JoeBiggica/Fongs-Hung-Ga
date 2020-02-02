@@ -30,7 +30,7 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-","logo":"Index-logo-n
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1580685406292");
+            injectCss(link, link.href.split("?")[0] + "?unix=1580685742377");
           });
       }
     }
@@ -39,4 +39,4 @@ module.exports = {"video-banner":"Index-video-banner-2qJc-","logo":"Index-logo-n
 /***/ })
 
 })
-//# sourceMappingURL=styles.3c6de55a9bacea4b270f.hot-update.js.map
+//# sourceMappingURL=styles.e6b01beb42b7b9659287.hot-update.js.map

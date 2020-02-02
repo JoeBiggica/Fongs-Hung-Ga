@@ -45,14 +45,16 @@
 }
 
 .logo {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	position: fixed;
 	left: 50%;
     top: 30%;
     transform: translate(-50%, -25%);
 
     @include for-tablet-portrait-up {
+    	width: 300px;
+		height: 300px;
     	top: 35%;
     	font-size: 21px;
     	line-height: 31px;
@@ -66,7 +68,7 @@
     position: fixed;
     
     left: 50%;
-    top: 60%;
+    top: 55%;
     transform: translate(-50%, -25%);
     text-align: center;
     width: 100%;
@@ -74,6 +76,7 @@
     max-width: 600px;
 
     @include for-tablet-portrait-up {
+    	top: 60%;
     	font-size: 21px;
     	line-height: 31px;
     }
