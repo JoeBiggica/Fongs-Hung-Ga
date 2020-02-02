@@ -50,10 +50,13 @@ class Classes extends Component {
 				/>
 				<Layout>
 					<PageHeader 
-						title='Class Schedule'
+						className={styles('page-header')}
+						title='Class Schedules'
 					/>
-					<div className={styles('content')} />
-					<Table />
+					<Table 
+						title='Staten Island, New York'
+						data={this.classes_table}
+					/>
 				</Layout>
 			</>
 		)

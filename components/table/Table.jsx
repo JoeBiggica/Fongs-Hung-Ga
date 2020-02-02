@@ -8,32 +8,51 @@ import styles from './Table.scss';
 class Table extends PureComponent {
 
 	static propTypes = {
+		className: PropTypes.string,
 		title: PropTypes.string,
 		description: PropTypes.string,
+		data: PropTypes.object,
 		color: PropTypes.string,
 	}
 
-	static defaultProps = {
-		color: '#ffffff',
-		text_position: 'right',
+	renderHeader = header => {
+		return <div className={styles('header')}>{header}</div>;
 	}
 
+	renderCell = (cell, index) => {
+		return (
+			<div key={`${cell.name}-${index}`} className={styles('cell-container')}>
+				<div className={styles('cell')}>{cell.name}</div>
+				<div className={styles('subcell')}>{cell.value}</div>
+			</div>
+		);
+	}
+
+	renderColumn = (column, index) => {
+		return (
+			<div key={`${column.name}-${index}`} className={styles('column')}>
+				{column.header && this.renderHeader(column.header)}
+				{column.cells && column.cells.map(this.renderCell)}
+			</div>
+		);
+	}
 
 	render() {
 		const {
 			className,
 			title,
 			description,
-			color,
-			background_image,
-			image,
-			url,
-			text_position,
-			title_border,
+			data,
 		} = this.props;
 
 		return (
-			<div className={styles('container')}>
+			<div className={classnames(styles('container'), className)}>
+				{title && <h3 className={styles('title')}>{title}</h3>}
+				<div className={styles('table-container')}>
+					<div className={styles('table-columns')}>
+						{data.table.columns && data.table.columns.map(this.renderColumn)}
+					</div>
+				</div>
 			</div>
 		);	
 	}

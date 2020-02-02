@@ -8,19 +8,21 @@ import styles from './PageHeader.scss';
 class PageHeader extends PureComponent {
 
 	static propTypes = {
+		className: PropTypes.string,
 		title: PropTypes.string,
 	}
 
 
 	render() {
 		const {
+			className,
 			title
 		} = this.props;
 
 		return (
-			<div className={styles('container')}>
+			<div className={classnames(styles('container'), className)}>
 				<div className={styles('inner')}>
-					<h1 className={styles('title')}>{title}</h1>
+					<h2 className={styles('title')}>{title}</h2>
 					<div className={styles('underline')} />
 				</div>
 			</div>
