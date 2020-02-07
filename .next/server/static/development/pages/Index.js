@@ -1034,7 +1034,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/Index.jsx */"./pages/Index.jsx");
+module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Fongs-Hung-Ga/pages/Index.jsx */"./pages/Index.jsx");
 
 
 /***/ }),
