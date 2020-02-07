@@ -48,20 +48,23 @@
 	}
 }
 
+.content {
+	position: fixed;
+	width: 100%;
+    top: 30%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logo {
 	width: 250px;
 	height: 250px;
-	position: fixed;
-	left: 50%;
-    top: 30%;
-    transform: translate(-50%, -25%);
 
     @include for-tablet-portrait-up {
     	width: 300px;
 		height: 300px;
-    	top: 38%;
-    	font-size: 21px;
-    	line-height: 31px;
     }
 }
 
@@ -69,18 +72,12 @@
 	font-size: 18px;
 	line-height: 28px;
     color: $white;
-    position: fixed;
-    
-    left: 50%;
-    top: 53%;
-    transform: translate(-50%, -25%);
     text-align: center;
     width: 100%;
-    padding: 0 20px;
     max-width: 600px;
+    padding-top: 10px;
 
     @include for-tablet-portrait-up {
-    	top: 65%;
     	font-size: 21px;
     	line-height: 31px;
     }

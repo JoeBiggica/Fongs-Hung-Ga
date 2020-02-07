@@ -864,6 +864,7 @@ module.exports = {
 
 module.exports = {
 	"video-banner": "Index-video-banner-2qJc-",
+	"content": "Index-content-T_TIg",
 	"logo": "Index-logo-nGWz0",
 	"description": "Index-description-3gzw7"
 };
@@ -964,7 +965,9 @@ function (_Component) {
         className: _Index_scss__WEBPACK_IMPORTED_MODULE_12___default()('video-banner')
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("iframe", {
         src: "//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1"
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _Index_scss__WEBPACK_IMPORTED_MODULE_12___default()('content')
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
         style: {
           display: 'none'
         }
@@ -973,7 +976,7 @@ function (_Component) {
         style: logo_styles
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         className: _Index_scss__WEBPACK_IMPORTED_MODULE_12___default()('description')
-      }, "It's not just a style, it's a way of life.")));
+      }, "It's not just a style, it's a way of life."))));
     }
   }]);
 

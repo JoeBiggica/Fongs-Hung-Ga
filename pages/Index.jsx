@@ -61,9 +61,11 @@ class Index extends Component {
 					<div className={styles('video-banner')}>
 						<iframe src='//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1' />
 					</div>
-					<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
-					<div className={styles('logo')} style={logo_styles} />
-					<p className={styles('description')}>It's not just a style, it's a way of life.</p>
+					<div className={styles('content')}>
+						<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
+						<div className={styles('logo')} style={logo_styles} />
+						<p className={styles('description')}>It's not just a style, it's a way of life.</p>
+					</div>
 				</section>
 			</>
 		)
