@@ -3,13 +3,13 @@
     "static/development/dll/dll_d71c1af1605d81df73ef.js"
   ],
   "pages": {
-    "/Index": [
+    "/Classes": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/LionDance": [
+    "/Index": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",

@@ -120,7 +120,7 @@ ul {
   margin-top: 20px; }
   @media (min-width: 600px) {
     .Header-nav-3jI7E {
-      margin-top: 40px; } }
+      margin-top: 20px; } }
   .Header-nav-3jI7E li {
     font-size: 12px;
     font-weight: bold;
@@ -175,75 +175,6 @@ ul {
     color: #fff; }
     .Header-menu-container-2rqw1 li:not(:last-child) {
       margin-bottom: 10px; }
-
-.Index-video-banner-2qJc- {
-  background-image: url("https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/head-banner.jpg");
-  background-position: 50%;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-  .Index-video-banner-2qJc-:before {
-    content: '';
-    background: rgba(0, 0, 0, 0.75);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2; }
-    @media (min-width: 1026px) {
-      .Index-video-banner-2qJc-:before {
-        background: rgba(0, 0, 0, 0.65); } }
-  .Index-video-banner-2qJc- iframe {
-    display: none;
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    position: absolute;
-    pointer-events: none;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    border: 0;
-    transform: translate(-50%, -50%); }
-    @media (min-width: 1026px) {
-      .Index-video-banner-2qJc- iframe {
-        display: block; } }
-
-.Index-content-T_TIg {
-  position: fixed;
-  width: 100%;
-  top: 30%;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-.Index-logo-nGWz0 {
-  width: 250px;
-  height: 250px; }
-  @media (min-width: 600px) {
-    .Index-logo-nGWz0 {
-      width: 300px;
-      height: 300px; } }
-
-.Index-description-3gzw7 {
-  font-size: 18px;
-  line-height: 28px;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
-  padding-top: 10px; }
-  @media (min-width: 600px) {
-    .Index-description-3gzw7 {
-      font-size: 21px;
-      line-height: 31px; } }
 
 .HeroBanner-container-fYWwV {
   width: 100%;
@@ -379,14 +310,164 @@ ul {
   height: 5px;
   background: #FF1815; }
 
-.LionDance-herobanner-2rUbW {
-  margin-top: 30px; }
+.Table-container-4bHKy {
+  width: 100%; }
 
-.LionDance-content-rdopy {
+.Table-title-30c42 {
+  font-size: 24px;
+  margin-bottom: 15px; }
+
+.Table-table-columns-1UKoT {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    .Table-table-columns-1UKoT {
+      flex-direction: row; } }
+  .Table-table-columns-1UKoT .Table-column-1Jb8H:not(:last-child) {
+    margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .Table-table-columns-1UKoT .Table-column-1Jb8H {
+      margin-bottom: 0; }
+      .Table-table-columns-1UKoT .Table-column-1Jb8H:not(:last-child) {
+        padding-right: 15px; } }
+
+.Table-header-2i1gN {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  background: #FF1815;
+  color: white;
+  padding: 2px 5px;
+  margin-bottom: 10px; }
+
+.Table-cell-container-2YrHW {
+  margin-bottom: 10px; }
+  .Table-cell-container-2YrHW .Table-cell-1lyKe {
+    font-size: 16px;
+    font-weight: bold; }
+  .Table-cell-container-2YrHW .Table-subcell-3-zj9 {
+    font-size: 14px; }
+
+.Classes-herobanner-hGTqS {
+  margin-top: 20px; }
+
+.Classes-page-header-1ipoY {
+  margin-bottom: 30px; }
+
+.Classes-content-1new4 {
   width: 100%;
   height: 100vh;
   margin-top: 60px;
   background: #414141; }
+
+.Classes-schools-container-2daf4 {
+  margin-bottom: 30px; }
+  .Classes-schools-container-2daf4 .Classes-school-3pmtP:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa; }
+  .Classes-schools-container-2daf4 .Classes-title-3uCC9 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+    @media (min-width: 600px) {
+      .Classes-schools-container-2daf4 .Classes-title-3uCC9 {
+        font-size: 24px; } }
+  .Classes-schools-container-2daf4 .Classes-instructor-1W08x {
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-instructor-1W08x .Classes-label-2F5hW {
+      font-size: 16px;
+      font-weight: bold;
+      padding-right: 6px; }
+    .Classes-schools-container-2daf4 .Classes-instructor-1W08x .Classes-name-1emSx {
+      font-size: 16px;
+      color: #FF1815; }
+  .Classes-schools-container-2daf4 .Classes-address-6bSH0 {
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-address-6bSH0 > p {
+      font-size: 16px; }
+  .Classes-schools-container-2daf4 .Classes-contact-1cTKz {
+    font-size: 16px;
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-contact-1cTKz a {
+      display: block;
+      line-height: 24px; }
+  .Classes-schools-container-2daf4 .Classes-table-container-2IxAi {
+    margin-top: 20px; }
+
+.Classes-disclaimer-VCtLL {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF1815; }
+
+.Index-video-banner-2qJc- {
+  background-image: url("https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/head-banner.jpg");
+  background-position: 50%;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .Index-video-banner-2qJc-:before {
+    content: '';
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+    @media (min-width: 1026px) {
+      .Index-video-banner-2qJc-:before {
+        background: rgba(0, 0, 0, 0.65); } }
+  .Index-video-banner-2qJc- iframe {
+    display: none;
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border: 0;
+    transform: translate(-50%, -50%); }
+    @media (min-width: 1026px) {
+      .Index-video-banner-2qJc- iframe {
+        display: block; } }
+
+.Index-content-T_TIg {
+  position: fixed;
+  width: 100%;
+  top: 30%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.Index-logo-nGWz0 {
+  width: 250px;
+  height: 250px; }
+  @media (min-width: 600px) {
+    .Index-logo-nGWz0 {
+      width: 300px;
+      height: 300px; } }
+
+.Index-description-3gzw7 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 10px; }
+  @media (min-width: 600px) {
+    .Index-description-3gzw7 {
+      font-size: 21px;
+      line-height: 31px; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

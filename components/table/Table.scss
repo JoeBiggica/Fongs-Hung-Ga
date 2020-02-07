@@ -22,7 +22,9 @@
 	}
 
 	.column {
-		margin-bottom: 20px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 
 		@include for-tablet-portrait-up {
 			margin-bottom: 0;

@@ -42,16 +42,8 @@
 				"header": "Wednesday",
 				"cells": [
 					{
-						"name": "Kids I",
-						"value": "Closed"
-					},
-					{
-						"name": "Kids II",
-						"value": "Closed"
-					},
-					{
-						"name": "Adults",
-						"value": "Closed"
+						"name": "Closed",
+						"value": ""
 					}
 				]
 			},
@@ -78,16 +70,8 @@
 				"header": "Friday",
 				"cells": [
 					{
-						"name": "Kids I",
-						"value": "Closed"
-					},
-					{
-						"name": "Kids II",
-						"value": "Closed"
-					},
-					{
-						"name": "Adults",
-						"value": "Closed"
+						"name": "Closed",
+						"value": ""
 					}
 				]
 			},
