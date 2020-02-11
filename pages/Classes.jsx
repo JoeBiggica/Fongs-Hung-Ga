@@ -53,7 +53,7 @@ class Classes extends Component {
 			email,
 			class_schedule
 		} = school;
-		console.log(number)
+
 		return (
 			<section key={`school-${i}`} className={styles('school')}>
 				<h3 className={styles('title')}>{school.address.city}</h3>
@@ -88,7 +88,7 @@ class Classes extends Component {
 				{class_schedule &&
 					<div className={styles('table-container')}>
 						<Table 
-							data={this.classes_table}
+							table_data={this.classes_table}
 						/>
 					</div>
 				}

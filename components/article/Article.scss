@@ -1,0 +1,16 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.container {
+	width: 100%;
+}
+
+.paragraph {
+	margin-bottom: 20px;
+}
+
+.subheader {
+	font-size: 18px;
+	margin-bottom: 10px;
+}

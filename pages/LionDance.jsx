@@ -6,6 +6,8 @@ import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
+import Article from 'components/article';
+import lion_dance_article from 'static/lion_dance_article.json'
 
 import styles from './LionDance.scss';
 
@@ -42,9 +44,10 @@ class LionDance extends Component {
 				/>
 				<Layout>
 					<PageHeader 
-						title='Lion Dance'
+						className={styles('page-header')}
+						title='An Intro to Lion Dance'
 					/>
-					<div className={styles('content')} />
+					<Article article_data={lion_dance_article} />
 				</Layout>
 			</>
 		)

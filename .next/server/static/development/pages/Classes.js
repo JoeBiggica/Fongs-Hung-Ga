@@ -1018,7 +1018,7 @@ function (_PureComponent) {
           className = _this$props.className,
           title = _this$props.title,
           description = _this$props.description,
-          data = _this$props.data;
+          table_data = _this$props.table_data;
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_10___default()(_Table_scss__WEBPACK_IMPORTED_MODULE_11___default()('container'), className)
       }, title && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
@@ -1027,7 +1027,7 @@ function (_PureComponent) {
         className: _Table_scss__WEBPACK_IMPORTED_MODULE_11___default()('table-container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Table_scss__WEBPACK_IMPORTED_MODULE_11___default()('table-columns')
-      }, data.table.columns && data.table.columns.map(this.renderColumn))));
+      }, table_data.table.columns && table_data.table.columns.map(this.renderColumn))));
     }
   }]);
 
@@ -1038,7 +1038,7 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
   className: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string,
   title: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string,
   description: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string,
-  data: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object,
+  table_data: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object,
   color: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.string
 });
 
@@ -1710,7 +1710,6 @@ function (_Component) {
           number = school.number,
           email = school.email,
           class_schedule = school.class_schedule;
-      console.log(number);
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("section", {
         key: "school-".concat(i),
         className: _Classes_scss__WEBPACK_IMPORTED_MODULE_19___default()('school')
@@ -1740,7 +1739,7 @@ function (_Component) {
       }, email))), class_schedule && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _Classes_scss__WEBPACK_IMPORTED_MODULE_19___default()('table-container')
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_table__WEBPACK_IMPORTED_MODULE_18__["default"], {
-        data: _this.classes_table
+        table_data: _this.classes_table
       })), !class_schedule && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         className: _Classes_scss__WEBPACK_IMPORTED_MODULE_19___default()('more-info')
       }, "Please call or email for more class information."));

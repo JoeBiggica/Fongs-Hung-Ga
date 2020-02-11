@@ -11,7 +11,7 @@ class Table extends PureComponent {
 		className: PropTypes.string,
 		title: PropTypes.string,
 		description: PropTypes.string,
-		data: PropTypes.object,
+		table_data: PropTypes.object,
 		color: PropTypes.string,
 	}
 
@@ -42,7 +42,7 @@ class Table extends PureComponent {
 			className,
 			title,
 			description,
-			data,
+			table_data,
 		} = this.props;
 
 		return (
@@ -50,7 +50,7 @@ class Table extends PureComponent {
 				{title && <h3 className={styles('title')}>{title}</h3>}
 				<div className={styles('table-container')}>
 					<div className={styles('table-columns')}>
-						{data.table.columns && data.table.columns.map(this.renderColumn)}
+						{table_data.table.columns && table_data.table.columns.map(this.renderColumn)}
 					</div>
 				</div>
 			</div>
