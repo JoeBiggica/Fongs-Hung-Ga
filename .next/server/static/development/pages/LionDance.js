@@ -1596,7 +1596,9 @@ module.exports = {
 
 module.exports = {
 	"herobanner": "LionDance-herobanner-2rUbW",
-	"page-header": "LionDance-page-header-1LNYG"
+	"page-header": "LionDance-page-header-1LNYG",
+	"article": "LionDance-article-2PHL_",
+	"clients-container": "LionDance-clients-container-3XRUu"
 };
 
 /***/ }),
@@ -1684,8 +1686,17 @@ function (_Component) {
         className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
         title: "An Intro to Lion Dance"
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('article'),
         article_data: _static_lion_dance_article_json__WEBPACK_IMPORTED_MODULE_15__
-      })));
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_pageheader__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
+        title: "Our Clients"
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('clients-container')
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
+        src: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/client-logos.png",
+        alt: "Client Logos"
+      }))));
     }
   }], [{
     key: "getInitialProps",

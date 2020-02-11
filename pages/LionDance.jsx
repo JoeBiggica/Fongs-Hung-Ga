@@ -47,7 +47,17 @@ class LionDance extends Component {
 						className={styles('page-header')}
 						title='An Intro to Lion Dance'
 					/>
-					<Article article_data={lion_dance_article} />
+					<Article 
+						className={styles('article')} 
+						article_data={lion_dance_article} 
+					/>
+					<PageHeader 
+						className={styles('page-header')}
+						title='Our Clients'
+					/>
+					<div className={styles('clients-container')}>
+						<img src='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/client-logos.png' alt='Client Logos' />
+					</div>
 				</Layout>
 			</>
 		)
