@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1598,6 +1598,7 @@ module.exports = {
 	"schools-container": "Classes-schools-container-2daf4",
 	"school": "Classes-school-3pmtP",
 	"title": "Classes-title-3uCC9",
+	"info-container": "Classes-info-container-1VUpl",
 	"instructor": "Classes-instructor-1W08x",
 	"label": "Classes-label-2F5hW",
 	"name": "Classes-name-1emSx",
@@ -1835,14 +1836,14 @@ module.exports = {"locations":[{"name":"Fong's Hung Ga Kung Fu","head":{"name":"
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/Classes.jsx ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/reuters/Engineering/Fongs-Hung-Ga/pages/Classes.jsx */"./pages/Classes.jsx");
+module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/Classes.jsx */"./pages/Classes.jsx");
 
 
 /***/ }),
