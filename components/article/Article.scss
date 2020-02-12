@@ -14,3 +14,20 @@
 	font-size: 18px;
 	margin-bottom: 10px;
 }
+
+.image-container {
+
+	&.small {
+		width: 300px;
+	}
+
+	&.left {
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+
+	&.right {
+		float: right;
+		margin: 0 0 20px 20px;
+	}
+}

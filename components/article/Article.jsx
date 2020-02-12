@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import Image from 'components/image';
 
 import styles from './Article.scss';
 
@@ -12,23 +13,32 @@ class Article extends PureComponent {
 	}
 
 	renderTitle = content => {
-		return <h1 className={styles('title')}>{content}</h1>;
+		return <h1 className={styles('title')}>{content.text}</h1>;
 	}
 
 	renderSubHeader = content => {
-		return <h3 className={styles('subheader')}>{content}</h3>;
+		return <h3 className={styles('subheader')}>{content.text}</h3>;
 	}
 
 	renderParagraph = content => {
-		return <p className={styles('paragraph')}>{content}</p>
+		return <p className={styles('paragraph')}>{content.text}</p>
 	}
 
 	renderImage = content => {
-		const size = data.size;
-		const image_container_classname = styles('image-container', {size});
+		const size = content.size;
+		const alignment = content.alignment;
+		const image_container_classname = styles('image-container', `${size}`, `${alignment}`);
 
 		return (
-			<div className={image_container_classname}>
+			<div className={styles(image_container_classname)}>
+				<Image
+					style={{
+						width: '100%',
+					}}
+					fill_mode={Image.FillMode.COVER}
+					src={content.src}
+					alt={content.caption}
+				/>
 			</div>
 		);
 	}
@@ -45,6 +55,12 @@ class Article extends PureComponent {
 				return (
 					<div key={`${item.type}-${index}`}>
 						{this.renderSubHeader(item.content)}
+					</div>
+				);
+			case 'image':
+				return (
+					<div key={`${item.type}-${index}`}>
+						{this.renderImage(item.content)}
 					</div>
 				);
 				
