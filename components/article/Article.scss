@@ -17,17 +17,29 @@
 
 .image-container {
 
+	margin-bottom: 20px;
+
 	&.small {
-		width: 300px;
+		width: 100%;
+
+		@include for-tablet-portrait-up {
+			width: 300px;
+		}
 	}
 
-	&.left {
-		float: left;
-		margin: 0 20px 20px 0;
+	&.left {	
+
+		@include for-tablet-portrait-up {
+			float: left;
+			margin: 0 20px 20px 0;
+		}
 	}
 
 	&.right {
-		float: right;
-		margin: 0 0 20px 20px;
+
+		@include for-tablet-portrait-up {
+			float: right;
+			margin: 0 0 20px 20px;
+		}
 	}
 }

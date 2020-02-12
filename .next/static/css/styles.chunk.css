@@ -310,6 +310,99 @@ ul {
   height: 4px;
   background: #FF1815; }
 
+.Table-container-4bHKy {
+  width: 100%; }
+
+.Table-title-30c42 {
+  font-size: 24px;
+  margin-bottom: 15px; }
+
+.Table-table-columns-1UKoT {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    .Table-table-columns-1UKoT {
+      flex-direction: row; } }
+  .Table-table-columns-1UKoT .Table-column-1Jb8H:not(:last-child) {
+    margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .Table-table-columns-1UKoT .Table-column-1Jb8H {
+      margin-bottom: 0; }
+      .Table-table-columns-1UKoT .Table-column-1Jb8H:not(:last-child) {
+        padding-right: 15px; } }
+
+.Table-header-2i1gN {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  background: #FF1815;
+  color: white;
+  padding: 2px 5px;
+  margin-bottom: 10px; }
+
+.Table-cell-container-2YrHW {
+  margin-bottom: 10px; }
+  .Table-cell-container-2YrHW .Table-cell-1lyKe {
+    font-size: 16px;
+    font-weight: bold; }
+  .Table-cell-container-2YrHW .Table-subcell-3-zj9 {
+    font-size: 14px; }
+
+.Classes-herobanner-hGTqS {
+  margin-top: 20px; }
+
+.Classes-page-header-1ipoY {
+  margin-bottom: 30px; }
+
+.Classes-content-1new4 {
+  width: 100%;
+  height: 100vh;
+  margin-top: 60px;
+  background: #414141; }
+
+.Classes-schools-container-2daf4 {
+  margin-bottom: 30px; }
+  .Classes-schools-container-2daf4 .Classes-school-3pmtP:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa; }
+  .Classes-schools-container-2daf4 .Classes-title-3uCC9 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+    @media (min-width: 600px) {
+      .Classes-schools-container-2daf4 .Classes-title-3uCC9 {
+        font-size: 24px; } }
+  .Classes-schools-container-2daf4 .Classes-info-container-1VUpl > a {
+    display: inline-block; }
+  .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-instructor-1W08x {
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-instructor-1W08x .Classes-label-2F5hW {
+      font-size: 16px;
+      font-weight: bold;
+      padding-right: 6px; }
+    .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-instructor-1W08x .Classes-name-1emSx {
+      font-size: 16px;
+      color: #FF1815; }
+  .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-address-6bSH0 {
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-address-6bSH0 > p {
+      font-size: 16px; }
+  .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-contact-1cTKz {
+    font-size: 16px;
+    margin-bottom: 8px; }
+    .Classes-schools-container-2daf4 .Classes-info-container-1VUpl .Classes-contact-1cTKz a {
+      display: block;
+      width: fit-content;
+      line-height: 24px; }
+  .Classes-schools-container-2daf4 .Classes-table-container-2IxAi {
+    margin-top: 20px; }
+
+.Classes-disclaimer-VCtLL {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF1815; }
+
 @keyframes Image-fadein-agl3V {
   from {
     opacity: 0; }
@@ -369,16 +462,21 @@ ul {
   font-size: 18px;
   margin-bottom: 10px; }
 
-.Article-image-container-2Ea-Z.Article-small-1yWXt {
-  width: 300px; }
-
-.Article-image-container-2Ea-Z.Article-left-38vI8 {
-  float: left;
-  margin: 0 20px 20px 0; }
-
-.Article-image-container-2Ea-Z.Article-right-KGNcw {
-  float: right;
-  margin: 0 0 20px 20px; }
+.Article-image-container-2Ea-Z {
+  margin-bottom: 20px; }
+  .Article-image-container-2Ea-Z.Article-small-1yWXt {
+    width: 100%; }
+    @media (min-width: 600px) {
+      .Article-image-container-2Ea-Z.Article-small-1yWXt {
+        width: 300px; } }
+  @media (min-width: 600px) {
+    .Article-image-container-2Ea-Z.Article-left-38vI8 {
+      float: left;
+      margin: 0 20px 20px 0; } }
+  @media (min-width: 600px) {
+    .Article-image-container-2Ea-Z.Article-right-KGNcw {
+      float: right;
+      margin: 0 0 20px 20px; } }
 
 .LionDance-herobanner-2rUbW {
   margin-top: 20px; }
