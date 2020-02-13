@@ -121,17 +121,17 @@ class HeroBanner extends PureComponent {
 			'auto': hero_height === 'auto',
 		});
 
-		const container_style = {
+		const background_style = {
 			backgroundImage: background_image && this.getBackground(background_image, gradient),
 			backgroundPosition: background_position && background_position,
 		};
 
-		const text_container_classname = styles('text-container', {
+		const text_container_classname = styles('text-container', 'parallax-layer', 'parallax-base', {
 			'border': title_border,
 		});
 
 		return (
-			<div className={classnames(container_classname, className)} style={container_style}>
+			<div className={classnames(container_classname, className)}  style={background_style}>
 				<div className={text_container_classname}>
 					<h1 className={styles('title')}>{this.props.title}</h1>
 				</div>

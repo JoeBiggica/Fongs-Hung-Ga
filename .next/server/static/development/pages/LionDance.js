@@ -795,16 +795,16 @@ function (_PureComponent) {
         'half': hero_height === 'half',
         'auto': hero_height === 'auto'
       });
-      var container_style = {
+      var background_style = {
         backgroundImage: background_image && this.getBackground(background_image, gradient),
         backgroundPosition: background_position && background_position
       };
-      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_11___default()('text-container', {
+      var text_container_classname = _HeroBanner_scss__WEBPACK_IMPORTED_MODULE_11___default()('text-container', 'parallax-layer', 'parallax-base', {
         'border': title_border
       });
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_10___default()(container_classname, className),
-        style: container_style
+        style: background_style
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: text_container_classname
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {

@@ -9,12 +9,6 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/Classes": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
     "/LionDance": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
