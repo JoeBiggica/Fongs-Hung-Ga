@@ -178,6 +178,20 @@ function (_PureComponent) {
       }, content.text);
     });
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderList", function (content) {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        className: _Article_scss__WEBPACK_IMPORTED_MODULE_11___default()('list')
+      }, content.items && content.items.map(_this.renderListItem));
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderListItem", function (item, index) {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        key: "".concat(item.text, "-").concat(index)
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: item.url
+      }, item.text));
+    });
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderImage", function (content) {
       var size = content.size;
       var alignment = content.alignment;
@@ -205,6 +219,11 @@ function (_PureComponent) {
           return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
             key: "".concat(item.type, "-").concat(index)
           }, _this.renderSubHeader(item.content));
+
+        case 'list':
+          return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+            key: "".concat(item.type, "-").concat(index)
+          }, _this.renderList(item.content));
 
         case 'image':
           return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -1807,26 +1826,25 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss":
-/*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/locals.js??ref--6-0!./node_modules/sass-loader/lib/loader.js??ref--6-1!./pages/LionDance.scss ***!
-  \*******************************************************************************************************************************/
+/***/ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/About.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/locals.js??ref--6-0!./node_modules/sass-loader/lib/loader.js??ref--6-1!./pages/About.scss ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"herobanner": "LionDance-herobanner-2rUbW",
-	"page-header": "LionDance-page-header-1LNYG",
-	"article": "LionDance-article-2PHL_",
-	"clients-container": "LionDance-clients-container-3XRUu"
+	"herobanner": "About-herobanner-1TGcB",
+	"page-header": "About-page-header-1Mjuh",
+	"article": "About-article-3EA44"
 };
 
 /***/ }),
 
-/***/ "./pages/LionDance.jsx":
-/*!*****************************!*\
-  !*** ./pages/LionDance.jsx ***!
-  \*****************************/
+/***/ "./pages/About.jsx":
+/*!*************************!*\
+  !*** ./pages/About.jsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1851,10 +1869,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
 /* harmony import */ var _components_pageheader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/pageheader */ "./components/pageheader/index.js");
 /* harmony import */ var _components_article__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/article */ "./components/article/index.js");
-/* harmony import */ var _static_lion_dance_article_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/lion_dance_article.json */ "./static/lion_dance_article.json");
-var _static_lion_dance_article_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/lion_dance_article.json */ "./static/lion_dance_article.json", 1);
-/* harmony import */ var _LionDance_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./LionDance.scss */ "./pages/LionDance.scss");
-/* harmony import */ var _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_LionDance_scss__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _static_about_article_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/about_article.json */ "./static/about_article.json");
+var _static_about_article_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../static/about_article.json */ "./static/about_article.json", 1);
+/* harmony import */ var _About_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./About.scss */ "./pages/About.scss");
+/* harmony import */ var _About_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_About_scss__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_17__);
 
@@ -1877,46 +1895,38 @@ var _static_lion_dance_article_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*
 
 
 
-var LionDance =
+var About =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(LionDance, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(About, _Component);
 
-  function LionDance() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, LionDance);
+  function About() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, About);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(LionDance).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(About).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(LionDance, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(About, [{
     key: "render",
     value: function render() {
       var router = this.props.router;
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_10__["default"], {
         router: router
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('herobanner'),
-        title: "Lion Dance",
+        className: _About_scss__WEBPACK_IMPORTED_MODULE_16___default()('herobanner'),
+        title: "About",
         text_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].TextPosition.BOTTOM,
-        background_image: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions.jpg",
+        background_image: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/fongs-doyers-pose.jpg",
         background_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].BackgroundPosition.CENTER,
         hero_height: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].HeroHeight.HALF,
         gradient: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].Gradient.BOTTOM
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_12__["default"], null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_pageheader__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
-        title: "An Intro to Lion Dance"
+        className: _About_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
+        title: "Who We Are"
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('article'),
-        article_data: _static_lion_dance_article_json__WEBPACK_IMPORTED_MODULE_15__
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_pageheader__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
-        title: "Our Clients"
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _LionDance_scss__WEBPACK_IMPORTED_MODULE_16___default()('clients-container')
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        src: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/client-logos.png",
-        alt: "Client Logos"
-      }))));
+        className: _About_scss__WEBPACK_IMPORTED_MODULE_16___default()('article'),
+        article_data: _static_about_article_json__WEBPACK_IMPORTED_MODULE_15__
+      })));
     }
   }], [{
     key: "getInitialProps",
@@ -1928,28 +1938,28 @@ function (_Component) {
     }
   }]);
 
-  return LionDance;
+  return About;
 }(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
-Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(LionDance, "propTypes", {
+Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(About, "propTypes", {
   router: prop_types__WEBPACK_IMPORTED_MODULE_17___default.a.object
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_9__["withRouter"])(LionDance));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_9__["withRouter"])(About));
 
 /***/ }),
 
-/***/ "./pages/LionDance.scss":
-/*!******************************!*\
-  !*** ./pages/LionDance.scss ***!
-  \******************************/
+/***/ "./pages/About.scss":
+/*!**************************!*\
+  !*** ./pages/About.scss ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
         // classnames-loader: automatically bind css-modules to classnames
         var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./LionDance.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/LionDance.scss");
+        var locals = __webpack_require__(/*! !../node_modules/css-loader/locals.js??ref--6-0!../node_modules/sass-loader/lib/loader.js??ref--6-1!./About.scss */ "./node_modules/css-loader/locals.js?!./node_modules/sass-loader/lib/loader.js?!./pages/About.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {
@@ -1967,25 +1977,25 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ "./static/lion_dance_article.json":
-/*!****************************************!*\
-  !*** ./static/lion_dance_article.json ***!
-  \****************************************/
+/***/ "./static/about_article.json":
+/*!***********************************!*\
+  !*** ./static/about_article.json ***!
+  \***********************************/
 /*! exports provided: body_items, default */
 /***/ (function(module) {
 
-module.exports = {"body_items":[{"type":"paragraph","content":{"text":"The lion dance is a traditional style of dance performed in Chinese culture and is usually an integral part of most Chinese Kung Fu schools. The lion dance typically consists of two performers, one in the head of the lion, and the other in the tail as they perform sequenced steps, movements and acrobatics to accompanying music on drums, cymbals and gongs from their classmates. The head is typically made of papier-mache, and the performers’ faces are rarely seen during the actual performance, giving illusion that the lion has come to life."}},{"type":"image","content":{"size":"small","alignment":"left","src":"https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions-02.jpg"}},{"type":"subheader","content":{"text":"Why perform lion dances"}},{"type":"paragraph","content":{"text":"Lion dances are mostly performed around the time of Chinese New Year, as a means of symbolizing the wishing of good fortune and celebration of the new year. However, lion dances serve many other purposes such as blessing a business with good fortune, sanctioning the grand-opening of a building, and celebratory events like the anniversary of an establishment, or even a birthday party."}},{"type":"subheader","content":{"text":"Why we do it"}},{"type":"paragraph","content":{"text":"Lion dancing at Fong’s Hung Ga is an experience that takes students to many different places and allows them to express an art form not commonly seen on a daily basis. Lion dance is also an intense physical workout that is integral to Hung Ga as it conditions and builds muscles gained by our students during their regular classroom training. It also further instills in our students the importance of proper stances as lion dancing utilizes each stance in the Hung Ga system and is dependent on the performer not only having knowledge of each stance, but also having trained enough to execute each movement without losing their balance or falling short on stamina."}}]};
+module.exports = {"body_items":[{"type":"paragraph","content":{"text":"Fong’s Hung Ga Kung Fu Association based out of New York City is dedicated to teach and present only the purest, most traditional Chinese Hung Ga Kung Fu in the United States. We offer classes for kids, teens and adults, from beginner to advanced levels."}},{"type":"subheader","content":{"text":"What is Hung Ga Kung Fu?"}},{"type":"paragraph","content":{"text":"Hung Ga is one of the most popular kung-fu systems to originate from Kwang Tung (Canton), China. It is one of the five family systems passed down from the teachings of the Siu Lum Monk, Gee Shim, who taught five disciples surnamed Hung, Choy, Lay, Lau, and Mok. Hung- Ga, named after Hung Hei Guen, is a powerful style which encompasses the hard, long range offense of the Fu Ying (tiger form) and the soft, short range fluid defense of the Hok Ying (crane form), the evasiveness of the Lung (dragon), the precision of the Sae (snake), the swiftness of the Pao, (leopard) and the application of the Ng Hang Kuen (five element fist)."}},{"type":"paragraph","content":{"text":"Additional information on the history of Hung Ga and Shaolin can be found here:"}},{"type":"list","content":{"items":[{"text":"History of Hung Ga","url":"/about/history-of-hung-ga"},{"text":"History of Northern Shaolin","url":"/about/history-of-northern-shaolin"},{"text":"History of Southern Shaolin","url":"/about/history-of-southern-shaolin"},{"text":"Our Forms","url":"/about/forms"},{"text":"Past Grand Masters","url":"/about/grandmasters"}]}},{"type":"image","content":{"size":"small","alignment":"left","src":"https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions-02.jpg"}}]};
 
 /***/ }),
 
 /***/ 5:
-/*!***********************************!*\
-  !*** multi ./pages/LionDance.jsx ***!
-  \***********************************/
+/*!*******************************!*\
+  !*** multi ./pages/About.jsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/LionDance.jsx */"./pages/LionDance.jsx");
+module.exports = __webpack_require__(/*! /Users/joebiggica/Engineering/Apps/Fongs_Hung_Ga/pages/About.jsx */"./pages/About.jsx");
 
 
 /***/ }),
@@ -2167,4 +2177,4 @@ module.exports = require("redux");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=LionDance.js.map
+//# sourceMappingURL=About.js.map

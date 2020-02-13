@@ -24,6 +24,24 @@ class Article extends PureComponent {
 		return <p className={styles('paragraph')}>{content.text}</p>
 	}
 
+	renderList = content => {
+		return (
+			<ul className={styles('list')}>
+				{content.items && content.items.map(this.renderListItem)}
+			</ul>
+		);
+	}
+
+	renderListItem = (item, index) => {
+		return (
+			<li key={`${item.text}-${index}`}>
+				<a href={item.url}>
+					{item.text}
+				</a>
+			</li>
+		);
+	}
+
 	renderImage = content => {
 		const size = content.size;
 		const alignment = content.alignment;
@@ -55,6 +73,12 @@ class Article extends PureComponent {
 				return (
 					<div key={`${item.type}-${index}`}>
 						{this.renderSubHeader(item.content)}
+					</div>
+				);
+			case 'list':
+				return (
+					<div key={`${item.type}-${index}`}>
+						{this.renderList(item.content)}
 					</div>
 				);
 			case 'image':

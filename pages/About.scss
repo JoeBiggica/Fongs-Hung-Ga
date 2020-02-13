@@ -2,9 +2,14 @@
 @import 'styles/_colors.scss';
 @import 'styles/_eases.scss';
 
-.content {
-	width: 100%;
-	height: 100vh;
-	margin-top: 60px;
-	background: $darkgrey;
+.herobanner {
+	margin-top: 20px;
+}
+
+.page-header {
+	margin-bottom: 30px;
+}
+
+.article {
+	margin-bottom: 30px;
 }

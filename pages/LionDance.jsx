@@ -7,7 +7,7 @@ import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 import Article from 'components/article';
-import lion_dance_article from 'static/lion_dance_article.json'
+import lion_dance_article from 'static/lion_dance_article.json';
 
 import styles from './LionDance.scss';
 
