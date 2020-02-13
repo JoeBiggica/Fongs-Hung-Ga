@@ -50,14 +50,6 @@
 					}
 				]
 			}
-		},
-		{
-			"type": "image",
-			"content": {
-				"size": "small",
-				"alignment": "left",
-				"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions-02.jpg"
-			}
 		}
 	]
 }
