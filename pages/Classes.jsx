@@ -112,7 +112,7 @@ class Classes extends Component {
 
 					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/school-wall.jpg'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
-					hero_height={HeroBanner.HeroHeight.HALF} 
+					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}
 				/>
 				<Layout>

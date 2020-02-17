@@ -10,6 +10,7 @@
 		{"src": "/classes", "dest": "Classes"},
 		{"src": "/liondance", "dest": "LionDance"},
 		{"src": "/about", "dest": "About"},
-		{"src": "/contact", "dest": "Contact"}
+		{"src": "/contact", "dest": "Contact"},
+		{"src": "/article/:slug", "dest": "Article"}
 	]
 }

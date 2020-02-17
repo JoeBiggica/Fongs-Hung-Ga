@@ -364,63 +364,49 @@ ul {
   position: absolute;
   height: 100%; }
 
-.Article-container-7jklW {
+.ArticleBody-container-1MHeD {
   width: 100%; }
 
-.Article-paragraph-ZZ-tj {
+.ArticleBody-paragraph-2I40G {
   margin-bottom: 20px; }
 
-.Article-subheader-3K9-b {
+.ArticleBody-subheader-2d5PN {
   font-size: 18px;
   margin-bottom: 10px; }
 
-.Article-list-3Vbjh {
+.ArticleBody-list-2Rrd- {
   list-style-type: disc;
   margin-left: 15px;
   margin-bottom: 20px; }
-  .Article-list-3Vbjh li {
+  .ArticleBody-list-2Rrd- li {
     font-weight: bold; }
-    .Article-list-3Vbjh li:not(:last-child) {
+    .ArticleBody-list-2Rrd- li:not(:last-child) {
       padding-bottom: 10px; }
 
-.Article-image-container-2Ea-Z {
+.ArticleBody-image-container-1w9XO {
   margin-bottom: 20px; }
-  .Article-image-container-2Ea-Z.Article-small-1yWXt {
+  .ArticleBody-image-container-1w9XO.ArticleBody-small-uu_-_ {
     width: 100%; }
     @media (min-width: 600px) {
-      .Article-image-container-2Ea-Z.Article-small-1yWXt {
+      .ArticleBody-image-container-1w9XO.ArticleBody-small-uu_-_ {
         width: 300px; } }
   @media (min-width: 600px) {
-    .Article-image-container-2Ea-Z.Article-left-38vI8 {
+    .ArticleBody-image-container-1w9XO.ArticleBody-left-2suTo {
       float: left;
       margin: 0 20px 20px 0; } }
   @media (min-width: 600px) {
-    .Article-image-container-2Ea-Z.Article-right-KGNcw {
+    .ArticleBody-image-container-1w9XO.ArticleBody-right-1cP21 {
       float: right;
       margin: 0 0 20px 20px; } }
 
-.About-herobanner-1TGcB {
+.Article-herobanner-2Ixof {
   margin-top: 20px; }
 
-.About-page-header-1Mjuh {
+.Article-page-header-1E0tH {
   margin-bottom: 30px; }
 
-.About-article-3EA44 {
+.Article-article-tdP4L {
   margin-bottom: 30px; }
-
-.LionDance-herobanner-2rUbW {
-  margin-top: 20px; }
-
-.LionDance-page-header-1LNYG {
-  margin-bottom: 30px; }
-
-.LionDance-article-2PHL_ {
-  margin-bottom: 30px; }
-
-.LionDance-clients-container-3XRUu {
-  width: 100%; }
-  .LionDance-clients-container-3XRUu img {
-    width: 100%; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

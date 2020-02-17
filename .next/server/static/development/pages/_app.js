@@ -1498,36 +1498,62 @@ function (_App) {
 /*!********************************!*\
   !*** ./redux/actions/index.js ***!
   \********************************/
-/*! exports provided: actionTypes, toggleTap, incrementCount, decrementCount */
+/*! exports provided: Type, Action */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleTap", function() { return toggleTap; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "incrementCount", function() { return incrementCount; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decrementCount", function() { return decrementCount; });
-// ACTIONS
-var actionTypes = {
-  TOGGLE: 'TOGGLE',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT'
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Type", function() { return Type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Action", function() { return Action; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-api-middleware */ "redux-api-middleware");
+/* harmony import */ var redux_api_middleware__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__);
+
+ // ACTIONS
+
+var Type = {
+  FETCH_ARTICLE: 'FETCH_ARTICLE'
 };
-var toggleTap = function toggleTap() {
-  return {
-    type: actionTypes.TOGGLE
-  };
+var Action = {
+  fetchArticle: function fetchArticle(slug) {
+    console.log('FETCH ARTICLE');
+    return Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__["RSAA"], {
+      endpoint: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/".concat(slug, ".json"),
+      method: 'GET',
+      headers: {},
+      types: [{
+        type: "".concat(Type.FETCH_ARTICLE, "_REQUEST")
+      }, {
+        type: "".concat(Type.FETCH_ARTICLE, "_SUCCESS"),
+        payload: function payload(action, state, res) {
+          console.log('SUCCESS', res);
+          return Object(redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__["getJSON"])(res).then(function (json) {
+            return json;
+          }, function (err) {
+            return undefined;
+          });
+        }
+      }, {
+        type: "".concat(Type.FETCH_ARTICLE, "_FAILURE"),
+        meta: function meta(action, state, res) {
+          console.log('FAIL', res);
+
+          if (res) {
+            return {
+              status: res.status,
+              statusText: res.statusText
+            };
+          }
+
+          return {
+            status: 'Network request failed'
+          };
+        }
+      }]
+    });
+  }
 };
-var incrementCount = function incrementCount() {
-  return {
-    type: actionTypes.INCREMENT
-  };
-};
-var decrementCount = function decrementCount() {
-  return {
-    type: actionTypes.DECREMENT
-  };
-};
+
 
 /***/ }),
 
@@ -1555,7 +1581,7 @@ function initializeStore() {
     tap: false,
     count: 0
   };
-  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["reducer"], initial_state, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])()));
+  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initial_state, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])()));
 }
 
 /***/ }),
@@ -1564,42 +1590,43 @@ function initializeStore() {
 /*!*********************************!*\
   !*** ./redux/reducers/index.js ***!
   \*********************************/
-/*! exports provided: reducer */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return reducer; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions */ "./redux/actions/index.js");
 
  // REDUCERS
 
-var reducer = function reducer() {
+function reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments.length > 1 ? arguments[1] : undefined;
+  var meta = action.meta,
+      payload = action.payload;
 
   switch (action.type) {
-    case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].TOGGLE:
-      return _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()({}, state, {
-        tap: !state.tap
-      });
+    case 'FETCH_ARTICLE_SUCCESS':
+      {
+        console.log('PAYLOAD', payload);
+        console.log('ARTICLE SUCCESS!');
+        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+          article: payload.article
+        });
+      }
 
-    case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].INCREMENT:
-      return _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()({}, state, {
-        count: state.count + 1
-      });
-
-    case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].DECREMENT:
-      return _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()({}, state, {
-        count: state.count - 1
-      });
+    case 'FETCH_ARTICLE_REQUEST':
+      {
+        console.log('ARTICLE REQUEST');
+        return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state);
+      }
 
     default:
       return state;
   }
-};
+}
 
 /***/ }),
 
@@ -1838,6 +1865,17 @@ module.exports = require("react-redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
+
+/***/ }),
+
+/***/ "redux-api-middleware":
+/*!***************************************!*\
+  !*** external "redux-api-middleware" ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-api-middleware");
 
 /***/ }),
 

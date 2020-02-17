@@ -6,8 +6,8 @@ import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
-import Article from 'components/article';
-import about_article from 'static/about_article.json';
+import ArticleBody from 'components/article/article-body';
+import about_article from 'static/articles/about_article.json';
 
 import styles from './About.scss';
 
@@ -39,7 +39,7 @@ class About extends Component {
 
 					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/fongs-doyers-pose.jpg'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
-					hero_height={HeroBanner.HeroHeight.HALF} 
+					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}
 				/>
 				<Layout>
@@ -47,7 +47,7 @@ class About extends Component {
 						className={styles('page-header')}
 						title='Who We Are'
 					/>
-					<Article 
+					<ArticleBody 
 						className={styles('article')} 
 						article_data={about_article} 
 					/>

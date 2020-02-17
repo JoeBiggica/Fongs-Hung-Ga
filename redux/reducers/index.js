@@ -1,22 +1,28 @@
-import { actionTypes } from '../actions';
+import { Action } from 'actions';
 
 // REDUCERS
-export const reducer = (state = {}, action) => {
-	switch (action.type) {
-		case actionTypes.TOGGLE:
-			return Object.assign({}, state, {
-				tap: !state.tap
-			})
+export default function reducer(state = {}, action) {
 
-		case actionTypes.INCREMENT:
-			return Object.assign({}, state, {
-				count: state.count + 1
-			})
-			
-		case actionTypes.DECREMENT:
-			return Object.assign({}, state, {
-				count: state.count - 1
-			})
+	const { meta, payload } = action;
+
+	switch (action.type) {
+		case 'FETCH_ARTICLE_SUCCESS': {
+			console.log('PAYLOAD', payload);
+
+			console.log('ARTICLE SUCCESS!');
+
+			return {
+				...state,
+				article: payload.article
+			};
+		}
+
+		case 'FETCH_ARTICLE_REQUEST': {
+			console.log('ARTICLE REQUEST');
+			return {
+				...state
+			};
+		}
 
 		default:
 			return state
