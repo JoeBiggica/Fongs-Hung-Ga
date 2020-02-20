@@ -206,7 +206,10 @@ ul {
   .HeroBanner-container-fYWwV.HeroBanner-full-1ZTji {
     min-height: 100vh; }
   .HeroBanner-container-fYWwV.HeroBanner-three-quater-1uIgj {
-    min-height: 75vh; }
+    min-height: 35vh; }
+    @media (min-width: 600px) {
+      .HeroBanner-container-fYWwV.HeroBanner-three-quater-1uIgj {
+        min-height: 75vh; } }
   .HeroBanner-container-fYWwV.HeroBanner-half-1V9GZ {
     min-height: 35vh; }
     @media (min-width: 600px) {

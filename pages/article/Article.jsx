@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import { Action } from 'actions';
+import fetch from 'isomorphic-unfetch'
 import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
@@ -15,12 +16,18 @@ import PropTypes from 'prop-types';
 
 class Article extends Component {
 
-	static getInitialProps ({ store, req, res, query }) {
+	static async getInitialProps ({ store, req, res, query }) {
 		const isServer = !!req
 		const slug = query.slug;
-		console.log('#####SLUG', slug);
-		Action.fetchArticle(slug);
-		return {};
+
+		const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}.json`)
+		const article_json = await article_res.json()
+		console.log('#########', article_json);
+		if (article_json) {
+			return {
+				article: article_json.article
+			};
+		}
 	}
 
 	static propTypes = {
@@ -49,21 +56,18 @@ class Article extends Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {
-		article: state.article
-	};
-};
+// const mapStateToProps = state => {
+// 	return {
+// 		article: state.article
+// 	};
+// };
 
-const mapDispatchToProps = dispatch => {
-	return {
-		fetchArticle(slug) {
-			return dispatch(Action.fetchArticle(slug));
-		},
-	};
-};
+// const mapDispatchToProps = dispatch => {
+// 	return {
+// 		fetchArticle(slug) {
+// 			return dispatch(Action.fetchArticle(slug));
+// 		},
+// 	};
+// };
 
-export default connect(
-	mapStateToProps, 
-	mapDispatchToProps
-)(withRouter(Article));
+export default withRouter(Article);

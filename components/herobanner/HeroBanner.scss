@@ -42,7 +42,11 @@
 	}
 
 	&.three-quater {
-		min-height: 75vh;
+		min-height: 35vh;
+
+		@include for-tablet-portrait-up {
+			min-height: 75vh;
+		}
 	}
 
 	&.half {

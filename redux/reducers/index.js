@@ -4,13 +4,12 @@ import { Action } from 'actions';
 export default function reducer(state = {}, action) {
 
 	const { meta, payload } = action;
-
+	console.log('REDUX', action, payload);
 	switch (action.type) {
 		case 'FETCH_ARTICLE_SUCCESS': {
-			console.log('PAYLOAD', payload);
-
 			console.log('ARTICLE SUCCESS!');
-
+			console.log('PAYLOAD', payload);
+			
 			return {
 				...state,
 				article: payload.article
