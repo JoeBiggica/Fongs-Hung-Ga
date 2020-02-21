@@ -1,16 +1,16 @@
 webpackHotUpdate("styles",{
 
-/***/ "./components/table/Table.scss":
-/*!*************************************!*\
-  !*** ./components/table/Table.scss ***!
-  \*************************************/
+/***/ "./components/article/article-header/ArticleHeader.scss":
+/*!**************************************************************!*\
+  !*** ./components/article/article-header/ArticleHeader.scss ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
         // classnames-loader: automatically bind css-modules to classnames
-        var classNames = __webpack_require__(/*! ../../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../../node_modules/extracted-loader!../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader??ref--6-2!../../node_modules/sass-loader/lib/loader.js??ref--6-3!./Table.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/table/Table.scss");
+        var classNames = __webpack_require__(/*! ../../../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
+        var locals = __webpack_require__(/*! !../../../node_modules/extracted-loader!../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader??ref--6-2!../../../node_modules/sass-loader/lib/loader.js??ref--6-3!./ArticleHeader.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/article/article-header/ArticleHeader.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {
@@ -28,15 +28,15 @@ webpackHotUpdate("styles",{
 
 /***/ }),
 
-/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/table/Table.scss":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./components/table/Table.scss ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./components/article/article-header/ArticleHeader.scss":
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./components/article/article-header/ArticleHeader.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"container":"Table-container-4bHKy","title":"Table-title-30c42","table-columns":"Table-table-columns-1UKoT","column":"Table-column-1Jb8H","header":"Table-header-2i1gN","cell-container":"Table-cell-container-2YrHW","cell":"Table-cell-1lyKe","subcell":"Table-subcell-3-zj9"};;
+module.exports = {"container":"ArticleHeader-container-20Gwx","title":"ArticleHeader-title-Yj_Nc","byline":"ArticleHeader-byline-2jpzB","image":"ArticleHeader-image-xAg9L","primary-asset":"ArticleHeader-primary-asset-2Vs7I"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -58,7 +58,7 @@ module.exports = {"container":"Table-container-4bHKy","title":"Table-title-30c42
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1582327135037");
+            injectCss(link, link.href.split("?")[0] + "?unix=1582327377302");
           });
       }
     }
@@ -66,15 +66,15 @@ module.exports = {"container":"Table-container-4bHKy","title":"Table-title-30c42
 
 /***/ }),
 
-/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss":
+/***/ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Article.scss":
 /*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Classes.scss ***!
+  !*** ./node_modules/extracted-loader!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./pages/Article.scss ***!
   \*********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"herobanner":"Classes-herobanner-hGTqS","page-header":"Classes-page-header-1ipoY","content":"Classes-content-1new4","schools-container":"Classes-schools-container-2daf4","school":"Classes-school-3pmtP","title":"Classes-title-3uCC9","info-container":"Classes-info-container-1VUpl","instructor":"Classes-instructor-1W08x","label":"Classes-label-2F5hW","name":"Classes-name-1emSx","address":"Classes-address-6bSH0","contact":"Classes-contact-1cTKz","table-container":"Classes-table-container-2IxAi","disclaimer":"Classes-disclaimer-VCtLL"};;
+module.exports = {"herobanner":"Article-herobanner-anJVd","container":"Article-container-30zAN","article-header":"Article-article-header-P_Y84","article-body":"Article-article-body-3w64q"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -96,7 +96,7 @@ module.exports = {"herobanner":"Classes-herobanner-hGTqS","page-header":"Classes
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1582327134878");
+            injectCss(link, link.href.split("?")[0] + "?unix=1582327377227");
           });
       }
     }
@@ -104,9 +104,9 @@ module.exports = {"herobanner":"Classes-herobanner-hGTqS","page-header":"Classes
 
 /***/ }),
 
-/***/ "./pages/Classes.scss":
+/***/ "./pages/Article.scss":
 /*!****************************!*\
-  !*** ./pages/Classes.scss ***!
+  !*** ./pages/Article.scss ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -114,7 +114,7 @@ module.exports = {"herobanner":"Classes-herobanner-hGTqS","page-header":"Classes
 
         // classnames-loader: automatically bind css-modules to classnames
         var classNames = __webpack_require__(/*! ../node_modules/classnames/bind.js */ "./node_modules/classnames/bind.js");
-        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Classes.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Classes.scss");
+        var locals = __webpack_require__(/*! !../node_modules/extracted-loader!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader??ref--6-2!../node_modules/sass-loader/lib/loader.js??ref--6-3!./Article.scss */ "./node_modules/extracted-loader/index.js!./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/index.js?!./node_modules/sass-loader/lib/loader.js?!./pages/Article.scss");
         var css = classNames.bind(locals);
         for (var style in locals) {
             if (!locals.hasOwnProperty(style)) {
@@ -133,4 +133,4 @@ module.exports = {"herobanner":"Classes-herobanner-hGTqS","page-header":"Classes
 /***/ })
 
 })
-//# sourceMappingURL=styles.97f0f1d6c7c7ea439f53.hot-update.js.map
+//# sourceMappingURL=styles.39a11ee394d06daa83a5.hot-update.js.map
