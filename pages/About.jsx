@@ -42,7 +42,7 @@ class About extends Component {
 					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}
 				/>
-				<Layout>
+				<Layout padding >
 					<PageHeader 
 						className={styles('page-header')}
 						title='Who We Are'

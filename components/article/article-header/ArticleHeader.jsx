@@ -16,7 +16,7 @@ class ArticleHeader extends PureComponent {
 
 	renderByline = byline => {
 		return (
-			<div className={styles('byline')}>
+			<span className={styles('byline')}>
 				{byline.image && 
 					<div 
 						className={styles('image')} 
@@ -30,7 +30,7 @@ class ArticleHeader extends PureComponent {
 						</a> : byline.name
 					}
 				</span>
-			</div>
+			</span>
 		);
 	}
 

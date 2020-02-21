@@ -193,7 +193,7 @@ ul {
   .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
     justify-content: flex-start; }
     .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M .HeroBanner-text-container-3UaLg {
-      background: linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0) 10%);
+      background: linear-gradient(rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 0%);
       padding-top: 20px; }
       @media (min-width: 600px) {
         .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M .HeroBanner-text-container-3UaLg {
@@ -201,7 +201,7 @@ ul {
   .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU {
     justify-content: flex-end; }
     .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU .HeroBanner-text-container-3UaLg {
-      background: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7) 75%);
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%);
       padding-bottom: 20px; }
       @media (min-width: 600px) {
         .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU .HeroBanner-text-container-3UaLg {
@@ -295,11 +295,12 @@ ul {
 
 .Layout-inner-d3Io5 {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 30px 30px; }
-  @media (min-width: 600px) {
-    .Layout-inner-d3Io5 {
-      padding: 60px 30px; } }
+  margin: 0 auto; }
+  .Layout-inner-d3Io5.Layout-padding-1J6cR {
+    padding: 30px 30px; }
+    @media (min-width: 600px) {
+      .Layout-inner-d3Io5.Layout-padding-1J6cR {
+        padding: 60px 30px; } }
 
 .PageHeader-container-3ktzp {
   width: 100%; }
@@ -453,11 +454,23 @@ ul {
 .Article-herobanner-2Ixof {
   margin-top: 20px; }
 
-.Article-page-header-1E0tH {
-  margin-bottom: 30px; }
+.Article-container-1S4v1 {
+  padding-top: 30px; }
+  @media (min-width: 600px) {
+    .Article-container-1S4v1 {
+      padding-top: 40px; } }
 
-.Article-article-tdP4L {
+.Article-article-header-2eqrq {
   margin-bottom: 30px; }
+  .Article-article-header-2eqrq > h1,
+  .Article-article-header-2eqrq > span {
+    padding: 0 30px; }
+
+.Article-article-body-WAnGD {
+  padding: 0 30px; }
+  @media (min-width: 600px) {
+    .Article-article-body-WAnGD {
+      padding: 0 30px; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

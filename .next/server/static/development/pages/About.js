@@ -1087,8 +1087,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Layout.scss */ "./components/layout/Layout.scss");
-/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Layout_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Layout.scss */ "./components/layout/Layout.scss");
+/* harmony import */ var _Layout_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Layout_scss__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -1113,11 +1116,17 @@ function (_PureComponent) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Layout, [{
     key: "render",
     value: function render() {
-      var children = this.props.children;
+      var _this$props = this.props,
+          className = _this$props.className,
+          children = _this$props.children,
+          padding = _this$props.padding;
+      var inner_classname = _Layout_scss__WEBPACK_IMPORTED_MODULE_9___default()('inner', {
+        'padding': padding
+      });
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Layout_scss__WEBPACK_IMPORTED_MODULE_8___default()('container')
+        className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_Layout_scss__WEBPACK_IMPORTED_MODULE_9___default()('container'), className)
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: _Layout_scss__WEBPACK_IMPORTED_MODULE_8___default()('inner')
+        className: inner_classname
       }, children));
     }
   }]);
@@ -1126,7 +1135,8 @@ function (_PureComponent) {
 }(react__WEBPACK_IMPORTED_MODULE_6__["PureComponent"]);
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__["default"])(Layout, "propTypes", {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.node
+  children: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.node,
+  padding: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.bool
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -1791,7 +1801,8 @@ module.exports = {
 
 module.exports = {
 	"container": "Layout-container-1Z389",
-	"inner": "Layout-inner-d3Io5"
+	"inner": "Layout-inner-d3Io5",
+	"padding": "Layout-padding-1J6cR"
 };
 
 /***/ }),
@@ -1906,7 +1917,9 @@ function (_Component) {
         background_position: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].BackgroundPosition.CENTER,
         hero_height: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].HeroHeight.THREE_QUATER,
         gradient: _components_herobanner__WEBPACK_IMPORTED_MODULE_11__["default"].Gradient.BOTTOM
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_12__["default"], null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_pageheader__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        padding: true
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_pageheader__WEBPACK_IMPORTED_MODULE_13__["default"], {
         className: _About_scss__WEBPACK_IMPORTED_MODULE_16___default()('page-header'),
         title: "Who We Are"
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_article_article_body__WEBPACK_IMPORTED_MODULE_14__["default"], {

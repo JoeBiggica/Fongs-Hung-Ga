@@ -115,7 +115,7 @@ class Classes extends Component {
 					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}
 				/>
-				<Layout>
+				<Layout padding >
 					<PageHeader 
 						className={styles('page-header')}
 						title='Class Schedules'

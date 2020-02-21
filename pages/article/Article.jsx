@@ -54,15 +54,21 @@ class Article extends Component {
 		return (
 			<>
 				<Header router={router} />
-				<Layout>
+				<Layout className={styles('container')}>
 					{header && 
 						<ArticleHeader
+							className={styles('article-header')}
 							title={header.title}
 							byline={header.byline}
 							primary_asset={header.primary_asset}
 						/>
 					}
-					{body && <ArticleBody items={body.items} /> }
+					{body && 
+						<ArticleBody 
+							className={styles('article-body')}
+							items={body.items} 
+						/> 
+					}
 				</Layout>
 			</>
 		)

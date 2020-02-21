@@ -6,10 +6,27 @@
 	margin-top: 20px;
 }
 
-.page-header {
-	margin-bottom: 30px;
+.container {
+	padding-top: 30px;
+
+	@include for-tablet-portrait-up {
+		padding-top: 40px;
+	}
 }
 
-.article {
+.article-header {
 	margin-bottom: 30px;
+
+	> h1,
+	> span {
+		padding: 0 30px;
+	}
+}
+
+.article-body {
+	padding: 0 30px;
+
+	@include for-tablet-portrait-up {
+		padding: 0 30px;
+	}
 }
