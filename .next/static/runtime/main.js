@@ -1703,7 +1703,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5475,11 +5475,11 @@ function () {
         // navigating back from an external site
         if (history.state) {
           var _history$state = history.state,
-              url = _history$state.url,
+              _url2 = _history$state.url,
               _as2 = _history$state.as,
               options = _history$state.options;
 
-          _this.changeState('replaceState', url, _as2, (0, _assign.default)({}, options, {
+          _this.changeState('replaceState', _url2, _as2, (0, _assign.default)({}, options, {
             fromExternal: true
           }));
         }

@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/article.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/Article.js"],{
 
 /***/ "./components/article/article-body/ArticleBody.jsx":
 /*!*********************************************************!*\
@@ -2849,7 +2849,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5802,7 +5802,7 @@ module.exports = function (it) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -6831,11 +6831,14 @@ var MEMO_STATICS = {
 };
 var TYPE_STATICS = {};
 TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
+TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
 
 function getStatics(component) {
+  // React v16.11 and below
   if (reactIs.isMemo(component)) {
     return MEMO_STATICS;
-  }
+  } // React v16.12 and above
+
 
   return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
 }
@@ -6884,67 +6887,6 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
-
-
-/***/ }),
-
-/***/ "./node_modules/invariant/browser.js":
-/*!*******************************************!*\
-  !*** ./node_modules/invariant/browser.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var invariant = function(condition, format, a, b, c, d, e, f) {
-  if (true) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  }
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error(
-        'Minified exception occurred; use the non-minified dev environment ' +
-        'for the full error message and additional helpful warnings.'
-      );
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(
-        format.replace(/%s/g, function() { return args[argIndex++]; })
-      );
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-};
-
-module.exports = invariant;
 
 
 /***/ }),
@@ -7229,11 +7171,11 @@ function () {
         // navigating back from an external site
         if (history.state) {
           var _history$state = history.state,
-              url = _history$state.url,
+              _url2 = _history$state.url,
               _as2 = _history$state.as,
               options = _history$state.options;
 
-          _this.changeState('replaceState', url, _as2, (0, _assign.default)({}, options, {
+          _this.changeState('replaceState', _url2, _as2, (0, _assign.default)({}, options, {
             fromExternal: true
           }));
         }
@@ -7959,21 +7901,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js!./":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js ***!
-  \***********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FArticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FArticle.jsx!./":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FArticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FArticle.jsx ***!
+  \****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/article", function() {
-      var page = __webpack_require__(/*! ./pages/article/index.js */ "./pages/article/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/Article", function() {
+      var page = __webpack_require__(/*! ./pages/Article.jsx */ "./pages/Article.jsx")
       if(true) {
-        module.hot.accept(/*! ./pages/article/index.js */ "./pages/article/index.js", function() {
-          if(!next.router.components["/article"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/article/index.js */ "./pages/article/index.js")
-          next.router.update("/article", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/Article.jsx */ "./pages/Article.jsx", function() {
+          if(!next.router.components["/Article"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/Article.jsx */ "./pages/Article.jsx")
+          next.router.update("/Article", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -9903,7 +9845,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-var ReactReduxContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null);
+var ReactReduxContext =
+/*#__PURE__*/
+react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null);
+
+if (true) {
+  ReactReduxContext.displayName = 'ReactRedux';
+}
+
 /* harmony default export */ __webpack_exports__["default"] = (ReactReduxContext);
 
 /***/ }),
@@ -9962,15 +9911,18 @@ function Provider(_ref) {
   }, children);
 }
 
-Provider.propTypes = {
-  store: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
-    subscribe: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
-    dispatch: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
-    getState: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
-  }),
-  context: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any
-};
+if (true) {
+  Provider.propTypes = {
+    store: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+      subscribe: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+      dispatch: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+      getState: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
+    }),
+    context: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+    children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any
+  };
+}
+
 /* harmony default export */ __webpack_exports__["default"] = (Provider);
 
 /***/ }),
@@ -9989,16 +9941,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/react-redux/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-is */ "./node_modules/react-redux/node_modules/react-is/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
-/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
-/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-is */ "./node_modules/react-redux/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
 
@@ -10022,6 +9971,102 @@ var stringifyComponent = function stringifyComponent(Comp) {
 function storeStateUpdatesReducer(state, action) {
   var updateCount = state[1];
   return [action.payload, updateCount + 1];
+}
+
+function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
+  Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__["useIsomorphicLayoutEffect"])(function () {
+    return effectFunc.apply(void 0, effectArgs);
+  }, dependencies);
+}
+
+function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs) {
+  // We want to capture the wrapper props and child props we used for later comparisons
+  lastWrapperProps.current = wrapperProps;
+  lastChildProps.current = actualChildProps;
+  renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
+
+  if (childPropsFromStoreUpdate.current) {
+    childPropsFromStoreUpdate.current = null;
+    notifyNestedSubs();
+  }
+}
+
+function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch) {
+  // If we're not subscribed to the store, nothing to do here
+  if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
+
+  var didUnsubscribe = false;
+  var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
+
+  var checkForUpdates = function checkForUpdates() {
+    if (didUnsubscribe) {
+      // Don't run stale listeners.
+      // Redux doesn't guarantee unsubscriptions happen until next dispatch.
+      return;
+    }
+
+    var latestStoreState = store.getState();
+    var newChildProps, error;
+
+    try {
+      // Actually run the selector with the most recent store state and wrapper props
+      // to determine what the child props should be
+      newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
+    } catch (e) {
+      error = e;
+      lastThrownError = e;
+    }
+
+    if (!error) {
+      lastThrownError = null;
+    } // If the child props haven't changed, nothing to do here - cascade the subscription update
+
+
+    if (newChildProps === lastChildProps.current) {
+      if (!renderIsScheduled.current) {
+        notifyNestedSubs();
+      }
+    } else {
+      // Save references to the new child props.  Note that we track the "child props from store update"
+      // as a ref instead of a useState/useReducer because we need a way to determine if that value has
+      // been processed.  If this went into useState/useReducer, we couldn't clear out the value without
+      // forcing another re-render, which we don't want.
+      lastChildProps.current = newChildProps;
+      childPropsFromStoreUpdate.current = newChildProps;
+      renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
+
+      forceComponentUpdateDispatch({
+        type: 'STORE_UPDATED',
+        payload: {
+          error: error
+        }
+      });
+    }
+  }; // Actually subscribe to the nearest connected ancestor (or store)
+
+
+  subscription.onStateChange = checkForUpdates;
+  subscription.trySubscribe(); // Pull data from the store after first render in case the store has
+  // changed since we began.
+
+  checkForUpdates();
+
+  var unsubscribeWrapper = function unsubscribeWrapper() {
+    didUnsubscribe = true;
+    subscription.tryUnsubscribe();
+    subscription.onStateChange = null;
+
+    if (lastThrownError) {
+      // It's possible that we caught an error due to a bad mapState function, but the
+      // parent re-rendered without this component and we're about to unmount.
+      // This shouldn't happen as long as we do top-down subscriptions correctly, but
+      // if we ever do those wrong, this throw will surface the error in our tests.
+      // In that case, throw the error from here so it doesn't get lost.
+      throw lastThrownError;
+    }
+  };
+
+  return unsubscribeWrapper;
 }
 
 var initStateUpdates = function initStateUpdates() {
@@ -10067,17 +10112,29 @@ _ref) {
       _ref2$forwardRef = _ref2.forwardRef,
       forwardRef = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef,
       _ref2$context = _ref2.context,
-      context = _ref2$context === void 0 ? _Context__WEBPACK_IMPORTED_MODULE_8__["ReactReduxContext"] : _ref2$context,
+      context = _ref2$context === void 0 ? _Context__WEBPACK_IMPORTED_MODULE_7__["ReactReduxContext"] : _ref2$context,
       connectOptions = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef", "forwardRef", "context"]);
 
-  invariant__WEBPACK_IMPORTED_MODULE_3___default()(renderCountProp === undefined, "renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
-  invariant__WEBPACK_IMPORTED_MODULE_3___default()(!withRef, 'withRef is removed. To access the wrapped instance, use a ref on the connected component');
-  var customStoreWarningMessage = 'To use a custom Redux store for specific components, create a custom React context with ' + "React.createContext(), and pass the context object to React Redux's Provider and specific components" + ' like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. ' + 'You may also pass a {context : MyContext} option to connect';
-  invariant__WEBPACK_IMPORTED_MODULE_3___default()(storeKey === 'store', 'storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
+  if (true) {
+    if (renderCountProp !== undefined) {
+      throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
+    }
+
+    if (withRef) {
+      throw new Error('withRef is removed. To access the wrapped instance, use a ref on the connected component');
+    }
+
+    var customStoreWarningMessage = 'To use a custom Redux store for specific components, create a custom React context with ' + "React.createContext(), and pass the context object to React Redux's Provider and specific components" + ' like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. ' + 'You may also pass a {context : MyContext} option to connect';
+
+    if (storeKey !== 'store') {
+      throw new Error('storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
+    }
+  }
+
   var Context = context;
   return function wrapWithConnect(WrappedComponent) {
-    if (true) {
-      invariant__WEBPACK_IMPORTED_MODULE_3___default()(Object(react_is__WEBPACK_IMPORTED_MODULE_5__["isValidElementType"])(WrappedComponent), "You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
+    if ( true && !Object(react_is__WEBPACK_IMPORTED_MODULE_4__["isValidElementType"])(WrappedComponent)) {
+      throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
     }
 
     var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
@@ -10103,12 +10160,12 @@ _ref) {
     // that just executes the given callback immediately.
 
 
-    var usePureOnlyMemo = pure ? react__WEBPACK_IMPORTED_MODULE_4__["useMemo"] : function (callback) {
+    var usePureOnlyMemo = pure ? react__WEBPACK_IMPORTED_MODULE_3__["useMemo"] : function (callback) {
       return callback();
     };
 
     function ConnectFunction(props) {
-      var _useMemo = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var _useMemo = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         // Distinguish between actual "data" props that were passed to the wrapper component,
         // and values needed to control behavior (forwarded refs, alternate context instances).
         // To maintain the wrapperProps object reference, memoize this destructuring.
@@ -10121,32 +10178,36 @@ _ref) {
           forwardedRef = _useMemo[1],
           wrapperProps = _useMemo[2];
 
-      var ContextToUse = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var ContextToUse = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
         // Memoize the check that determines which context instance we should use.
-        return propsContext && propsContext.Consumer && Object(react_is__WEBPACK_IMPORTED_MODULE_5__["isContextConsumer"])(react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(propsContext.Consumer, null)) ? propsContext : Context;
+        return propsContext && propsContext.Consumer && Object(react_is__WEBPACK_IMPORTED_MODULE_4__["isContextConsumer"])(react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(propsContext.Consumer, null)) ? propsContext : Context;
       }, [propsContext, Context]); // Retrieve the store and ancestor subscription via context, if available
 
-      var contextValue = Object(react__WEBPACK_IMPORTED_MODULE_4__["useContext"])(ContextToUse); // The store _must_ exist as either a prop or in context.
+      var contextValue = Object(react__WEBPACK_IMPORTED_MODULE_3__["useContext"])(ContextToUse); // The store _must_ exist as either a prop or in context.
       // We'll check to see if it _looks_ like a Redux store first.
       // This allows us to pass through a `store` prop that is just a plain value.
 
       var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
       var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
-      invariant__WEBPACK_IMPORTED_MODULE_3___default()(didStoreComeFromProps || didStoreComeFromContext, "Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options.")); // Based on the previous check, one of these must be true
+
+      if ( true && !didStoreComeFromProps && !didStoreComeFromContext) {
+        throw new Error("Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
+      } // Based on the previous check, one of these must be true
+
 
       var store = didStoreComeFromProps ? props.store : contextValue.store;
-      var childPropsSelector = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var childPropsSelector = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         // The child props selector needs the store reference as an input.
         // Re-create this selector whenever the store changes.
         return createChildSelector(store);
       }, [store]);
 
-      var _useMemo2 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var _useMemo2 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
         // connected to the store via props shouldn't use subscription from context, or vice versa.
 
-        var subscription = new _utils_Subscription__WEBPACK_IMPORTED_MODULE_6__["default"](store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+        var subscription = new _utils_Subscription__WEBPACK_IMPORTED_MODULE_5__["default"](store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
         // the middle of the notification loop, where `subscription` will then be null. This can
         // probably be avoided if Subscription's listeners logic is changed to not call listeners
         // that have been unsubscribed in the  middle of the notification loop.
@@ -10159,7 +10220,7 @@ _ref) {
       // and memoize that value to avoid unnecessary context updates.
 
 
-      var overriddenContextValue = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var overriddenContextValue = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         if (didStoreComeFromProps) {
           // This component is directly subscribed to a store from props.
           // We don't want descendants reading from this store - pass down whatever
@@ -10175,7 +10236,7 @@ _ref) {
       }, [didStoreComeFromProps, contextValue, subscription]); // We need to force this wrapper component to re-render whenever a Redux store update
       // causes a change to the calculated child component props (or we caught an error in mapState)
 
-      var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_4__["useReducer"])(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates),
+      var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_3__["useReducer"])(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates),
           _useReducer$ = _useReducer[0],
           previousStateUpdateResult = _useReducer$[0],
           forceComponentUpdateDispatch = _useReducer[1]; // Propagate any mapState/mapDispatch errors upwards
@@ -10186,10 +10247,10 @@ _ref) {
       } // Set up refs to coordinate values between the subscription effect and the render logic
 
 
-      var lastChildProps = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])();
-      var lastWrapperProps = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(wrapperProps);
-      var childPropsFromStoreUpdate = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])();
-      var renderIsScheduled = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(false);
+      var lastChildProps = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])();
+      var lastWrapperProps = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])(wrapperProps);
+      var childPropsFromStoreUpdate = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])();
+      var renderIsScheduled = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])(false);
       var actualChildProps = usePureOnlyMemo(function () {
         // Tricky logic here:
         // - This render may have been triggered by a Redux store update that produced new child props
@@ -10210,110 +10271,24 @@ _ref) {
       // about useLayoutEffect in SSR, so we try to detect environment and fall back to
       // just useEffect instead to avoid the warning, since neither will run anyway.
 
-      Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_7__["useIsomorphicLayoutEffect"])(function () {
-        // We want to capture the wrapper props and child props we used for later comparisons
-        lastWrapperProps.current = wrapperProps;
-        lastChildProps.current = actualChildProps;
-        renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
+      useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs]); // Our re-subscribe logic only runs when the store/subscription setup changes
 
-        if (childPropsFromStoreUpdate.current) {
-          childPropsFromStoreUpdate.current = null;
-          notifyNestedSubs();
-        }
-      }); // Our re-subscribe logic only runs when the store/subscription setup changes
-
-      Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_7__["useIsomorphicLayoutEffect"])(function () {
-        // If we're not subscribed to the store, nothing to do here
-        if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
-
-        var didUnsubscribe = false;
-        var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
-
-        var checkForUpdates = function checkForUpdates() {
-          if (didUnsubscribe) {
-            // Don't run stale listeners.
-            // Redux doesn't guarantee unsubscriptions happen until next dispatch.
-            return;
-          }
-
-          var latestStoreState = store.getState();
-          var newChildProps, error;
-
-          try {
-            // Actually run the selector with the most recent store state and wrapper props
-            // to determine what the child props should be
-            newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
-          } catch (e) {
-            error = e;
-            lastThrownError = e;
-          }
-
-          if (!error) {
-            lastThrownError = null;
-          } // If the child props haven't changed, nothing to do here - cascade the subscription update
-
-
-          if (newChildProps === lastChildProps.current) {
-            if (!renderIsScheduled.current) {
-              notifyNestedSubs();
-            }
-          } else {
-            // Save references to the new child props.  Note that we track the "child props from store update"
-            // as a ref instead of a useState/useReducer because we need a way to determine if that value has
-            // been processed.  If this went into useState/useReducer, we couldn't clear out the value without
-            // forcing another re-render, which we don't want.
-            lastChildProps.current = newChildProps;
-            childPropsFromStoreUpdate.current = newChildProps;
-            renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
-
-            forceComponentUpdateDispatch({
-              type: 'STORE_UPDATED',
-              payload: {
-                error: error
-              }
-            });
-          }
-        }; // Actually subscribe to the nearest connected ancestor (or store)
-
-
-        subscription.onStateChange = checkForUpdates;
-        subscription.trySubscribe(); // Pull data from the store after first render in case the store has
-        // changed since we began.
-
-        checkForUpdates();
-
-        var unsubscribeWrapper = function unsubscribeWrapper() {
-          didUnsubscribe = true;
-          subscription.tryUnsubscribe();
-          subscription.onStateChange = null;
-
-          if (lastThrownError) {
-            // It's possible that we caught an error due to a bad mapState function, but the
-            // parent re-rendered without this component and we're about to unmount.
-            // This shouldn't happen as long as we do top-down subscriptions correctly, but
-            // if we ever do those wrong, this throw will surface the error in our tests.
-            // In that case, throw the error from here so it doesn't get lost.
-            throw lastThrownError;
-          }
-        };
-
-        return unsubscribeWrapper;
-      }, [store, subscription, childPropsSelector]); // Now that all that's done, we can finally try to actually render the child component.
+      useIsomorphicLayoutEffectWithArgs(subscribeUpdates, [shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch], [store, subscription, childPropsSelector]); // Now that all that's done, we can finally try to actually render the child component.
       // We memoize the elements for the rendered child component as an optimization.
 
-      var renderedWrappedComponent = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
-        return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(WrappedComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, actualChildProps, {
+      var renderedWrappedComponent = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
+        return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(WrappedComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, actualChildProps, {
           ref: forwardedRef
         }));
       }, [forwardedRef, WrappedComponent, actualChildProps]); // If React sees the exact same element reference as last time, it bails out of re-rendering
       // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
 
-      var renderedChild = Object(react__WEBPACK_IMPORTED_MODULE_4__["useMemo"])(function () {
+      var renderedChild = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
         if (shouldHandleStateChanges) {
           // If this component is subscribed to store updates, we need to pass its own
           // subscription instance down to our descendants. That means rendering the same
           // Context instance, and putting a different value into the context.
-          return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ContextToUse.Provider, {
+          return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextToUse.Provider, {
             value: overriddenContextValue
           }, renderedWrappedComponent);
         }
@@ -10324,13 +10299,13 @@ _ref) {
     } // If we're in "pure" mode, ensure our wrapper component only re-renders when incoming props have changed.
 
 
-    var Connect = pure ? react__WEBPACK_IMPORTED_MODULE_4___default.a.memo(ConnectFunction) : ConnectFunction;
+    var Connect = pure ? react__WEBPACK_IMPORTED_MODULE_3___default.a.memo(ConnectFunction) : ConnectFunction;
     Connect.WrappedComponent = WrappedComponent;
     Connect.displayName = displayName;
 
     if (forwardRef) {
-      var forwarded = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function forwardConnectRef(props, ref) {
-        return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Connect, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      var forwarded = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function forwardConnectRef(props, ref) {
+        return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Connect, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
           forwardedRef: ref
         }));
       });
@@ -10460,7 +10435,7 @@ function createConnect(_temp) {
     }, extraOptions));
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (createConnect());
+/* harmony default export */ __webpack_exports__["default"] = (/*#__PURE__*/createConnect());
 
 /***/ }),
 
@@ -10811,7 +10786,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Hook factory, which creates a `useDispatch` hook bound to a given context.
  *
- * @param {Function} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
  * @returns {Function} A `useDispatch` hook bound to the specified context.
  */
 
@@ -10848,7 +10823,9 @@ function createDispatchHook(context) {
  * }
  */
 
-var useDispatch = createDispatchHook();
+var useDispatch =
+/*#__PURE__*/
+createDispatchHook();
 
 /***/ }),
 
@@ -10864,10 +10841,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useReduxContext", function() { return useReduxContext; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
-
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
 /**
@@ -10888,8 +10862,12 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function useReduxContext() {
-  var contextValue = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_Context__WEBPACK_IMPORTED_MODULE_2__["ReactReduxContext"]);
-  invariant__WEBPACK_IMPORTED_MODULE_1___default()(contextValue, 'could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
+  var contextValue = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_Context__WEBPACK_IMPORTED_MODULE_1__["ReactReduxContext"]);
+
+  if ( true && !contextValue) {
+    throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
+  }
+
   return contextValue;
 }
 
@@ -10908,13 +10886,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSelector", function() { return useSelector; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
-/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
-/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
-/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
-
+/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
 
@@ -10932,7 +10907,7 @@ function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contex
       forceRender = _useReducer[1];
 
   var subscription = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
-    return new _utils_Subscription__WEBPACK_IMPORTED_MODULE_3__["default"](store, contextSub);
+    return new _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__["default"](store, contextSub);
   }, [store, contextSub]);
   var latestSubscriptionCallbackError = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
   var latestSelector = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
@@ -10946,21 +10921,19 @@ function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contex
       selectedState = latestSelectedState.current;
     }
   } catch (err) {
-    var errorMessage = "An error occurred while selecting the store state: " + err.message + ".";
-
     if (latestSubscriptionCallbackError.current) {
-      errorMessage += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\nOriginal stack trace:";
+      err.message += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\n";
     }
 
-    throw new Error(errorMessage);
+    throw err;
   }
 
-  Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_4__["useIsomorphicLayoutEffect"])(function () {
+  Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__["useIsomorphicLayoutEffect"])(function () {
     latestSelector.current = selector;
     latestSelectedState.current = selectedState;
     latestSubscriptionCallbackError.current = undefined;
   });
-  Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_4__["useIsomorphicLayoutEffect"])(function () {
+  Object(_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__["useIsomorphicLayoutEffect"])(function () {
     function checkForUpdates() {
       try {
         var newSelectedState = latestSelector.current(store.getState());
@@ -10993,17 +10966,17 @@ function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contex
 /**
  * Hook factory, which creates a `useSelector` hook bound to a given context.
  *
- * @param {Function} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
  * @returns {Function} A `useSelector` hook bound to the specified context.
  */
 
 
 function createSelectorHook(context) {
   if (context === void 0) {
-    context = _components_Context__WEBPACK_IMPORTED_MODULE_5__["ReactReduxContext"];
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_4__["ReactReduxContext"];
   }
 
-  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_5__["ReactReduxContext"] ? _useReduxContext__WEBPACK_IMPORTED_MODULE_2__["useReduxContext"] : function () {
+  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_4__["ReactReduxContext"] ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__["useReduxContext"] : function () {
     return Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(context);
   };
   return function useSelector(selector, equalityFn) {
@@ -11011,7 +10984,9 @@ function createSelectorHook(context) {
       equalityFn = refEquality;
     }
 
-    invariant__WEBPACK_IMPORTED_MODULE_1___default()(selector, "You must pass a selector to useSelectors");
+    if ( true && !selector) {
+      throw new Error("You must pass a selector to useSelectors");
+    }
 
     var _useReduxContext = useReduxContext(),
         store = _useReduxContext.store,
@@ -11044,7 +11019,9 @@ function createSelectorHook(context) {
  * }
  */
 
-var useSelector = createSelectorHook();
+var useSelector =
+/*#__PURE__*/
+createSelectorHook();
 
 /***/ }),
 
@@ -11069,7 +11046,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Hook factory, which creates a `useStore` hook bound to a given context.
  *
- * @param {Function} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
  * @returns {Function} A `useStore` hook bound to the specified context.
  */
 
@@ -11104,7 +11081,9 @@ function createStoreHook(context) {
  * }
  */
 
-var useStore = createStoreHook();
+var useStore =
+/*#__PURE__*/
+createStoreHook();
 
 /***/ }),
 
@@ -11181,42 +11160,69 @@ __webpack_require__.r(__webpack_exports__);
 // well as nesting subscriptions of descendant components, so that we can ensure the
 // ancestor components re-render before descendants
 
-var CLEARED = null;
 var nullListeners = {
   notify: function notify() {}
 };
 
 function createListenerCollection() {
-  var batch = Object(_batch__WEBPACK_IMPORTED_MODULE_0__["getBatch"])(); // the current/next pattern is copied from redux's createStore code.
-  // TODO: refactor+expose that code to be reusable here?
-
-  var current = [];
-  var next = [];
+  var batch = Object(_batch__WEBPACK_IMPORTED_MODULE_0__["getBatch"])();
+  var first = null;
+  var last = null;
   return {
     clear: function clear() {
-      next = CLEARED;
-      current = CLEARED;
+      first = null;
+      last = null;
     },
     notify: function notify() {
-      var listeners = current = next;
       batch(function () {
-        for (var i = 0; i < listeners.length; i++) {
-          listeners[i]();
+        var listener = first;
+
+        while (listener) {
+          listener.callback();
+          listener = listener.next;
         }
       });
     },
     get: function get() {
-      return next;
+      var listeners = [];
+      var listener = first;
+
+      while (listener) {
+        listeners.push(listener);
+        listener = listener.next;
+      }
+
+      return listeners;
     },
-    subscribe: function subscribe(listener) {
+    subscribe: function subscribe(callback) {
       var isSubscribed = true;
-      if (next === current) next = current.slice();
-      next.push(listener);
+      var listener = last = {
+        callback: callback,
+        next: null,
+        prev: last
+      };
+
+      if (listener.prev) {
+        listener.prev.next = listener;
+      } else {
+        first = listener;
+      }
+
       return function unsubscribe() {
-        if (!isSubscribed || current === CLEARED) return;
+        if (!isSubscribed || first === null) return;
         isSubscribed = false;
-        if (next === current) next = current.slice();
-        next.splice(next.indexOf(listener), 1);
+
+        if (listener.next) {
+          listener.next.prev = listener.prev;
+        } else {
+          last = listener.prev;
+        }
+
+        if (listener.prev) {
+          listener.prev.next = listener.next;
+        } else {
+          first = listener.next;
+        }
       };
     }
   };
@@ -11362,8 +11368,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return shallowEqual; });
-var hasOwn = Object.prototype.hasOwnProperty;
-
 function is(x, y) {
   if (x === y) {
     return x !== 0 || y !== 0 || 1 / x === 1 / y;
@@ -11384,7 +11388,7 @@ function shallowEqual(objA, objB) {
   if (keysA.length !== keysB.length) return false;
 
   for (var i = 0; i < keysA.length; i++) {
-    if (!hasOwn.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+    if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
       return false;
     }
   }
@@ -11415,8 +11419,7 @@ __webpack_require__.r(__webpack_exports__);
 // is created synchronously, otherwise a store update may occur before the
 // subscription is created and an inconsistent state may be observed
 
-var isHopefullyDomEnvironment = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined';
-var useIsomorphicLayoutEffect = isHopefullyDomEnvironment ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
 
 /***/ }),
 
@@ -12596,6 +12599,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
    *
    * @constant {string}
    * @access public
+   * @deprecated To be made private (implementation detail). Use `createAction` instead.
    * @default
    */
   var RSAA = '@@redux-api-middleware/RSAA';
@@ -14969,6 +14973,15 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
   function actionWith(_x2) {
     return _actionWith.apply(this, arguments);
   }
+  /**
+   * Create RSAA action
+   *
+   * @function createAction
+   * @access public
+   * @param {object} clientCall - The options for the RSAA action
+   * @returns {object} RSAA Action
+   */
+
 
   function _actionWith() {
     _actionWith = _asyncToGenerator(
@@ -15052,6 +15065,10 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
       }, _callee2, this, [[1, 12], [16, 27]]);
     }));
     return _actionWith.apply(this, arguments);
+  }
+
+  function createAction(clientCall) {
+    return _defineProperty({}, RSAA, clientCall);
   }
 
   var shared = _shared('keys');
@@ -15250,126 +15267,142 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
 
                   case 21:
                     if (!(typeof endpoint === 'function')) {
-                      _context.next = 33;
+                      _context.next = 35;
                       break;
                     }
 
                     _context.prev = 22;
-                    endpoint = endpoint(getState());
-                    _context.next = 33;
+                    _context.next = 25;
+                    return endpoint(getState());
+
+                  case 25:
+                    endpoint = _context.sent;
+                    _context.next = 35;
                     break;
 
-                  case 26:
-                    _context.prev = 26;
+                  case 28:
+                    _context.prev = 28;
                     _context.t3 = _context["catch"](22);
                     _context.t4 = next;
-                    _context.next = 31;
+                    _context.next = 33;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new RequestError('[RSAA].endpoint function failed'),
                       error: true
                     }), [action, getState()]);
 
-                  case 31:
+                  case 33:
                     _context.t5 = _context.sent;
                     return _context.abrupt("return", (0, _context.t4)(_context.t5));
 
-                  case 33:
+                  case 35:
                     if (!(typeof body === 'function')) {
-                      _context.next = 45;
+                      _context.next = 49;
                       break;
                     }
 
-                    _context.prev = 34;
-                    body = body(getState());
-                    _context.next = 45;
+                    _context.prev = 36;
+                    _context.next = 39;
+                    return body(getState());
+
+                  case 39:
+                    body = _context.sent;
+                    _context.next = 49;
                     break;
 
-                  case 38:
-                    _context.prev = 38;
-                    _context.t6 = _context["catch"](34);
+                  case 42:
+                    _context.prev = 42;
+                    _context.t6 = _context["catch"](36);
                     _context.t7 = next;
-                    _context.next = 43;
+                    _context.next = 47;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new RequestError('[RSAA].body function failed'),
                       error: true
                     }), [action, getState()]);
 
-                  case 43:
+                  case 47:
                     _context.t8 = _context.sent;
                     return _context.abrupt("return", (0, _context.t7)(_context.t8));
 
-                  case 45:
+                  case 49:
                     if (!(typeof headers === 'function')) {
-                      _context.next = 57;
+                      _context.next = 63;
                       break;
                     }
 
-                    _context.prev = 46;
-                    headers = headers(getState());
-                    _context.next = 57;
+                    _context.prev = 50;
+                    _context.next = 53;
+                    return headers(getState());
+
+                  case 53:
+                    headers = _context.sent;
+                    _context.next = 63;
                     break;
 
-                  case 50:
-                    _context.prev = 50;
-                    _context.t9 = _context["catch"](46);
+                  case 56:
+                    _context.prev = 56;
+                    _context.t9 = _context["catch"](50);
                     _context.t10 = next;
-                    _context.next = 55;
+                    _context.next = 61;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new RequestError('[RSAA].headers function failed'),
                       error: true
                     }), [action, getState()]);
 
-                  case 55:
+                  case 61:
                     _context.t11 = _context.sent;
                     return _context.abrupt("return", (0, _context.t10)(_context.t11));
 
-                  case 57:
+                  case 63:
                     if (!(typeof options === 'function')) {
-                      _context.next = 69;
+                      _context.next = 77;
                       break;
                     }
 
-                    _context.prev = 58;
-                    options = options(getState());
-                    _context.next = 69;
+                    _context.prev = 64;
+                    _context.next = 67;
+                    return options(getState());
+
+                  case 67:
+                    options = _context.sent;
+                    _context.next = 77;
                     break;
 
-                  case 62:
-                    _context.prev = 62;
-                    _context.t12 = _context["catch"](58);
+                  case 70:
+                    _context.prev = 70;
+                    _context.t12 = _context["catch"](64);
                     _context.t13 = next;
-                    _context.next = 67;
+                    _context.next = 75;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new RequestError('[RSAA].options function failed'),
                       error: true
                     }), [action, getState()]);
 
-                  case 67:
+                  case 75:
                     _context.t14 = _context.sent;
                     return _context.abrupt("return", (0, _context.t13)(_context.t14));
 
-                  case 69:
+                  case 77:
                     if (!(typeof requestType.payload === 'function' || typeof requestType.meta === 'function')) {
-                      _context.next = 77;
+                      _context.next = 85;
                       break;
                     }
 
                     _context.t15 = next;
-                    _context.next = 73;
+                    _context.next = 81;
                     return actionWith(requestType, [action, getState()]);
 
-                  case 73:
+                  case 81:
                     _context.t16 = _context.sent;
                     (0, _context.t15)(_context.t16);
-                    _context.next = 78;
+                    _context.next = 86;
                     break;
 
-                  case 77:
+                  case 85:
                     next(requestType);
 
-                  case 78:
-                    _context.prev = 78;
-                    _context.next = 81;
+                  case 86:
+                    _context.prev = 86;
+                    _context.next = 89;
                     return doFetch(endpoint, _objectSpread({}, options, {
                       method: method,
                       body: body || undefined,
@@ -15377,76 +15410,76 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
                       headers: headers || {}
                     }));
 
-                  case 81:
+                  case 89:
                     res = _context.sent;
-                    _context.next = 91;
+                    _context.next = 99;
                     break;
 
-                  case 84:
-                    _context.prev = 84;
-                    _context.t17 = _context["catch"](78);
+                  case 92:
+                    _context.prev = 92;
+                    _context.t17 = _context["catch"](86);
                     _context.t18 = next;
-                    _context.next = 89;
+                    _context.next = 97;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new RequestError(_context.t17.message),
                       error: true
                     }), [action, getState()]);
 
-                  case 89:
+                  case 97:
                     _context.t19 = _context.sent;
                     return _context.abrupt("return", (0, _context.t18)(_context.t19));
 
-                  case 91:
-                    _context.prev = 91;
+                  case 99:
+                    _context.prev = 99;
                     isOk = ok(res);
-                    _context.next = 102;
+                    _context.next = 110;
                     break;
 
-                  case 95:
-                    _context.prev = 95;
-                    _context.t20 = _context["catch"](91);
+                  case 103:
+                    _context.prev = 103;
+                    _context.t20 = _context["catch"](99);
                     _context.t21 = next;
-                    _context.next = 100;
+                    _context.next = 108;
                     return actionWith(_objectSpread({}, failureType, {
                       payload: new InternalError('[RSAA].ok function failed'),
                       error: true
                     }), [action, getState(), res]);
 
-                  case 100:
+                  case 108:
                     _context.t22 = _context.sent;
                     return _context.abrupt("return", (0, _context.t21)(_context.t22));
 
-                  case 102:
+                  case 110:
                     if (!isOk) {
-                      _context.next = 110;
+                      _context.next = 118;
                       break;
                     }
 
                     _context.t23 = next;
-                    _context.next = 106;
+                    _context.next = 114;
                     return actionWith(successType, [action, getState(), res]);
 
-                  case 106:
+                  case 114:
                     _context.t24 = _context.sent;
                     return _context.abrupt("return", (0, _context.t23)(_context.t24));
 
-                  case 110:
+                  case 118:
                     _context.t25 = next;
-                    _context.next = 113;
+                    _context.next = 121;
                     return actionWith(_objectSpread({}, failureType, {
                       error: true
                     }), [action, getState(), res]);
 
-                  case 113:
+                  case 121:
                     _context.t26 = _context.sent;
                     return _context.abrupt("return", (0, _context.t25)(_context.t26));
 
-                  case 115:
+                  case 123:
                   case "end":
                     return _context.stop();
                 }
               }
-            }, _callee, this, [[9, 14], [22, 26], [34, 38], [46, 50], [58, 62], [78, 84], [91, 95]]);
+            }, _callee, this, [[9, 14], [22, 28], [36, 42], [50, 56], [64, 70], [86, 92], [99, 103]]);
           }))();
         };
       };
@@ -15493,6 +15526,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_f63c51d7c013ef4fdbda
   exports.RequestError = RequestError;
   exports.ApiError = ApiError;
   exports.getJSON = getJSON;
+  exports.createAction = createAction;
   exports.createMiddleware = createMiddleware;
   exports.apiMiddleware = apiMiddleware;
 
@@ -17915,10 +17949,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/article/Article.jsx":
-/*!***********************************!*\
-  !*** ./pages/article/Article.jsx ***!
-  \***********************************/
+/***/ "./pages/Article.jsx":
+/*!***************************!*\
+  !*** ./pages/Article.jsx ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17941,16 +17975,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../redux/actions */ "./redux/actions/index.js");
+/* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../redux/actions */ "./redux/actions/index.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/header */ "./components/header/index.js");
-/* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../components/herobanner */ "./components/herobanner/index.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../components/layout */ "./components/layout/index.js");
-/* harmony import */ var _components_pageheader__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../components/pageheader */ "./components/pageheader/index.js");
-/* harmony import */ var _components_article_article_header__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../components/article/article-header */ "./components/article/article-header/index.js");
-/* harmony import */ var _components_article_article_body__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../components/article/article-body */ "./components/article/article-body/index.js");
-/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./Article.scss */ "./pages/article/Article.scss");
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/header */ "./components/header/index.js");
+/* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
+/* harmony import */ var _components_pageheader__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/pageheader */ "./components/pageheader/index.js");
+/* harmony import */ var _components_article_article_header__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/article/article-header */ "./components/article/article-header/index.js");
+/* harmony import */ var _components_article_article_body__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/article/article-body */ "./components/article/article-body/index.js");
+/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./Article.scss */ "./pages/Article.scss");
 /* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_Article_scss__WEBPACK_IMPORTED_MODULE_21__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_22__);
@@ -18091,22 +18125,6 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ "./pages/article/index.js":
-/*!********************************!*\
-  !*** ./pages/article/index.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Article */ "./pages/article/Article.jsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Article__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
 /***/ "./redux/actions/index.js":
 /*!********************************!*\
   !*** ./redux/actions/index.js ***!
@@ -18171,13 +18189,13 @@ var Action = {
 /***/ }),
 
 /***/ 2:
-/*!***************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js ***!
-  \***************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FArticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FArticle.jsx ***!
+  \********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FArticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FArticle.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FArticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2FArticle.jsx!./");
 
 
 /***/ }),
@@ -18194,4 +18212,4 @@ module.exports = dll_f63c51d7c013ef4fdbda;
 /***/ })
 
 },[[2,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=article.js.map
+//# sourceMappingURL=Article.js.map
