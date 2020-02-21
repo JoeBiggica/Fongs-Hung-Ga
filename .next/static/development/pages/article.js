@@ -441,7 +441,7 @@ function (_PureComponent) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       };
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("header", {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         className: container_classname
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('inner')
@@ -18170,7 +18170,7 @@ var Action = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!***************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Farticle&absolutePagePath=%2FUsers%2Fjoebiggica%2FEngineering%2FApps%2FFongs_Hung_Ga%2Fpages%2Farticle%2Findex.js ***!
   \***************************************************************************************************************************************************************/
@@ -18193,5 +18193,5 @@ module.exports = dll_f63c51d7c013ef4fdbda;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=article.js.map

@@ -11,7 +11,6 @@
 		{"src": "/liondance", "dest": "LionDance"},
 		{"src": "/about", "dest": "About"},
 		{"src": "/contact", "dest": "Contact"},
-		{ "src": "/article/(.*)", "dest": "/article/:slug" },
-		{"src": "/article/(.*)", "dest": "Article"}
+		{"src": "/article/:slug", "dest": "Article"}
 	]
 }

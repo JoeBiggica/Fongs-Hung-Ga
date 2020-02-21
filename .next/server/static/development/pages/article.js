@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -601,7 +601,7 @@ function (_PureComponent) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
       };
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("header", {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         className: container_classname
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         className: _Header_scss__WEBPACK_IMPORTED_MODULE_13___default()('inner')
@@ -2398,7 +2398,7 @@ var Action = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**************************************!*\
   !*** multi ./pages/article/index.js ***!
   \**************************************/

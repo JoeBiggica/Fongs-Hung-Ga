@@ -83,7 +83,7 @@ class Header extends PureComponent {
 		};
 
 		return (
-			<header className={container_classname}>
+			<div className={container_classname}>
 				<div className={styles('inner')}>
 					<div className={styles('banner')} style={banner_styles} />
 					<nav className={styles('nav')}>
@@ -98,7 +98,7 @@ class Header extends PureComponent {
 						</ul>
 					</div>
 				</div>
-			</header>
+			</div>
 		);	
 	}
 }
