@@ -21,7 +21,8 @@ body {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  font-family: Georgia,Cambria,"Times New Roman",Times,serifPublicoText-Roman-Web,Georgia,Cambria,"Times New Roman",Times,serif; }
   p small {
     font-size: .8em; }
 
@@ -178,7 +179,6 @@ ul {
 
 .HeroBanner-container-fYWwV {
   width: 100%;
-  padding: 0 20px;
   background: #232323;
   background-size: cover;
   position: relative;
@@ -188,21 +188,24 @@ ul {
   align-items: center; }
   @media (min-width: 600px) {
     .HeroBanner-container-fYWwV {
-      padding: 0 60px;
       justify-content: center;
       background-attachment: fixed; } }
   .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
-    justify-content: flex-start;
-    padding-top: 20px; }
-    @media (min-width: 600px) {
-      .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M {
-        padding-top: 40px; } }
+    justify-content: flex-start; }
+    .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M .HeroBanner-text-container-3UaLg {
+      background: linear-gradient(rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0) 10%);
+      padding-top: 20px; }
+      @media (min-width: 600px) {
+        .HeroBanner-container-fYWwV.HeroBanner-justify-top-3VB1M .HeroBanner-text-container-3UaLg {
+          padding-top: 40px; } }
   .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU {
-    justify-content: flex-end;
-    padding-bottom: 20px; }
-    @media (min-width: 600px) {
-      .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU {
-        padding-bottom: 30px; } }
+    justify-content: flex-end; }
+    .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU .HeroBanner-text-container-3UaLg {
+      background: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7) 75%);
+      padding-bottom: 20px; }
+      @media (min-width: 600px) {
+        .HeroBanner-container-fYWwV.HeroBanner-justify-bottom-l4RcU .HeroBanner-text-container-3UaLg {
+          padding-bottom: 30px; } }
   .HeroBanner-container-fYWwV.HeroBanner-full-1ZTji {
     min-height: 100vh; }
   .HeroBanner-container-fYWwV.HeroBanner-three-quater-1uIgj {
@@ -219,11 +222,8 @@ ul {
     min-height: auto; }
 
 .HeroBanner-text-container-3UaLg {
-  max-width: 75%;
+  width: 100%;
   text-align: center; }
-  @media (min-width: 600px) {
-    .HeroBanner-text-container-3UaLg {
-      max-width: 60%; } }
   .HeroBanner-text-container-3UaLg.HeroBanner-border-1PvtJ {
     border: 1px solid #fff;
     padding: 18px 20px; }
@@ -367,24 +367,63 @@ ul {
   position: absolute;
   height: 100%; }
 
+.ArticleHeader-container-20Gwx {
+  width: 100%; }
+
+.ArticleHeader-title-Yj_Nc {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px; }
+  @media (min-width: 600px) {
+    .ArticleHeader-title-Yj_Nc {
+      font-size: 48px; } }
+
+.ArticleHeader-byline-2jpzB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 15px; }
+  .ArticleHeader-byline-2jpzB .ArticleHeader-image-xAg9L {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px; }
+
+.ArticleHeader-primary-asset-2Vs7I {
+  width: 100%;
+  margin-bottom: 15px; }
+
 .ArticleBody-container-1MHeD {
   width: 100%; }
 
 .ArticleBody-paragraph-2I40G {
+  font-size: 18px;
+  line-height: 34px;
   margin-bottom: 20px; }
 
 .ArticleBody-subheader-2d5PN {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px; }
 
 .ArticleBody-list-2Rrd- {
   list-style-type: disc;
-  margin-left: 15px;
+  margin-left: 20px;
   margin-bottom: 20px; }
+  .ArticleBody-list-2Rrd-.ArticleBody-ordered-1BE_- {
+    list-style-type: decimal; }
   .ArticleBody-list-2Rrd- li {
     font-weight: bold; }
     .ArticleBody-list-2Rrd- li:not(:last-child) {
       padding-bottom: 10px; }
+
+@media (min-width: 600px) {
+  .ArticleBody-paragraph-2I40G,
+  .ArticleBody-subheader-2d5PN,
+  .ArticleBody-list-2Rrd- {
+    padding: 0 80px; } }
 
 .ArticleBody-image-container-1w9XO {
   margin-bottom: 20px; }
@@ -401,6 +440,15 @@ ul {
     .ArticleBody-image-container-1w9XO.ArticleBody-right-1cP21 {
       float: right;
       margin: 0 0 20px 20px; } }
+
+.About-herobanner-1TGcB {
+  margin-top: 20px; }
+
+.About-page-header-1Mjuh {
+  margin-bottom: 30px; }
+
+.About-article-3EA44 {
+  margin-bottom: 30px; }
 
 .Article-herobanner-2Ixof {
   margin-top: 20px; }

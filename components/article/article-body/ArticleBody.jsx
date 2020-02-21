@@ -9,11 +9,7 @@ class ArticleBody extends PureComponent {
 
 	static propTypes = {
 		className: PropTypes.string,
-		article_data: PropTypes.object
-	}
-
-	renderTitle = content => {
-		return <h1 className={styles('title')}>{content.text}</h1>;
+		items: PropTypes.array
 	}
 
 	renderSubHeader = content => {
@@ -26,7 +22,7 @@ class ArticleBody extends PureComponent {
 
 	renderList = content => {
 		return (
-			<ul className={styles('list')}>
+			<ul className={styles('list', content.list_type)}>
 				{content.items && content.items.map(this.renderListItem)}
 			</ul>
 		);
@@ -35,9 +31,11 @@ class ArticleBody extends PureComponent {
 	renderListItem = (item, index) => {
 		return (
 			<li key={`${item.text}-${index}`}>
-				<a href={item.url}>
-					{item.text}
-				</a>
+				{ item.url ? 
+					<a href={item.url}> 
+						{item.text}
+					</a> : item.text
+				}
 			</li>
 		);
 	}
@@ -98,13 +96,12 @@ class ArticleBody extends PureComponent {
 	render() {
 		const {
 			className,
-			article_data
+			items,
 		} = this.props;
 
 		return (
 			<div className={classnames(styles('container'), className)}>
-				{article_data.title && this.renderTitle(article_data.title)}
-				{article_data.body_items.map(this.renderItems)}
+				{items.map(this.renderItems)}
 			</div>
 		);	
 	}

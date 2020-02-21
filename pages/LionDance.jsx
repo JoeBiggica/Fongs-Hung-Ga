@@ -49,7 +49,7 @@ class LionDance extends Component {
 					/>
 					<ArticleBody 
 						className={styles('article')} 
-						article_data={lion_dance_article} 
+						items={lion_dance_article.items} 
 					/>
 					<PageHeader 
 						className={styles('page-header')}

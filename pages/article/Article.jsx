@@ -8,6 +8,7 @@ import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
+import ArticleHeader from 'components/article/article-header';
 import ArticleBody from 'components/article/article-body';
 
 import styles from './Article.scss';
@@ -20,9 +21,9 @@ class Article extends Component {
 		const isServer = !!req
 		const slug = query.slug;
 
-		const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}.json`)
+		const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`)
 		const article_json = await article_res.json()
-		console.log('#########', article_json);
+
 		if (article_json) {
 			return {
 				article: article_json.article
@@ -35,21 +36,33 @@ class Article extends Component {
 		article: PropTypes.object
 	}
 
+	static defaultProps = {
+		article: {}
+	}
+
 	render() {
 		const {
 			router,
 			article
 		} = this.props;
 
-		console.log('ARTICLE', article)
+		const header = article.header;
+		const body = article.body;
+
+		console.log('article', article);
+
 		return (
 			<>
 				<Header router={router} />
 				<Layout>
-					<PageHeader 
-						className={styles('page-header')}
-						title='ARTICLE TEST'
-					/>
+					{header && 
+						<ArticleHeader
+							title={header.title}
+							byline={header.byline}
+							primary_asset={header.primary_asset}
+						/>
+					}
+					{body && <ArticleBody items={body.items} /> }
 				</Layout>
 			</>
 		)

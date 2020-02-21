@@ -2,12 +2,17 @@
 	"article": {
 		"header": {
 			"title": "History of Hung Kuen",
+			"byline": {
+				"name": "Sifu Maurice Morrison",
+				"url": "about/sifu-maurice-morrison",
+				"image": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/profiles/maurice-morrison-avatar.jpg"
+			},
 			"primary_asset": {
 				"type": "image",
 				"content": {
 					"size": "small",
 					"alignment": "left",
-					"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions-02.jpg"
+					"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/history-of-hung-kuen/tang-fong-village.jpg"
 				}
 			}
 		},

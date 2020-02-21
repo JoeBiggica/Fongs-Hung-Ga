@@ -49,7 +49,7 @@ class About extends Component {
 					/>
 					<ArticleBody 
 						className={styles('article')} 
-						article_data={about_article} 
+						items={about_article.items} 
 					/>
 				</Layout>
 			</>
