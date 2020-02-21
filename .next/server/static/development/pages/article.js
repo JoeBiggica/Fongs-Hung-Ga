@@ -362,7 +362,14 @@ function (_PureComponent) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "renderByline", function (byline) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: _ArticleHeader_scss__WEBPACK_IMPORTED_MODULE_12___default()('byline')
-      }, byline.image && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, byline.image && byline.url ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: byline.url
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: _ArticleHeader_scss__WEBPACK_IMPORTED_MODULE_12___default()('image'),
+        style: {
+          backgroundImage: "url(".concat(byline.image, ")")
+        }
+      })) : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _ArticleHeader_scss__WEBPACK_IMPORTED_MODULE_12___default()('image'),
         style: {
           backgroundImage: "url(".concat(byline.image, ")")

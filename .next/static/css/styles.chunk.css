@@ -391,7 +391,10 @@ ul {
     background-size: cover;
     display: inline-block;
     border-radius: 50%;
-    margin-right: 10px; }
+    margin-right: 10px;
+    transition: 0.25s all cubic-bezier(0.42, 0, 0.58, 1); }
+  .ArticleHeader-byline-2jpzB a .ArticleHeader-image-xAg9L:hover {
+    filter: brightness(75%); }
 
 .ArticleHeader-primary-asset-2Vs7I {
   width: 100%;
@@ -442,20 +445,12 @@ ul {
       float: right;
       margin: 0 0 20px 20px; } }
 
-.About-herobanner-1TGcB {
-  margin-top: 20px; }
-
-.About-page-header-1Mjuh {
-  margin-bottom: 30px; }
-
-.About-article-3EA44 {
-  margin-bottom: 30px; }
-
 .Article-herobanner-2Ixof {
   margin-top: 20px; }
 
 .Article-container-1S4v1 {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 60px; }
   @media (min-width: 600px) {
     .Article-container-1S4v1 {
       padding-top: 40px; } }

@@ -30,6 +30,11 @@
 		display: inline-block;
 		border-radius: 50%;
 		margin-right: 10px;
+		transition: .25s all $easeInOut;
+	}
+
+	a .image:hover {
+		filter: brightness(75%);
 	}
 }
 

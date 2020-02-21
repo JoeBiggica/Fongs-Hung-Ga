@@ -18,10 +18,16 @@ class ArticleHeader extends PureComponent {
 		return (
 			<span className={styles('byline')}>
 				{byline.image && 
-					<div 
-						className={styles('image')} 
-						style={{backgroundImage: `url(${byline.image})`}}
-					/>
+					byline.url ? 
+						<a href={byline.url}> 
+							<div 
+								className={styles('image')} 
+								style={{backgroundImage: `url(${byline.image})`}}
+							/>
+						</a> : <div 
+							className={styles('image')} 
+							style={{backgroundImage: `url(${byline.image})`}}
+						/>
 				}
 				<span className={styles('name')}>
 					{ byline.url ? 
