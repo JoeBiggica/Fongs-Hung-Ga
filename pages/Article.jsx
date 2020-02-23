@@ -21,7 +21,7 @@ class Article extends Component {
 		const isServer = !!req
 		const slug = query.slug;
 
-		/* if (typeof(fetch) !== 'undefinded') {
+		if (typeof(fetch) !== 'undefinded') {
 			const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`);
 			const article_json = await article_res.json();
 
@@ -30,7 +30,7 @@ class Article extends Component {
 					article: article_json.article
 				};
 			}
-		} */
+		}
 
 		return {};
 		

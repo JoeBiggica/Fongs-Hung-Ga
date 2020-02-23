@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2218,7 +2218,7 @@ function (_Component) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
-        var store, req, res, query, isServer, slug;
+        var store, req, res, query, isServer, slug, article_res, article_json;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -2226,19 +2226,36 @@ function (_Component) {
                 store = _ref.store, req = _ref.req, res = _ref.res, query = _ref.query;
                 isServer = !!req;
                 slug = query.slug;
-                /* if (typeof(fetch) !== 'undefinded') {
-                	const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`);
-                	const article_json = await article_res.json();
-                		if (article_json) {
-                		return {
-                			article: article_json.article
-                		};
-                	}
-                } */
 
+                if (!(typeof fetch !== 'undefinded')) {
+                  _context.next = 12;
+                  break;
+                }
+
+                _context.next = 6;
+                return fetch("https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/".concat(slug, "/article-data.json"));
+
+              case 6:
+                article_res = _context.sent;
+                _context.next = 9;
+                return article_res.json();
+
+              case 9:
+                article_json = _context.sent;
+
+                if (!article_json) {
+                  _context.next = 12;
+                  break;
+                }
+
+                return _context.abrupt("return", {
+                  article: article_json.article
+                });
+
+              case 12:
                 return _context.abrupt("return", {});
 
-              case 4:
+              case 13:
               case "end":
                 return _context.stop();
             }
@@ -2314,6 +2331,7 @@ __webpack_require__.r(__webpack_exports__);
 var Type = {
   FETCH_ARTICLE: 'FETCH_ARTICLE'
 };
+console.log('actions loaded');
 var Action = {
   /* fetchArticle: slug => {
   	console.log('FETCH ARTICLE');
@@ -2357,7 +2375,7 @@ var Action = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/Article.jsx ***!
   \*********************************/

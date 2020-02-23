@@ -1,5 +1,5 @@
-/* global.fetch = require('isomorphic-unfetch');
-const fetch = global.fetch; */
+global.fetch = require('isomorphic-unfetch');
+const fetch = global.fetch;
 
 const express = require('express');
 const nextjs = require('next');

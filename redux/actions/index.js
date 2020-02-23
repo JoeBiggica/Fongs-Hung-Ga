@@ -4,7 +4,7 @@
 const Type = {
 	FETCH_ARTICLE: 'FETCH_ARTICLE'
 }
-
+console.log('actions loaded');
 const Action = {
 
 	/* fetchArticle: slug => {

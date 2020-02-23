@@ -4,7 +4,7 @@ const withSass = require('@zeit/next-sass');
 const withCSS = require("@zeit/next-css");
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
-/* global.fetch = require('isomorphic-unfetch'); */
+global.fetch = require('isomorphic-unfetch');
 
 const sass = {
 	cssModules: true,

@@ -14025,6 +14025,7 @@ __webpack_require__.r(__webpack_exports__);
 var Type = {
   FETCH_ARTICLE: 'FETCH_ARTICLE'
 };
+console.log('actions loaded');
 var Action = {
   /* fetchArticle: slug => {
   	console.log('FETCH ARTICLE');
