@@ -1,4 +1,4 @@
-import { RSAA, getJSON } from 'redux-api-middleware';
+/* import { RSAA, getJSON } from 'redux-api-middleware'; */
 
 // ACTIONS
 const Type = {
@@ -7,7 +7,7 @@ const Type = {
 
 const Action = {
 
-	fetchArticle: slug => {
+	/* fetchArticle: slug => {
 		console.log('FETCH ARTICLE');
 		return {
 			[RSAA]: {
@@ -44,7 +44,7 @@ const Action = {
 				]
 			}
 		}
-	}
+	} */
 }
 
 export { Type, Action };

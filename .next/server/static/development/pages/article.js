@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2142,18 +2142,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../redux/actions */ "./redux/actions/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/header */ "./components/header/index.js");
-/* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
-/* harmony import */ var _components_pageheader__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/pageheader */ "./components/pageheader/index.js");
-/* harmony import */ var _components_article_article_header__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/article/article-header */ "./components/article/article-header/index.js");
-/* harmony import */ var _components_article_article_body__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/article/article-body */ "./components/article/article-body/index.js");
-/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./Article.scss */ "./pages/Article.scss");
-/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_Article_scss__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/header */ "./components/header/index.js");
+/* harmony import */ var _components_herobanner__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/herobanner */ "./components/herobanner/index.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/layout */ "./components/layout/index.js");
+/* harmony import */ var _components_pageheader__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/pageheader */ "./components/pageheader/index.js");
+/* harmony import */ var _components_article_article_header__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/article/article-header */ "./components/article/article-header/index.js");
+/* harmony import */ var _components_article_article_body__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/article/article-body */ "./components/article/article-body/index.js");
+/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./Article.scss */ "./pages/Article.scss");
+/* harmony import */ var _Article_scss__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_Article_scss__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_21__);
 
 
 
@@ -2169,6 +2167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/* import fetch from 'isomorphic-unfetch'; */
 
 
 
@@ -2199,17 +2198,17 @@ function (_Component) {
       var header = article.header;
       var body = article.body;
       console.log('article', article);
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_header__WEBPACK_IMPORTED_MODULE_14__["default"], {
         router: router
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_17__["default"], {
-        className: _Article_scss__WEBPACK_IMPORTED_MODULE_21___default()('container')
-      }, header && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_article_article_header__WEBPACK_IMPORTED_MODULE_19__["default"], {
-        className: _Article_scss__WEBPACK_IMPORTED_MODULE_21___default()('article-header'),
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        className: _Article_scss__WEBPACK_IMPORTED_MODULE_20___default()('container')
+      }, header && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_article_article_header__WEBPACK_IMPORTED_MODULE_18__["default"], {
+        className: _Article_scss__WEBPACK_IMPORTED_MODULE_20___default()('article-header'),
         title: header.title,
         byline: header.byline,
         primary_asset: header.primary_asset
-      }), body && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_article_article_body__WEBPACK_IMPORTED_MODULE_20__["default"], {
-        className: _Article_scss__WEBPACK_IMPORTED_MODULE_21___default()('article-body'),
+      }), body && react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_components_article_article_body__WEBPACK_IMPORTED_MODULE_19__["default"], {
+        className: _Article_scss__WEBPACK_IMPORTED_MODULE_20___default()('article-body'),
         items: body.items
       })));
     }
@@ -2219,7 +2218,7 @@ function (_Component) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
-        var store, req, res, query, isServer, slug, article_res, article_json;
+        var store, req, res, query, isServer, slug;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -2227,33 +2226,19 @@ function (_Component) {
                 store = _ref.store, req = _ref.req, res = _ref.res, query = _ref.query;
                 isServer = !!req;
                 slug = query.slug;
+                /* if (typeof(fetch) !== 'undefinded') {
+                	const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`);
+                	const article_json = await article_res.json();
+                		if (article_json) {
+                		return {
+                			article: article_json.article
+                		};
+                	}
+                } */
 
-                if (!(typeof isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default.a !== 'undefinded')) {
-                  _context.next = 12;
-                  break;
-                }
+                return _context.abrupt("return", {});
 
-                _context.next = 6;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_14___default()("https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/".concat(slug, "/article-data.json"));
-
-              case 6:
-                article_res = _context.sent;
-                _context.next = 9;
-                return article_res.json();
-
-              case 9:
-                article_json = _context.sent;
-
-                if (!article_json) {
-                  _context.next = 12;
-                  break;
-                }
-
-                return _context.abrupt("return", {
-                  article: article_json.article
-                });
-
-              case 12:
+              case 4:
               case "end":
                 return _context.stop();
             }
@@ -2270,23 +2255,11 @@ function (_Component) {
   }]);
 
   return Article;
-}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]); // const mapStateToProps = state => {
-// 	return {
-// 		article: state.article
-// 	};
-// };
-// const mapDispatchToProps = dispatch => {
-// 	return {
-// 		fetchArticle(slug) {
-// 			return dispatch(Action.fetchArticle(slug));
-// 		},
-// 	};
-// };
-
+}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Article, "propTypes", {
-  router: prop_types__WEBPACK_IMPORTED_MODULE_22___default.a.object,
-  article: prop_types__WEBPACK_IMPORTED_MODULE_22___default.a.object
+  router: prop_types__WEBPACK_IMPORTED_MODULE_21___default.a.object,
+  article: prop_types__WEBPACK_IMPORTED_MODULE_21___default.a.object
 });
 
 Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Article, "defaultProps", {
@@ -2336,59 +2309,55 @@ Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODUL
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Type", function() { return Type; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Action", function() { return Action; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-api-middleware */ "redux-api-middleware");
-/* harmony import */ var redux_api_middleware__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__);
-
- // ACTIONS
-
+/* import { RSAA, getJSON } from 'redux-api-middleware'; */
+// ACTIONS
 var Type = {
   FETCH_ARTICLE: 'FETCH_ARTICLE'
 };
 var Action = {
-  fetchArticle: function fetchArticle(slug) {
-    console.log('FETCH ARTICLE');
-    return Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__["RSAA"], {
-      endpoint: "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/".concat(slug, ".json"),
-      method: 'GET',
-      headers: {},
-      types: [{
-        type: "".concat(Type.FETCH_ARTICLE, "_REQUEST")
-      }, {
-        type: "".concat(Type.FETCH_ARTICLE, "_SUCCESS"),
-        payload: function payload(action, state, res) {
-          console.log('SUCCESS', res);
-          return Object(redux_api_middleware__WEBPACK_IMPORTED_MODULE_1__["getJSON"])(res).then(function (json) {
-            return json;
-          }, function (err) {
-            return undefined;
-          });
-        }
-      }, {
-        type: "".concat(Type.FETCH_ARTICLE, "_FAILURE"),
-        meta: function meta(action, state, res) {
-          console.log('FAIL', res);
-
-          if (res) {
-            return {
-              status: res.status,
-              statusText: res.statusText
-            };
-          }
-
-          return {
-            status: 'Network request failed'
-          };
-        }
-      }]
-    });
-  }
+  /* fetchArticle: slug => {
+  	console.log('FETCH ARTICLE');
+  	return {
+  		[RSAA]: {
+  			endpoint: `https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}.json`,
+  			method: 'GET',
+  			headers: {},
+  			types: [
+  				{
+  					type: `${Type.FETCH_ARTICLE}_REQUEST`,
+  				},
+  				{
+  					type: `${Type.FETCH_ARTICLE}_SUCCESS`,
+  					payload: (action, state, res) => {
+  						console.log('SUCCESS', res);
+  						return getJSON(res).then(json => json, err => undefined);
+  					},
+  				},
+  				{
+  					type: `${Type.FETCH_ARTICLE}_FAILURE`,
+  					meta: (action, state, res) => {
+  						console.log('FAIL', res);
+  						if (res) {
+  							return {
+  								status: res.status,
+  								statusText: res.statusText
+  							};
+  						}
+  							return {
+  							status: 'Network request failed'
+  						};
+  					}
+  				}
+  			]
+  		}
+  	}
+  } */
 };
 
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!*********************************!*\
   !*** multi ./pages/Article.jsx ***!
   \*********************************/
@@ -2532,17 +2501,6 @@ module.exports = require("core-js/modules/es6.string.fixed");
 
 /***/ }),
 
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
-
-/***/ }),
-
 /***/ "next/router":
 /*!******************************!*\
   !*** external "next/router" ***!
@@ -2595,17 +2553,6 @@ module.exports = require("react-redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
-
-/***/ }),
-
-/***/ "redux-api-middleware":
-/*!***************************************!*\
-  !*** external "redux-api-middleware" ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("redux-api-middleware");
 
 /***/ }),
 

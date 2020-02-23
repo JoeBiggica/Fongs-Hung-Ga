@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import { Action } from 'actions';
-import fetch from 'isomorphic-unfetch';
+/* import fetch from 'isomorphic-unfetch'; */
 import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
@@ -21,7 +21,7 @@ class Article extends Component {
 		const isServer = !!req
 		const slug = query.slug;
 
-		if (typeof(fetch) !== 'undefinded') {
+		/* if (typeof(fetch) !== 'undefinded') {
 			const article_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/articles/${slug}/article-data.json`);
 			const article_json = await article_res.json();
 
@@ -30,7 +30,9 @@ class Article extends Component {
 					article: article_json.article
 				};
 			}
-		}
+		} */
+
+		return {};
 		
 	}
 
@@ -77,19 +79,5 @@ class Article extends Component {
 		)
 	}
 }
-
-// const mapStateToProps = state => {
-// 	return {
-// 		article: state.article
-// 	};
-// };
-
-// const mapDispatchToProps = dispatch => {
-// 	return {
-// 		fetchArticle(slug) {
-// 			return dispatch(Action.fetchArticle(slug));
-// 		},
-// 	};
-// };
 
 export default withRouter(Article);

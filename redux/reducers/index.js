@@ -1,10 +1,10 @@
 import { Action } from 'actions';
 
 // REDUCERS
-export default function reducer(state = {}, action) {
+export const reducer = (state = {}, action) => {
 
 	const { meta, payload } = action;
-	console.log('REDUX', action, payload);
+
 	switch (action.type) {
 		case 'FETCH_ARTICLE_SUCCESS': {
 			console.log('ARTICLE SUCCESS!');
