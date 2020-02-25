@@ -43,17 +43,10 @@ module.exports = Object.assign(
 				});
 
 				return config;
-			},
+			}
 		}
 	]),
 	{
-		target: 'serverless',
-		// generateBuildId: async () => {
-		// // const fromGit = await nextBuildId({
-		// //   dir: __dirname,
-		// // });
-
-		// return process.env.GIT_COMMIT || "localMachine";
-		// },
+		target: 'serverless'
 	}
 );

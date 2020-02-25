@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import { Action } from 'actions';
-/* import fetch from 'isomorphic-unfetch'; */
+import fetch from 'isomorphic-unfetch';
 import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
