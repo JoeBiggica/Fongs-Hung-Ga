@@ -49,7 +49,7 @@ class Classes extends Component {
 			head,
 			instructors,
 			address,
-			number,
+			phone,
 			email,
 			class_schedule
 		} = school;
@@ -81,7 +81,7 @@ class Classes extends Component {
 						</a>	
 					}
 					<div className={styles('contact')}>
-						{number && <a href={`tel:${number}`}>{number}</a>}
+						{phone && <a href={`tel:${phone}`}>{phone}</a>}
 						{email && <a href={`mailto:${email}`}>{email}</a>}
 					</div>
 				</div>

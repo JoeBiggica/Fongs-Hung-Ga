@@ -12,7 +12,7 @@
 				"zipcode": "10306",
 				"google_maps_url": "https://goo.gl/maps/xCZ6vMvwBzzAvup3A"
 			},
-			"number": "(718) 668-2478",
+			"phone": "(718) 668-2478",
 			"email": "sifu.fong@fonghungga.com",
 			"class_schedule": true
 		},
@@ -27,7 +27,7 @@
 				"city": "Central New Jersey",
 				"zipcode": ""
 			},
-			"number": "(973) 204-6602",
+			"phone": "(973) 204-6602",
 			"email": "sifu.fong@fonghungga.com"
 		},
 		{
@@ -43,7 +43,7 @@
 				"city": "Broward County Florida",
 				"zipcode": ""
 			},
-			"number": "(754) 707-1898",
+			"phone": "(754) 707-1898",
 			"email": "sifu.morrison@fonghungga.com"
 		},
 		{
@@ -63,7 +63,7 @@
 				"city": "Miami County Florida",
 				"zipcode": ""
 			},
-			"number": "(754) 707-1898",
+			"phone": "(754) 707-1898",
 			"email": "sifu.morrison@fonghungga.com"
 		}
 	]
