@@ -75,8 +75,8 @@ class Classes extends Component {
 					{address.street &&
 						<a href={address.google_maps_url && address.google_maps_url} target='_blank'>
 							<div className={styles('address')}>
-								<p>{school.address.street}</p>
-								<p>{school.address.city} {school.address.zipcode}</p>
+								<div>{school.address.street}</div>
+								<div>{school.address.city} {school.address.zipcode}</div>
 							</div>
 						</a>	
 					}
@@ -123,7 +123,7 @@ class Classes extends Component {
 					<div className={styles('schools-container')}>
 						{schools.locations && schools.locations.map(this.renderSchool)}
 					</div>
-					<p className={styles('disclaimer')}>All locations have group and private lessons available.</p>
+					<span className={styles('disclaimer')}>All locations have group and private lessons available.</span>
 				</Layout>
 			</>
 		)
