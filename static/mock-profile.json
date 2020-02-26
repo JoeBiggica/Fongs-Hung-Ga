@@ -17,8 +17,9 @@
 				{
 					"type": "image",
 					"content": {
-						"size": "large",
-						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-pose.jpg"
+						"size": "medium",
+						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-pose.jpg",
+						"caption": "Sifu Maurice Morrison training in the park."
 					}
 				},
 				{

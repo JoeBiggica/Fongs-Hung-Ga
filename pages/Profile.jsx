@@ -71,6 +71,10 @@ class Profile extends Component {
 						<div className={styles('picture')} style={image_styles}></div>
 						<h1 className={styles('name')}>{name}</h1>
 					</div>
+					<PageHeader 
+						className={styles('page-header')}
+						title='Bio'
+					/>
 					{body && 
 						<ArticleBody 
 							className={styles('article-body')}

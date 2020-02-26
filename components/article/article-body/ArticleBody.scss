@@ -59,8 +59,19 @@
 		}
 	}
 
-	&.left {	
+	&.medium {
+		width: 100%;
 
+		@include for-tablet-portrait-up {
+			padding: 0 75px;
+		}
+
+		@include for-tablet-landscape-up {
+			padding: 0 150px;
+		}
+	}
+
+	&.left {	
 		@include for-tablet-portrait-up {
 			float: left;
 			margin: 0 20px 20px 0;
@@ -68,10 +79,15 @@
 	}
 
 	&.right {
-
 		@include for-tablet-portrait-up {
 			float: right;
 			margin: 0 0 20px 20px;
 		}
+	}
+
+	.caption {
+		font-size: 12px;
+		color: $grey;
+		margin-top: 10px;
 	}
 }

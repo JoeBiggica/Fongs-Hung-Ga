@@ -4,7 +4,7 @@
 			"name": "Fong's Hung Ga Kung Fu",
 			"head": {
 				"name": "Sifu Bill Fong",
-				"url": "/about/sifu-bill-fong"
+				"url": "/profile/sifu-bill-fong"
 			},
 			"address": {
 				"street": "95 Lincoln Ave",
@@ -20,7 +20,7 @@
 			"name": "Fong's Hung Ga Kung Fu",
 			"head": {
 				"name": "Sifu Bill Fong",
-				"url": "/about/sifu-bill-fong"
+				"url": "/profile/sifu-bill-fong"
 			},
 			"address": {
 				"street": "",
@@ -35,7 +35,7 @@
 			"instructors": [
 				{
 					"name": "Sifu Maurice Morrison",
-					"url": "/about/sifu-maurice-morrison"
+					"url": "/profile/sifu-maurice-morrison"
 				}
 			],
 			"address": {
@@ -51,11 +51,11 @@
 			"instructors": [
 				{
 					"name": "Sifu Maurice Morrison",
-					"url": "/about/sifu-maurice-morrison"
+					"url": "/profile/sifu-maurice-morrison"
 				},
 				{
 					"name": "Carlos Gonzalez",
-					"url": "/about/carlos-gonzalez"
+					"url": "/profile/carlos-gonzalez"
 				}
 			],
 			"address": {

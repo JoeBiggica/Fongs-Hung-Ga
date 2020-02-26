@@ -55,6 +55,9 @@ class ArticleBody extends PureComponent {
 					src={content.src}
 					alt={content.caption}
 				/>
+				{content.caption &&
+					<div className={styles('caption')}>{content.caption}</div>
+				}
 			</div>
 		);
 	}
