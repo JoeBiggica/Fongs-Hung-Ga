@@ -1,6 +1,3 @@
-global.fetch = require('isomorphic-unfetch');
-const fetch = global.fetch;
-
 const express = require('express');
 const nextjs = require('next');
 const compression = require('compression');
@@ -8,6 +5,8 @@ const compression = require('compression');
 const app = nextjs({ dev: process.env.NODE_ENV !== 'production' });
 const routes = require('./routes');
 const handler = routes.getRequestHandler(app);
+
+global.fetch = require('isomorphic-unfetch');
 
 app
 	.prepare()

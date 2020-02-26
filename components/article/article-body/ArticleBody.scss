@@ -39,7 +39,11 @@
 .subheader,
 .list {
 	@include for-tablet-portrait-up {
-		padding: 0 120px;
+		padding: 0 75px;
+	}
+
+	@include for-tablet-landscape-up {
+		padding: 0 150px;
 	}
 }
 

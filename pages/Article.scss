@@ -20,14 +20,14 @@
 
 	> h1,
 	> span {
-		padding: 0 30px;
+		padding: 0 20px;
 	}
 }
 
 .article-body {
-	padding: 0 30px;
+	padding: 0 20px;
 
 	@include for-tablet-portrait-up {
-		padding: 0 30px;
+		padding: 0;
 	}
 }

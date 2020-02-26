@@ -1,7 +1,7 @@
 {
 	"profile": {
 		"name": "Sifu Maurice Morrison",
-		"image": "",
+		"image": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-avatar.jpg",
 		"contact": {
 			"phone": "(754) 707-1898",
 			"email": "sifu.morrison@fonghungga.com"
@@ -17,7 +17,7 @@
 				{
 					"type": "image",
 					"content": {
-						"size": "medium",
+						"size": "large",
 						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-pose.jpg"
 					}
 				},

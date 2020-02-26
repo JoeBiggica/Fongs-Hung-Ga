@@ -1,0 +1,37 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.herobanner {
+	margin-top: 20px;
+}
+
+.container {
+}
+
+.header-container {
+	margin-bottom: 20px;
+}
+
+.picture {
+	width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    @include for-tablet-portrait-up {
+		width: 150px;
+    	height: 150px;
+	}
+}
+
+.name {
+	font-size: 30px;
+	text-align: center;
+
+	@include for-tablet-portrait-up {
+		font-size: 40px;
+	}
+}

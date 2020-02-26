@@ -5,7 +5,6 @@ import { withRouter } from 'next/router';
 import { Action } from 'actions';
 import fetch from 'isomorphic-unfetch';
 import Header from 'components/header';
-import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 import ArticleHeader from 'components/article/article-header';
@@ -53,8 +52,6 @@ class Article extends Component {
 
 		const header = article.header;
 		const body = article.body;
-
-		console.log('article', article);
 
 		return (
 			<>
