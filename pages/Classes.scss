@@ -7,7 +7,11 @@
 }
 
 .page-header {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+
+	@include for-tablet-portrait-up {
+		margin-bottom: 30px;
+	}
 }
 
 .content {
