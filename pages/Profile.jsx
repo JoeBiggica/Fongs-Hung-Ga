@@ -24,7 +24,7 @@ class Profile extends Component {
 		if (typeof(fetch) !== 'undefinded') {
 			const profile_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/${name_shaped}/profile-data.json`);
 			const profile_json = await profile_res.json();
-			console.log(profile_json);
+
 			if (profile_json) {
 				return {
 					profile: profile_json.profile
