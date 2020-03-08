@@ -46,15 +46,20 @@ class ArticleHeader extends PureComponent {
 		switch(asset.type) {
 			case 'image':
 				return (
-					<Image
-						style={{
-							width: '100%',
-						}}
-						fill_mode={Image.FillMode.COVER}
-						src={content.src}
-						alt={content.caption}
-						aspect_ratio={16/9}
-					/>
+					<div>
+						<Image
+							style={{
+								width: '100%',
+							}}
+							fill_mode={Image.FillMode.COVER}
+							src={content.src}
+							alt={content.caption}
+							aspect_ratio={16/9}
+						/>
+						{content.caption &&
+							<div className={styles('caption')}>{content.caption}</div>
+						}	
+					</div>
 				);
 			default:
 				return <div />;
@@ -69,7 +74,7 @@ class ArticleHeader extends PureComponent {
 			byline,
 			primary_asset
 		} = this.props;
-		console.log(primary_asset, 'byline');
+
 		return (
 			<div className={classnames(styles('container'), className)}>
 				{ title && <h1 className={styles('title')}>{title}</h1> }
