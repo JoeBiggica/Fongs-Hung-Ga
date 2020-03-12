@@ -1,8 +1,8 @@
 # dependencies
-/.next
-/node_modules
-package-lock.json
+.next
 .now
+node_modules
+package-lock.json
 
 # misc
 .DS_Store
