@@ -1,5 +1,8 @@
-.now
-.next
-build
+# dependencies
+/.next
+/node_modules
 package-lock.json
-node_modules
+.now
+
+# misc
+.DS_Store
