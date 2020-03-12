@@ -19,6 +19,7 @@
 	position: relative;
 	height: inherit;
 	z-index: 0;
+	background-color: $grey;
 
 	&.placeholder:after {
 		content: '';
@@ -33,7 +34,6 @@
 		background-size: auto 35%;
 		background-position: center center;
 		opacity: .1;
-		background-color: $grey;
 		background-image: 'url(./image-placeholder.png)';
 	}
 }

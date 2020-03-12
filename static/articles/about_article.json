@@ -19,9 +19,9 @@
 			}
 		},
 		{
-			"type": "paragraph",
+			"type": "subheader",
 			"content": {
-				"text": "Additional information on the history of Hung Ga and Shaolin can be found here:"
+				"text": "History of Hung Ga and Shaolin"
 			}
 		},
 		{
@@ -43,10 +43,35 @@
 					{
 						"text": "Our Forms",
 						"url": "/article/hung-ga-forms"
+					}
+				]
+			}
+		},
+		{
+			"type": "subheader",
+			"content": {
+				"text": "Past Grandmasters"
+			}
+		},
+		{
+			"type": "list",
+			"content": {
+				"items": [
+					{
+						"text": "Wong Fei Hung",
+						"url": "/article/wong-fei-hung"
 					},
 					{
-						"text": "Past Grand Masters",
-						"url": "/article/grandmasters"
+						"text": "Tang Fong",
+						"url": "/article/tang-fong"
+					},
+					{
+						"text": "Yuen Ling",
+						"url": "/article/yuen-ling"
+					},
+					{
+						"text": "Chow Wing Tak",
+						"url": "/article/chow-wing-tak"
 					}
 				]
 			}

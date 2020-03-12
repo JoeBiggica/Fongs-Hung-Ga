@@ -17,14 +17,24 @@ class ArticleBody extends PureComponent {
 	}
 
 	renderParagraph = content => {
-		return <p className={styles('paragraph')}>{content.text}</p>
+		return <p className={styles('paragraph')} dangerouslySetInnerHTML={{ __html: content.text }}></p>
+	}
+
+	renderDisclaimer = content => {
+		return (
+			<div className={styles('disclaimer')}>
+				<p dangerouslySetInnerHTML={{ __html: content.text }}></p>
+			</div>
+		);
 	}
 
 	renderList = content => {
 		return (
-			<ul className={styles('list', content.list_type)}>
-				{content.items && content.items.map(this.renderListItem)}
-			</ul>
+			<div className={styles('list')}>
+				<ul className={styles(content.list_type)}>
+					{content.items && content.items.map(this.renderListItem)}
+				</ul>
+			</div>
 		);
 	}
 
@@ -76,6 +86,12 @@ class ArticleBody extends PureComponent {
 						{this.renderSubHeader(item.content)}
 					</div>
 				);
+			case 'disclaimer':
+				return (
+					<div key={`${item.type}-${index}`}>
+						{this.renderDisclaimer(item.content)}
+					</div>
+				);
 			case 'list':
 				return (
 					<div key={`${item.type}-${index}`}>
@@ -88,7 +104,6 @@ class ArticleBody extends PureComponent {
 						{this.renderImage(item.content)}
 					</div>
 				);
-				
 
 			default:
 				return <div />;

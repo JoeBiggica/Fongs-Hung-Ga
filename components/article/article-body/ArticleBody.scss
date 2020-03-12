@@ -17,13 +17,25 @@
 	margin-bottom: 10px;
 }
 
+.disclaimer {
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	border-top: 1px solid $bordergrey;
+}
+
 .list {
-	list-style-type: disc;
-    margin-left: 20px;
     margin-bottom: 20px;
 
-    &.ordered {
-    	list-style-type: decimal;
+    ul {
+    	list-style-type: disc;
+    	margin-left: 20px;
+
+    	&.ordered {
+	    	list-style-type: decimal;
+	    	//margin-left: 20px;
+	    }
     }
 
     li {
@@ -37,13 +49,24 @@
 
 .paragraph,
 .subheader,
+.disclaimer,
 .list {
+	a {
+		color: $red;
+		transition: .25 color $easeInOut;
+
+		&:hover {
+			color: $darkred;
+		}
+	}
 	@include for-tablet-portrait-up {
-		padding: 0 75px;
+		margin-left: 75px;
+		margin-right: 75px;
 	}
 
 	@include for-tablet-landscape-up {
-		padding: 0 150px;
+		margin-left: 150px;
+		margin-right: 75px;
 	}
 }
 

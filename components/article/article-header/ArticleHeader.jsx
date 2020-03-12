@@ -43,6 +43,7 @@ class ArticleHeader extends PureComponent {
 	renderPrimaryAsset = asset => {
 		const type = asset.type;
 		const content = asset.content;
+		const fill_mode = asset.fill_mode;
 		switch(asset.type) {
 			case 'image':
 				return (
@@ -51,7 +52,7 @@ class ArticleHeader extends PureComponent {
 							style={{
 								width: '100%',
 							}}
-							fill_mode={Image.FillMode.COVER}
+							fill_mode={fill_mode ? fill_mode : Image.FillMode.COVER}
 							src={content.src}
 							alt={content.caption}
 							aspect_ratio={16/9}
