@@ -6,6 +6,8 @@ import Header from 'components/header';
 import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
+import ContactInfo from 'components/contactinfo';
+import schools from 'static/schools.json';
 
 import styles from './Contact.scss';
 
@@ -22,6 +24,10 @@ class Contact extends Component {
 		router: PropTypes.object,
 	}
 
+	renderContactInfo = (school, index) => {
+		return <ContactInfo key={`school-${index}`} className={styles('school')} {...school} />;
+	}
+
 	render() {
 		const {
 			router
@@ -30,12 +36,26 @@ class Contact extends Component {
 		return (
 			<>
 				<Header router={router} />
-				<HeroBanner title='Contact' hero_height={HeroBanner.HeroHeight.HALF} />
-				<Layout>
+				<HeroBanner 
+					className={styles('herobanner')}
+					title='Contact' 
+					text_position={HeroBanner.TextPosition.BOTTOM}
+
+					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/lion-dance-banner-cart.png'
+					background_position={HeroBanner.BackgroundPosition.CENTER}
+					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
+					gradient={HeroBanner.Gradient.BOTTOM}
+				/>
+				<Layout 
+					padding 
+				>
 					<PageHeader 
-						title='Contact'
+						className={styles('page-header')}
+						title='Schools'
 					/>
-					<div className={styles('content')} />
+					<div className={styles('schools-container')}>
+						{schools.locations && schools.locations.map(this.renderContactInfo)}
+					</div>
 				</Layout>
 			</>
 		)
