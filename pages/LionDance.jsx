@@ -49,7 +49,6 @@ class LionDance extends Component {
 							className={styles('button')}
 							text='Request a Lion Dance'
 							url='/liondance/request'
-							target='_blank'
 						/>
 					</div>
 					<PageHeader 
