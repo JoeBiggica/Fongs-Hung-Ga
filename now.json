@@ -8,6 +8,7 @@
 		{"src": "/", "dest": "Index"},
 		{"src": "/classes", "dest": "Classes"},
 		{"src": "/liondance", "dest": "LionDance"},
+		{"src": "/liondance/request", "dest": "LionDanceRequest"},
 		{"src": "/about", "dest": "About"},
 		{"src": "/contact", "dest": "Contact"},
 		{ "src": "/article/(?<slug>[^/]+)", "dest": "Article?slug=$slug"},

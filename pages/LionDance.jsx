@@ -7,6 +7,7 @@ import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 import ArticleBody from 'components/article/article-body';
+import Button from '/components/button';
 import lion_dance_article from 'static/articles/lion_dance_article.json';
 
 import styles from './LionDance.scss';
@@ -43,6 +44,14 @@ class LionDance extends Component {
 					gradient={HeroBanner.Gradient.BOTTOM}
 				/>
 				<Layout padding >
+					<div className={styles('button-container')}>
+						<Button
+							className={styles('button')}
+							text='Request a Lion Dance'
+							url='/liondance/request'
+							target='_blank'
+						/>
+					</div>
 					<PageHeader 
 						className={styles('page-header')}
 						title='An Intro to Lion Dance'

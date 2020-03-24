@@ -8,7 +8,7 @@ const Color = {
 	RED: 'red',
 	BLACK: 'black',
 	WHITE: 'white'
-}
+};
 
 
 class Button extends PureComponent {
@@ -16,11 +16,12 @@ class Button extends PureComponent {
 	static propTypes = {
 		className: PropTypes.string,
 		text: PropTypes.string,
+		url: PropTypes.string,
 		color: PropTypes.string
 	}
 
 	static defaultProps = {
-		color: COLOR.RED
+		color: Color.RED
 	}
 
 
@@ -28,16 +29,16 @@ class Button extends PureComponent {
 		const {
 			className,
 			text,
+			url,
+			target,
 			color
 		} = this.props;
 
-		const container_classname = styles('container', {
-			color
-		}, className);
-
 		return (
-			<div className={classnames(container_classname)}>
-				<div className={styles('text')}>{text}</div>
+			<div className={classnames(styles('container'), className)}>
+				<a href={url} target={target} className={styles('button', `${color}`)}>
+					<div className={styles('text')}>{text}</div>
+				</a>
 			</div>
 		);	
 	}
