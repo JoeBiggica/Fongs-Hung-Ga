@@ -45,26 +45,6 @@
 			},
 			"phone": "(754) 707-1898",
 			"email": "sifu.morrison@fonghungga.com"
-		},
-		{
-			"name": "Fong's Hung Ga Kung Fu",
-			"instructors": [
-				{
-					"name": "Sifu Maurice Morrison",
-					"url": "/profile/sifu-maurice-morrison"
-				},
-				{
-					"name": "Carlos Gonzalez",
-					"url": "/profile/carlos-gonzalez"
-				}
-			],
-			"address": {
-				"street": "",
-				"city": "Miami County Florida",
-				"zipcode": ""
-			},
-			"phone": "(754) 707-1898",
-			"email": "sifu.morrison@fonghungga.com"
 		}
 	]
 }

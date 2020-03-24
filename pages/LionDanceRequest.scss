@@ -1,0 +1,15 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+iframe {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 1600px;
+
+	@include for-tablet-portrait-up {
+		width: 640px;
+		height: 1302px;
+	}
+}

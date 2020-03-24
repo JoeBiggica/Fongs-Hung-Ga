@@ -29,25 +29,13 @@ class Slideshow extends PureComponent {
 			title,
 			images
 		} = this.props;
-		 
-		const properties = {
-			duration: 5000,
-			transitionDuration: 500,
-			infinite: true,
-			indicators: true,
-			arrows: true,
-			pauseOnHover: true,
-			onChange: (oldIndex, newIndex) => {
-				console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-			}
-		}
 
 		return (
 			<div className={classnames(styles('container'), className)}>
 				<div className="slide-container" key={`slide-${index}`}>
-			        <Slide {...properties}>
+			        <div>
 			          {images.map(this.renderSlide)}
-			        </Slide>
+			        </div>
 			    </div>
 			</div>
 		);	
