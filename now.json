@@ -12,6 +12,7 @@
 		{"src": "/about", "dest": "About"},
 		{"src": "/contact", "dest": "Contact"},
 		{ "src": "/article/(?<slug>[^/]+)", "dest": "Article?slug=$slug"},
-		{ "src": "/profile/(?<name>[^/]+)", "dest": "Profile?name=$name"}
+		{ "src": "/profile/(?<name>[^/]+)", "dest": "Profile?name=$name"},
+		{"src": "/events", "dest": "Events"},
 	]
 }
