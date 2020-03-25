@@ -29,7 +29,17 @@ class LionDanceRequest extends Component {
 			<>
 				<Header router={router} />
 				<Layout padding >
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4wNUSAepdrgs1SQqxCFdq3xT2jFPXpiobIN4U2S7KSyJfTw/viewform?embedded=true" width="640" height="1302" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="no">Loading…</iframe>
+					<iframe 
+						src="https://docs.google.com/forms/d/e/1FAIpQLSf4wNUSAepdrgs1SQqxCFdq3xT2jFPXpiobIN4U2S7KSyJfTw/viewform?embedded=true" 
+						width="640" 
+						height="1302" 
+						className={styles('form')}
+						frameBorder="0" 
+						marginHeight="0" 
+						marginWidth="0" 
+						scrolling="no">
+						Loading…
+					</iframe>
 				</Layout>
 			</>
 		)
