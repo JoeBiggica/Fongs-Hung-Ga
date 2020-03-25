@@ -41,7 +41,7 @@ class SiteHead extends PureComponent {
 
 
 				<meta property="fb:app_id" content="926660327777500"/>
-				<meta name='og:title' content="Fong's Hung Ga" />
+				<meta name='og:title' property="Fong's Hung Ga" />
 				<meta property='og:description' content="The official Fong's Hung Ga website" />
 				<meta property="og:type" content="website" />
 				<meta property='og:image' content=`${domain}/static/fongs-social-logo.png` />

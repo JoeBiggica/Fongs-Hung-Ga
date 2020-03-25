@@ -37,7 +37,7 @@ class LionDance extends Component {
 					<title>Fong's Hung Ga - Lion Dance</title>
 					<meta name='description' content="Lion Dance at The Fong's Hung Ga" />
 					<meta name='keywords' content='lion dance,lion dance booking,lion dance nyc,lion dance new york,lion dance new york city, chinese new year,lion dance chinese new year,fongs lions,fongs lion dance,hung ga,hung ga lion dance,fongs hung ga,traditional lion dance,futsan lions,futsan lion dance,hong kong style lion dance,hong kong style,hong kong style nyc' />
-					<meta name='og:title' content="Fong's Hung Ga - Lion Dance" />
+					<meta name='og:title' property="Fong's Hung Ga - Lion Dance" />
 					<meta property='og:description' content="Lion Dance at The Fong's Hung Ga" />
 					<link rel="canonical" href="https://www.fongshungga.com/liondance/" />
 				</Head>
