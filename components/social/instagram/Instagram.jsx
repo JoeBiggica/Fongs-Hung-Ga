@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import Color from '../Color';
-import styles from '../SocialTools.scss';
+import styles from '../Social.scss';
 
 
 function urlClickHandler(url) {
@@ -46,7 +46,7 @@ Instagram.propTypes = {
 };
 
 Instagram.defaultProps = {
-	color: Color.GRAY_TO_ORIGINAL,
+	color: Color.WHITE_TO_ORIGINAL,
 	borderless: false,
 };
 

@@ -5,6 +5,7 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Header from 'components/header';
+import Social from 'components/social';
 
 
 import styles from './Index.scss';
@@ -65,6 +66,13 @@ class Index extends Component {
 						<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
 						<div className={styles('logo')} style={logo_styles} />
 						<p className={styles('description')}>It's not just a style, it's a way of life.</p>
+						<div className={styles['share-buttons']}>
+							<Social
+								platforms={['facebook', 'instagram', 'email']}
+								urls={['https://www.facebook.com/fongslions/', 'https://www.instagram.com/fongslions/?hl=en', 'mailto:sifu@fongshungga.com']}
+								color={Social.Color.WHITE_TO_RED}
+							/>
+						</div>
 					</div>
 				</section>
 			</>
