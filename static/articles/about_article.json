@@ -75,6 +75,27 @@
 					}
 				]
 			}
+		},
+		{
+			"type": "subheader",
+			"content": {
+				"text": "Members"
+			}
+		},
+		{
+			"type": "list",
+			"content": {
+				"items": [
+					{
+						"text": "Sifu Bill Fong",
+						"url": "/profile/sifu-bill-fong"
+					},
+					{
+						"text": "Sifu Maurice Morrison",
+						"url": "/profile/sifu-maurice-morrison"
+					}
+				]
+			}
 		}
 	]
 }

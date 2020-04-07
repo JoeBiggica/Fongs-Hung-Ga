@@ -7,6 +7,7 @@ import HeroBanner from 'components/herobanner';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
 import ContactInfo from 'components/contactinfo';
+import Social from 'components/social';
 import schools from 'static/schools.json';
 
 import styles from './Contact.scss';
@@ -55,6 +56,17 @@ class Contact extends Component {
 					/>
 					<div className={styles('schools-container')}>
 						{schools.locations && schools.locations.map(this.renderContactInfo)}
+					</div>
+					<PageHeader 
+						className={styles('page-header')}
+						title='Social'
+					/>
+					<div className={styles['social-buttons']}>
+						<Social
+							platforms={['facebook', 'instagram', 'email']}
+							urls={['https://www.facebook.com/fongslions/', 'https://www.instagram.com/fongslions/', 'mailto:sifu.fong@fonghungga.com']}
+							color={Social.Color.BLACK_TO_RED}
+						/>
 					</div>
 				</Layout>
 			</>

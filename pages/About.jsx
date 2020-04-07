@@ -37,7 +37,7 @@ class About extends Component {
 					title='About' 
 					text_position={HeroBanner.TextPosition.BOTTOM}
 
-					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/fongs-doyers-pose.jpg'
+					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/kung-fu/fongs-doyers-pose.jpg'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
 					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}

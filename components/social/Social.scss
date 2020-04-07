@@ -2,11 +2,13 @@
 
 .container {
 	white-space: nowrap;
+	display: flex;
 }
 
 .icon {
-	display: inline-block;
-	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 45px;
 	height: 45px;
 	padding: 0;
@@ -34,10 +36,18 @@
 .white-to-original,
 .white-to-red {
 	svg path {
-		fill: white;
+		fill: $white;
 	}
 
 	border-color: $white;
+}
+
+.black-to-red {
+	svg path {
+		fill: $black;
+	}
+
+	border-color: $black;
 }
 
 .white-to-original:hover {
@@ -71,7 +81,8 @@
 	}
 }
 
-.white-to-red:hover {
+.white-to-red:hover,
+.black-to-red:hover {
 	svg path {
 		fill: $red;
 	}

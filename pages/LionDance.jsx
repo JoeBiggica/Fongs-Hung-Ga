@@ -47,7 +47,7 @@ class LionDance extends Component {
 					title='Lion Dance' 
 					text_position={HeroBanner.TextPosition.BOTTOM}
 
-					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/three-lions.jpg'
+					background_image='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/three-lions.jpg'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
 					hero_height={HeroBanner.HeroHeight.THREE_QUATER} 
 					gradient={HeroBanner.Gradient.BOTTOM}
