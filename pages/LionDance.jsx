@@ -73,7 +73,7 @@ class LionDance extends Component {
 						title='Our Clients'
 					/>
 					<div className={styles('clients-container')}>
-						<img src='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/client-logos.png' alt='Client Logos' />
+						<img src='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/misc/client-logos.png' alt='Client Logos' />
 					</div>
 				</Layout>
 			</>
