@@ -43,6 +43,8 @@ class Contact extends Component {
 					<meta name='keywords' content='contact,call,contact kung fu,lion dance,lion dance booking,lion dance nyc,lion dance new york,lion dance new york city, chinese new year,lion dance chinese new year,fongs lions,fongs lion dance,hung ga,hung ga lion dance,fongs hung ga,traditional lion dance,futsan lions,futsan lion dance,hong kong style lion dance,hong kong style,hong kong style nyc' />
 					<meta name='og:title' property="Fong's Hung Ga - Contact" />
 					<meta property='og:description' content="Contact Fong's Hung Ga" />
+					<meta property='og:image' content='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/lion-dance-banner-cart.png' />
+					<meta name='twitter:image' content='https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/lion-dance-banner-cart.png' />
 					<link rel="canonical" href="https://www.fongshungga.com/contact/" />
 				</Head>
 				<Header router={router} />

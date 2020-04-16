@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
+import Head from 'next/head';
 import Header from 'components/header';
 import Social from 'components/social';
 
@@ -52,6 +53,10 @@ class Index extends Component {
 
 		return (
 			<>
+				<Head>
+					<meta name='twitter:image' content='https://www.fongshungga.com/static/fongs-social-logo.png' />
+					<meta property='og:image' content='https://www.fongshungga.com/static/fongs-social-logo.png' />
+				</Head>
 				<Header
 					router={router}
 					gradient

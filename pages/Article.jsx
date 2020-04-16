@@ -57,8 +57,8 @@ class Article extends Component {
 
 		const header = article.header;
 		const body = article.body;
-		const primary_asset = article.header.primary_asset && article.header.primary_asset.content.src;
-		console.log(primary_asset, '##$####');
+		const share_image = article.header.primary_asset ? article.header.primary_asset.content.src : 'https://www.fongshungga.com/static/fongs-social-logo.png';
+		
 		return (
 			<>
 				<Head>
@@ -68,9 +68,9 @@ class Article extends Component {
 					<meta name='og:title' property={header.title} />
 					<meta property='og:description' content={header.title} />
 					<meta property="og:type" content="article" />
-					{ primary_asset && <meta property='og:image' content={primary_asset} /> }
+					<meta property='og:image' content={share_image} />
 					<meta property='og:url' content={url} />
-					{ primary_asset && <meta name='twitter:image' content={primary_asset} /> }
+					<meta name='twitter:image' content={share_image} />
 					<link rel="canonical" href={url} />
 				</Head>
 				<Header router={router} />

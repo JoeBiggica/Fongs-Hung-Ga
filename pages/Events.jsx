@@ -35,6 +35,8 @@ class Events extends Component {
 					<meta name='keywords' content='events' />
 					<meta name='og:title' property="Fong's Hung Ga - Events Calendar" />
 					<meta property='og:description' content="Events at Fong's Hung Ga" />
+					<meta property='og:image' content='https://www.fongshungga.com/static/fongs-social-logo.png' />
+					<meta name='twitter:image' content='https://www.fongshungga.com/static/fongs-social-logo.png' />
 					<link rel="canonical" href="https://www.fongshungga.com/events" />
 				</Head>
 				<Header router={router} />
