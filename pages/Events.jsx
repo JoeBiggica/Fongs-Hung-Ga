@@ -30,11 +30,11 @@ class Events extends Component {
 		return (
 			<>
 				<Head>
-					<title>Fong's Hung Ga - Events Calendar</title>
-					<meta name='description' content="Lion Dance at The Fong's Hung Ga" />
+					<title>Fong's Hung Ga - Events</title>
+					<meta name='description' content="Events at Fong's Hung Ga" />
 					<meta name='keywords' content='events' />
 					<meta name='og:title' property="Fong's Hung Ga - Events Calendar" />
-					<meta property='og:description' content="Events Calendar for The Fong's Hung Ga" />
+					<meta property='og:description' content="Events at Fong's Hung Ga" />
 					<link rel="canonical" href="https://www.fongshungga.com/events" />
 				</Head>
 				<Header router={router} />
