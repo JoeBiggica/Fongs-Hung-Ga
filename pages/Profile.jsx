@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 import { Action } from 'actions';
 import fetch from 'isomorphic-unfetch';
+import Head from 'next/head';
 import Header from 'components/header';
 import Layout from 'components/layout';
 import PageHeader from 'components/pageheader';
@@ -20,6 +21,7 @@ class Profile extends Component {
 		const isServer = !!req
 		const name = query.name;
 		const name_shaped = name.replace('sifu-', '');
+		const url = `https://www.fongshungga.com/profile/${name_shaped}`;
 		
 		if (typeof(fetch) !== 'undefinded') {
 			const profile_res = await fetch(`https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/${name_shaped}/profile-data.json`);
@@ -32,7 +34,9 @@ class Profile extends Component {
 			}
 		}
 
-		return {};
+		return {
+			url
+		};
 		
 	}
 
@@ -48,7 +52,8 @@ class Profile extends Component {
 	render() {
 		const {
 			router,
-			profile
+			profile,
+			url
 		} = this.props;
 
 		const name = profile.name;
@@ -62,6 +67,18 @@ class Profile extends Component {
 
 		return (
 			<>
+				<Head>
+					<title>Profile: {name}</title>
+					<meta name='description' content={name} />
+					<meta name='keywords' content='classes,kung fu classes,kung fu bootcamp,kung fu styles,learn kung fu,learn hung ga,where to learn kung fu,learn kung fu staten island,learn kung fu new york,kung fu classes nyc,contact,call,contact kung fu,lion dance,lion dance booking,lion dance nyc,lion dance new york,lion dance new york city, chinese new year,lion dance chinese new year,fongs lions,fongs lion dance,hung ga,hung ga lion dance,fongs hung ga,traditional lion dance,futsan lions,futsan lion dance,hong kong style lion dance,hong kong style,hong kong style nyc' />
+					<meta name='og:title' property={name} />
+					<meta property='og:description' content={name} />
+					<meta property="og:type" content="article" />
+					<meta property='og:image' content={image} />
+					<meta property='og:url' content={url} />
+					<meta name='twitter:image' content={image} />
+					<link rel="canonical" href={url} />
+				</Head>
 				<Header router={router} />
 				<Layout 
 					className={styles('container')} 
