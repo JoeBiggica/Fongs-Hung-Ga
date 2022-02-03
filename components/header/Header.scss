@@ -138,3 +138,24 @@
 		}
 	}
 }
+
+.note-banner-container {
+	margin-top: 24px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.note-banner {
+		text-align: center;
+		font-size: 12px;
+		color: white;
+		background-color: #8A0102;
+		border-radius: 100px;
+		padding: 10px;
+
+		@include for-tablet-portrait-up {
+			font-size: 16px;
+		}
+	}
+}
