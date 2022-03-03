@@ -98,7 +98,7 @@ class Header extends PureComponent {
 						</ul>
 					</div>
 				</div>
-				<div className={styles('note-banner-container')}><div className={styles('note-banner')}>Happy lunar new year - please note we are fully booked for performances. We appreciate your support.</div></div>
+				{/*<div className={styles('note-banner-container')}><div className={styles('note-banner')}>Happy lunar new year - please note we are fully booked for performances. We appreciate your support.</div></div>*/}
 			</div>
 		);	
 	}
