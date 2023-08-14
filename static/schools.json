@@ -32,6 +32,20 @@
 		},
 		{
 			"name": "Fong's Hung Ga Kung Fu",
+			"head": {
+				"name": "Vincent Hawley",
+				"url": ""
+			},
+			"address": {
+				"street": "7 S Main St",
+				"city": "Lambertville, New Jersey",
+				"zipcode": "08530"
+			},
+			"phone": "(978) 387-3251",
+			"email": "vincent@fongshungga.com"
+		},
+		{
+			"name": "Fong's Hung Ga Kung Fu",
 			"instructors": [
 				{
 					"name": "Sifu Maurice Morrison",
